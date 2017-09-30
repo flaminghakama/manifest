@@ -32,8 +32,10 @@ function Manifest(manifest) {
 
 		html += "</p>\n" ; 
 
-		html += this.displayRecordings(song) ; 
-
+		if ( song.hasOwnProperty('recordings') ) {
+			html += this.displayRecordings(song) ; 
+		}
+		
 		html += this.displayScoresAndParts(song, baseUrl) ; 
 
 		return html ; 
