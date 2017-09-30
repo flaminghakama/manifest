@@ -95,7 +95,9 @@ function Manifest(manifest) {
 
 	this.displayProgram = function() { 
 
-		console.log('in displayProgram with this.manifest', this.manifest,
+		console.log('in displayProgram with' +
+			"\n    this", this,
+		    "\n    and this.manifest", this.manifest,
 		    "\n    and this.manifest.songs ", this.manifest.songs, 
 		    "\n    and this.manifest.programOrder ", this.manifest.programOrder, 
 		    "\n    and this.manifest.programOrder.length ", this.manifest.programOrder.length ) ; 
