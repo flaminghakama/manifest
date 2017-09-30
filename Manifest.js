@@ -134,7 +134,7 @@ function Manifest(manifest) {
 
 		Object.keys(partsLists).forEach(function(songId) {
 
-	    	song = this.manifest.song[songId] ; 
+	    	song = this.manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			html += '<li>' + song.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
