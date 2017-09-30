@@ -12,8 +12,6 @@ function Manifest(manifest) {
 	}(this) ; 
 
     this.displaySong = function(song, baseUrl) {
-
-    	console.log('song is ', song) ; 
     	
 		var scoreIndex, 
 		    songIndex, 
