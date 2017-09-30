@@ -105,12 +105,12 @@ function Manifest(manifest) {
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
-			console.log('        got number ' + number) ;
-
 			songIndex = this.manifest.program[number] ; 
 			console.log('        got songIndex ' + songIndex) ;
 
 			song = this.manifest.songs[songIndex] ; 
+			console.log('        got song ', song) ;
+
 			html += this.displaySong(song) ; 
 			console.log('in displayProgram with number ' + number + 
 				', songIndex ' + songIndex + 
