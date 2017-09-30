@@ -1,3 +1,9 @@
+<html>
+<head>
+<title>Manifest Example</title>
+<script src="http://davidelainealt.com/manifest/Manifest.js"></script>
+<script type="text/javascript">
+
 var manifest = {
 
 	programOrder: [ "01", "02", "03", "04", "05" ],
@@ -248,5 +254,10 @@ var manifest = {
 };
 
 var windReading = new Manifest(manifest);
-console.log(windReading.displayManifest()) ; 
+document.body.innerHTML = windReading.displayManifest() ; 
 
+</script>
+</head>
+<body>
+</body>
+</html>
