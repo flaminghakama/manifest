@@ -11,14 +11,14 @@ function Manifest(manifest) {
 		console.log('Creating manifest ', that.manifest) ;  
 	}(this) ; 
 
-    this.displaySong = function(song, baseUrl) {
+    this.displaySong = function(song) {
     	
 		var scoreIndex, 
 		    songIndex, 
 		    score, 
 		    part,
 		    href, 
-			webDir = baseUrl + song.fileLocation + '/pdf/',
+			webDir = getBaseUrl(song) + song.fileLocation + '/pdf/',
 		    html = '<h3>' + song.title + '</h3>' +
 				"<p>Composed by " + song.composer ; 
 
@@ -34,7 +34,7 @@ function Manifest(manifest) {
 			html += this.displayRecordings(song) ; 
 		}
 
-		html += this.displayScoresAndParts(song, baseUrl) ; 
+		html += this.displayScoresAndParts(song) ; 
 
 		return html ; 
 	} ; 
@@ -68,12 +68,11 @@ function Manifest(manifest) {
 		return '' ;
 	} ;
 
-	this.displayScoresAndParts = function(song, baseUrl) { 
+	this.displayScoresAndParts = function(song) { 
 
 		var name, 
 			score, 
 			href, 
-			baseUrl = '',
 			html = "<h3>Scores<ul>\n<ul>\n" ; 
 
 		for ( name in song.scores ) { 
@@ -139,7 +138,7 @@ function Manifest(manifest) {
 			html += '<li>' + song.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				href = webDir + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				href = getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
 				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
 				if ( partIndex+1 < partsList.length ) { 
 					html += ',' ; 
