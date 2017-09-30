@@ -24,10 +24,10 @@ var manifestHtml = myProgram.displayManifest() ;
 
 Other available methods:
 
-* displaySong = function(song, baseUrl)
-* displayRecordings = function(song) 
-* getBaseUrl = function(song) 
-* displayScoresAndParts = function(song, baseUrl) 
-* displayProgram = function() 
-* displayPartsInBook = function(chair, partsLists) 
-* displayPartsInBooks = function() 
+* displayProgram() 
+* displaySong(song, baseUrl)
+* displayScoresAndParts(song, baseUrl) 
+* displayRecordings(song) 
+* getBaseUrl(song) 
+* displayPartsInBooks() 
+* displayPartsInBook(chair, partsLists) 
