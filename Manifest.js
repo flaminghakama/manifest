@@ -18,7 +18,7 @@ function Manifest(manifest) {
 		    score, 
 		    part,
 		    href, 
-			webDir = getBaseUrl(song) + song.fileLocation + '/pdf/',
+			webDir = this.getBaseUrl(song) + song.fileLocation + '/pdf/',
 		    html = '<h3>' + song.title + '</h3>' +
 				"<p>Composed by " + song.composer ; 
 
@@ -138,7 +138,7 @@ function Manifest(manifest) {
 			html += '<li>' + song.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				href = getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				href = this.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
 				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
 				if ( partIndex+1 < partsList.length ) { 
 					html += ',' ; 
