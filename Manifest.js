@@ -11,6 +11,17 @@ function Manifest(manifest) {
 		console.log('Creating manifest ', that.manifest) ;  
 	}(this) ; 
 
+	this.getBaseUrl = function(song) { 
+
+		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
+			return song.baseUrl ; 
+		} 
+		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
+			return this.manifest.baseUrl ;
+		}
+		return '' ;
+	} ;
+
     this.displaySong = function(song) {
     	
 		var scoreIndex, 
@@ -55,18 +66,7 @@ function Manifest(manifest) {
 		html += "</ul>\n" ; 
 
 		return html ; 
-	} ;
-
-	this.getBaseUrl = function(song) { 
-
-		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
-			return song.baseUrl ; 
-		} 
-		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
-			return this.manifest.baseUrl ;
-		}
-		return '' ;
-	} ;
+	} ; 
 
 	this.displayScoresAndParts = function(song) { 
 
