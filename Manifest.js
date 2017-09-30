@@ -96,12 +96,13 @@ function Manifest(manifest) {
 
 	this.displayProgram = function() { 
 
-		console.log('in displayProgram with this.manifest', this.manifest +
-		    ' and this.manifest.songs ', this.manifest.songs + 
-		    ' and this.manifest.programOrder ', this.manifest.programOrder ) ; 
+		console.log('in displayProgram with this.manifest', this.manifest,
+		    ' and this.manifest.songs ', this.manifest.songs, 
+		    ' and this.manifest.programOrder ', this.manifest.programOrder, 
+		    ' and this.manifest.programOrder.length ', this.manifest.programOrder.length ) ; 
 
 		var programIndex, number, songIndex, song, baseUrl, html ; 
-		for ( programIndex = this.manifest.programOrder.length - 1; programIndex >= 0; programIndex-- ) {
+		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
