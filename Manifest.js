@@ -97,10 +97,12 @@ function Manifest(manifest) {
 	this.displayProgram = function() { 
 
 		console.log('in displayProgram with this.manifest', this.manifest +
-		    ' and this.manifest.songs ', this.manifest.songs ) ; 
+		    ' and this.manifest.songs ', this.manifest.songs + 
+		    ' and this.manifest.programOrder ', this.manifest.programOrder ) ; 
 
 		var programIndex, number, songIndex, song, baseUrl, html ; 
 		for ( programIndex = this.manifest.programOrder.length - 1; programIndex >= 0; programIndex-- ) {
+
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
