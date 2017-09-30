@@ -33,9 +33,10 @@ function Manifest(manifest) {
 		html += "</p>\n" ; 
 
 		if ( song.hasOwnProperty('recordings') ) {
+			console.log('        it says we have song.recordings:', song.recordings) ; 
 			html += this.displayRecordings(song) ; 
 		}
-		
+
 		html += this.displayScoresAndParts(song, baseUrl) ; 
 
 		return html ; 
