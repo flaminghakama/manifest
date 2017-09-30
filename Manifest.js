@@ -4,7 +4,12 @@
  
 function Manifest(manifest) {
 
-    this.manifest = manifest,
+	var manifest = manifest ; 
+
+	var __Manifest = function(that) {
+		that.manifest = this.manifest ; 
+		console.log('Creating manifest ', that.manifest) ;  
+	}(this) ; 
 
     this.displaySong = function(song, baseUrl) {
 
