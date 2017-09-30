@@ -48,13 +48,9 @@ function Manifest(manifest) {
 			href, 
 			html = "<h3>Recordings</h3>\n<ul>\n" ; 
 
-		console.log('In displayRecordings, song is ', song, 
-			'and song.recordings is ', song.recordings ) ; 
-
 		for ( name in song.recordings ) { 
-			console.log('    looping through recording names:', name) ; 
 	 		recording = song.recordings[name] ; 
-			href = recordings[name] ; 
+			href = song.recordings[name] ; 
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		};
 
