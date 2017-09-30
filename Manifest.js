@@ -1,0 +1,158 @@
+/*
+ *  Manifest - organize a program of songs for an ensemble
+ */
+ 
+function Manifest(manifest) {
+
+    this.manifest = manifest,
+
+    this.displaySong = function(song, baseUrl) {
+
+    	console.log('song is ', song) ; 
+    	
+		var scoreIndex, 
+		    songIndex, 
+		    score, 
+		    part,
+		    href, 
+			webDir = baseUrl + song.fileLocation + '/pdf/',
+		    html = '<h3>' + song.title + '</h3>' +
+				"<p>Composed by " + song.composer ; 
+
+		if ( song.hasOwnProperty('arranger') && 
+			 song.arranger !== '' && 
+			 song.composer !== song.arranger ) {  
+			html += ', Arranged by ' + song.arranger ;
+		}
+
+		html += "</p>\n" ; 
+
+		html += this.displayRecordings(song) ; 
+
+		html += this.displayScoresAndParts(song, baseUrl) ; 
+
+		return html ; 
+	} ; 
+		
+	this.displayRecordings = function(song) { 
+
+		var name, 
+			recording, 
+			href, 
+			html = "<h3>Recordings</h3>\n<ul>\n" ; 
+
+		for ( name in song.recordings ) { 
+	 		recording = song.recordings[name] ; 
+			href = recordings[name] ; 
+			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+		};
+
+		html += "</ul>\n" ; 
+
+		return html ; 
+	} ;
+
+	this.getBaseUrl = function(song) { 
+
+		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
+			return song.baseUrl ; 
+		} 
+		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
+			return this.manifest.baseUrl ;
+		}
+		return '' ;
+	} ;
+
+	this.displayScoresAndParts = function(song, baseUrl) { 
+
+		var name, 
+			score, 
+			href, 
+			baseUrl = '',
+			html = "<h3>Scores<ul>\n<ul>\n" ; 
+
+		for ( name in song.scores ) { 
+	 		score = song.scores[name] ; 
+			href = this.getBaseUrl(song) + song.filePrefix + score.fileSuffix + '.pdf' ;
+			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+		}
+
+		html += "</ul>\n<h3>Parts<ul>\n" ; 
+
+		for ( name in song.parts ) { 
+			part = song.parts[name] ; 
+			href = this.getBaseUrl(song) + song.filePrefix + part.fileSuffix + '.pdf' ;
+			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+		};
+		html += "</ul>\n" ; 
+
+		return html ; 
+	} ;
+
+	this.displayProgram = function() { 
+
+		var programIndex, number, songIndex, song, baseUrl, html ; 
+		for ( programIndex = this.manifest.programOrder.length - 1; programIndex >= 0; programIndex-- ) {
+			number = this.manifest.programOrder[programIndex] ;
+			songIndex = this.manifest.program[number] ; 
+			song = this.manifest.songs[songIndex] ; 
+			html += this.displaySong(song) ; 
+		}
+
+		return html ; 
+	} ; 
+
+	this.displayPartsInBook = function(chair, partsLists) { 
+
+		var songId, 
+			song, 
+			partsList,
+			partIndex, 
+			part, 
+			href, 
+			html = '<h3>' + chair + '</h3>' +
+				"\n\n<ul>\n" ; 
+
+		Object.keys(partsLists).forEach(function(songId) {
+
+	    	song = this.manifest.song[songId] ; 
+			partsList = partsLists[songId] ; 
+			html += '<li>' + song.title ;
+			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
+				part = partsList[partIndex] ; 
+				href = webDir + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
+				if ( partIndex+1 < partsList.length ) { 
+					html += ',' ; 
+				}
+			}
+			html += "</li>\n" ; 
+		});
+
+		html += "</ul>\n" ; 
+
+		return html ; 
+	} ;
+
+	this.displayPartsInBooks = function() { 
+
+		var html, key,
+			books = this.manifest.partsInBooks ; 
+
+		for ( key in books ) {
+
+			if ( books.hasOwnProperty(key) ) {
+
+				html += this.displayPartsInBook( key, books[key] ) ; 
+
+			}
+		}
+	} ; 
+
+	this.displayManifest = function() { 
+		this.displayProgram() ; 
+		this.displayPartsInBooks() ; 
+	}
+}
+
+
