@@ -239,7 +239,6 @@ var windReading = {
 				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
-				"Concert": { fileSuffix: "Score-Concert" },
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {

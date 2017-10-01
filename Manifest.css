@@ -1,40 +1,22 @@
-.program-summary { 
-	border: solid blue 2px ; 
-}
-.book-summary { 
-	border: solid gray 2px ; 
-}
+.program-summary { }
+.book-summary { }
+.program { }
+.song-metadata { }
+.song-scores { }
+.song-parts { }
+.song-recordings { }
+.parts-in-book { }
 
-.program { 
-	border: solid green 2px ; 
-}
-
-.song-metadata { 
-	border: solid lavender 2px ; 
-}
-.song-scores { 
-	border: solid pink 2px ; 
-}
-.song-parts { 
-	border: solid red 2px ; 
-}
-.song-recordings { 
-	border: solid yellow 2px ; 
-}
-
-.parts-in-book { 
-	border: solid orange 2px ; 
-}
-
-
-.song-scores ul, .song-parts ul, .parts-in-book ul { 
+.book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
 }
-.song-scores li, .song-parts li, .parts-in-book li {
+.book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
 	/* padding-left: 2em; */
 	/* text-indent: -2em; */
 	/* overflow: hidden; */
 	/*text-overflow: ellipsis; */ 
 	white-space: nowrap;
+	float: left;
+	margin-right: 1em;
 }
 
