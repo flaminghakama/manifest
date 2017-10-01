@@ -46,7 +46,7 @@ function Manifest(manifest) {
 	this.displaySongMetadata = function(song) { 
 
 		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
-			"<div class='song-metadata'>\n<h4>" + song.metadata.title + "</h4>\n" +
+			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <p>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
@@ -67,7 +67,7 @@ function Manifest(manifest) {
 			description,
 			href, 
 			html = "<div class='song-recordings'>\n    <h4>Recordings</h4>\n    <ul>\n",
-			howManyRecordings ; 
+			howManyRecordings = 0 ; 
 
 		for ( name in song.recordings ) { 
 	 		recording = song.recordings[name] ; 
@@ -103,7 +103,7 @@ function Manifest(manifest) {
 			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		}
 
-		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -112,7 +112,7 @@ function Manifest(manifest) {
 
 		var name,  
 			href, 
-			html = "<div class='song-parts'>\n    <h3>Parts</h3>\n    <ul>\n" ; 
+			html = "<div class='song-parts'>\n    <h4>Parts</h4>\n    <ul>\n" ; 
 
 		for ( name in song.parts ) { 
 			part = song.parts[name] ; 
@@ -121,7 +121,7 @@ function Manifest(manifest) {
 				song.filePrefix + part.fileSuffix + '.pdf' ;
 			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		} 
-		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -140,7 +140,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songIndex] ; 
 			html += '        <li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
-		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -205,7 +205,7 @@ function Manifest(manifest) {
 			}
 		});
 
-		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -221,7 +221,7 @@ function Manifest(manifest) {
 				html += '        <li><a href="#' + key + '">' + key + "</a></li>\n";
 			}
 		}
-		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
