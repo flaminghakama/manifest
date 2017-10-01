@@ -46,7 +46,7 @@ function Manifest(manifest) {
 	this.displaySongMetadata = function(song) { 
 
 		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
-			"<div class='song-metadata'>\n<h2>" + song.metadata.title + "</h2>\n" +
+			"<div class='song-metadata'>\n<h4>" + song.metadata.title + "</h4>\n" +
 			"    <p>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
@@ -66,7 +66,7 @@ function Manifest(manifest) {
 			recording, 
 			description,
 			href, 
-			html = "<div class='song-recordings'>\n    <h3>Recordings</h3>\n    <ul>\n",
+			html = "<div class='song-recordings'>\n    <h4>Recordings</h4>\n    <ul>\n",
 			howManyRecordings ; 
 
 		for ( name in song.recordings ) { 
@@ -93,7 +93,7 @@ function Manifest(manifest) {
 		var name, 
 			score, 
 			href, 
-			html = "<div class='song-scores'>\n    <h3>Scores</h3>\n    <ul>\n" ; 
+			html = "<div class='song-scores'>\n    <h4>Scores</h4>\n    <ul>\n" ; 
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
@@ -129,7 +129,7 @@ function Manifest(manifest) {
 	this.displayProgramSummary = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<div class='program-summary'>\n    <h1>Program</h1>\n    <ul>\n",
+			html = "<div class='program-summary'>\n    <h2>Links to songs in program</h2>\n    <ul>\n",
 			songHtml = ''  ;
 
 		console.log
@@ -228,8 +228,9 @@ function Manifest(manifest) {
 
 	this.displayPartsInBooks = function() { 
 
-		var html, key,
-			books = this.manifest.partsInBooks ; 
+		var key,
+			books = this.manifest.partsInBooks, 
+			html = "<div class='parts-in-books'>\n    <h2>Instrumental Books<h2>\n" ; 
 
 		for ( key in books ) {
 
@@ -239,17 +240,20 @@ function Manifest(manifest) {
 
 			}
 		}
+		html += "</div>\n" ; 
 
 		return html ; 
 	} ; 
 
 	this.displayManifest = function() { 
 
-		var html = '' ; 
+		var html = "<div class='program'>\n    <h2>Program</h2>\n",
+
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
 		html += this.displayProgram() ; 
 		html += this.displayPartsInBooks() ; 
+		html += "</div>\n" ; 
 
 		return html ; 
 	}
