@@ -245,7 +245,6 @@ function Manifest(manifest) {
 			'DOMContentLoaded', 
 
 				function(){
-					var content = content || this.displayManifest() ;
 					var container = document.getElementById(this.manifest.selector) ; 
 					if ( container !== undefined  &&  typeof container === 'object' ) { 
 						container.innerHTML = content ;
