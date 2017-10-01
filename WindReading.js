@@ -1,6 +1,8 @@
 
 var windReading = {
 
+	title: 'alt.musica winds reading 27 October, 2017',
+	
 	selector: '#manifest-wind-reading',
 
 	baseUrl: 'http://davidelainealt.com/scores/', 

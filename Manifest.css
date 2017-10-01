@@ -12,6 +12,9 @@
 .book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
 }
+.program-songs h4, .parts-in-books h3 { 
+    margin-left: 1em;
+}
 .book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
 	/* padding-left: 2em; */
 	/* text-indent: -2em; */

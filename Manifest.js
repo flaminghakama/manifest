@@ -213,7 +213,7 @@ function Manifest(manifest) {
 
 		var key, name
 			books = this.manifest.partsInBooks, 
-			html = "<h2>Books</h2>\n<div class='book-summary'>\n    <ul>\n" ; 
+			html = "<h2>Links to instrumental books</h2>\n<div class='book-summary'>\n    <ul>\n" ; 
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
@@ -246,7 +246,7 @@ function Manifest(manifest) {
 
 	this.displayManifest = function() { 
 
-		var html = "<h1>Program</h1>\n<div class='program'>\n" ;
+		var html = "<h1>Program for " + this.title + "</h1>\n<div class='program'>\n" ;
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
 		html += this.displayProgramSongs() ; 
