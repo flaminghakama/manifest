@@ -91,7 +91,9 @@ function Manifest(manifest) {
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
-			href = this.getBaseUrl(song) + song.filePrefix + score.fileSuffix + '.pdf' ;
+			href = this.getBaseUrl(song) + 
+				score.fileLocation + '/pdf/' + 
+				song.filePrefix + score.fileSuffix + '.pdf' ;
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		}
 
@@ -108,7 +110,9 @@ function Manifest(manifest) {
 
 		for ( name in song.parts ) { 
 			part = song.parts[name] ; 
-			href = this.getBaseUrl(song) + song.filePrefix + part.fileSuffix + '.pdf' ;
+			href = this.getBaseUrl(song) + 
+				score.fileLocation + '/pdf/' + 
+				song.filePrefix + score.fileSuffix + '.pdf' ;
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		};
 		html += "</ul>\n" ; 
