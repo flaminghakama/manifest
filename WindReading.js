@@ -1,37 +1,32 @@
-<html>
-<head>
-<title>Manifest Example</title>
-<script src="http://davidelainealt.com/manifest/Manifest.js"></script>
-<script type="text/javascript">
 
-var manifest = {
+var windReading = {
 
 	selector: '#manifest-wind-reading',
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ "01", "02", "03", "04", "05" ],
+	programOrder: [ '01', '02', '03', '04', '05' ],
 
 	program: {
-		"01": "Smooch alt.musica",
-		"02": "You Don't Know What Love Is alt.musica",
-		"03": "Softly, As In A Morning Sunrise alt.musica",
-		"04": "Self-Immolation alt.musica",
-		"05": "We Declare alt.musica",
+		'01': "Smooch alt.musica",
+		'02': "You Don't Know What Love Is alt.musica",
+		'03': "Softly, As In A Morning Sunrise alt.musica",
+		'04': "Self-Immolation alt.musica",
+		'05': "We Declare alt.musica",
 	},
 
-	bookOrder: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10" ],
+	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10' ],
 	books: {
-		"01": "Flute",
-		"02": "English Horn",
-		"03": "Bass Clarinet",
-		"04": "Voice",
-		"05": "Drums",
-		"06": "Violin I",
-		"07": "Violin II",
-		"08": "Viola",
-		"09": "'Cello",
-		"10": "Bass",
+		'01': "Flute",
+		'02': "English Horn",
+		'03': "Bass Clarinet",
+		'04': "Voice",
+		'05': "Drums",
+		'06': "Violin I",
+		'07': "Violin II",
+		'08': "Viola",
+		'09': "'Cello",
+		'10': "Bass",
 	},
 
 	partsInBooks: {
@@ -265,14 +260,7 @@ var manifest = {
 	} 
 };
 
-document.addEventListener('DOMContentLoaded', function(){
-	var windReading = new Manifest(manifest);
-	var content = windReading.displayManifest() ;
-	document.getElementsByTagName('BODY')[0].innerHTML = content ;
-}, false);
-
-</script>
-</head>
-<body>
-</body>
-</html>
+var manifest = new Manifest(windReading);
+var content = manifest.displayManifest() ;
+console.log("content is: \n", content) ; 
+manifest.placeManifestOnReady() ; 

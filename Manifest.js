@@ -22,30 +22,30 @@ function Manifest(manifest) {
 		return '' ;
 	} ;
 
-    this.displaySong = function(manifest, song) {
+    this.displaySong = function(song) {
     	
 		var html = '' ; 
 
 		if ( song.hasOwnProperty('metadata') ) {
-			html += this.displayMetadata(song) ; 
+			html += this.displaySongMetadata(song) ; 
 		}
 
 		if ( song.hasOwnProperty('scores') ) {
-			html += this.displayScores(song) ; 
+			html += this.displaySongScores(song) ; 
 		}
 
 		if ( song.hasOwnProperty('parts') ) {
-			html += this.displayParts(song) ; 
+			html += this.displaySongParts(song) ; 
 		}
 
 		if ( song.hasOwnProperty('recordings') ) {
-			html += this.displayRecordings(song) ; 
+			html += this.displaySongRecordings(song) ; 
 		}
 
 		return html ; 
 	} ; 
 
-	this.displayMetadata = function(song) { 
+	this.displaySongMetadata = function(song) { 
 
 		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
 			'<h2>' + song.metadata.title + "</h2>\n" +
@@ -62,27 +62,33 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 		
-	this.displayRecordings = function(song) { 
+	this.displaySongRecordings = function(song) { 
 
 		var name, 
 			recording, 
 			href, 
-			html = "<h3>Recordings</h3>\n<ul>\n" ; 
+			html = "<h3>Recordings</h3>\n<ul>\n",
+			howManyRecordings ; 
 
 		for ( name in song.recordings ) { 
 	 		recording = song.recordings[name] ; 
 			href = song.recordings[name] ; 
 			if ( href !== '' ) { 
 				html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+				howManyRecordings += 1 ; 
 			}
 		};
 
-		html += "</ul>\n" ; 
+		if ( howManyRecordings == 0 ) { 
+			html = '' ; 
+		} else {
+			html += "</ul>\n" ; 
+		}
 
 		return html ; 
 	} ; 
 
-	this.displayScores = function(song) { 
+	this.displaySongScores = function(song) { 
 
 		var name, 
 			score, 
@@ -102,7 +108,7 @@ function Manifest(manifest) {
 		return html ; 
 	} ;
 
-	this.displayParts = function(song) { 
+	this.displaySongParts = function(song) { 
 
 		var name,  
 			href, 
@@ -120,7 +126,7 @@ function Manifest(manifest) {
 		return html ; 
 	} ;
 
-	this.displayProgram = function() { 
+	this.displayProgramSummary = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
 			html = "<h1>Program</h1>\n<ul>\n",
@@ -131,10 +137,27 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			songHtml += this.displaySong(this, song) ; 
 			html += '<li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
-		html += "</ul>\n" + songHtml ; 
+		html += "</ul>\n" ; 
+
+		return html ; 
+	} ; 
+
+	this.displayProgram = function() { 
+
+		var programIndex, number, songIndex, song, baseUrl, 
+			html = "<ul>\n",
+			songHtml = ''  ;
+
+		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
+
+			number = this.manifest.programOrder[programIndex] ;
+			songIndex = this.manifest.program[number] ; 
+			song = this.manifest.songs[songIndex] ; 
+			html += this.displaySong(song) ; 
+		}
+		html += "</ul>\n" ; 
 
 		return html ; 
 	} ; 
@@ -171,6 +194,30 @@ function Manifest(manifest) {
 		return html ; 
 	} ;
 
+	this.displayBookSummary= function() { 
+
+		var html, key,
+			books = this.manifest.partsInBooks ; 
+
+		for ( key in books ) {
+
+			if ( books.hasOwnProperty(key) ) {
+
+				html += books[key] ;
+
+			}
+		}
+
+
+	books: {
+		"01": "Flute",
+		"02": "English Horn",
+		"03": "Bass Clarinet",
+
+
+		return html ; 
+	} ; 
+
 	this.displayPartsInBooks = function() { 
 
 		var html, key,
@@ -191,11 +238,39 @@ function Manifest(manifest) {
 	this.displayManifest = function() { 
 
 		var html = '' ; 
+		html += this.displayProgramSummary() ; 
+		html += this.displayBookSummary() ; 
 		html += this.displayProgram() ; 
 		html += this.displayPartsInBooks() ; 
 
 		return html ; 
 	}
+
+	this.placeManifestOnReady = function(content) {
+
+		document.addEventListener(
+		
+			'DOMContentLoaded', 
+
+				function(){
+					var content = content || this.manifest.displayManifest() ;
+					var container = document.getElementById(this.manifest.selector) ; 
+					if ( container !== undefined  &&  typeof container === 'object' ) { 
+						container.innerHTML = content ;
+						return ; 
+					} 
+					console.log('Could not find elmement with id ' + this.manifest.selector + 'so addding child.') ;
+					document.getElementsByTagName('BODY')[0].innerHTML = content ;
+				}, 
+
+			false
+		);
+	}
+
+} ; 
+
+
+
 }
 
 
