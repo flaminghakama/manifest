@@ -47,7 +47,8 @@ function Manifest(manifest) {
 
 	this.displayMetadata = function(song) { 
 
-		var html = '<h3>' + song.metadata.title + "</h3>\n" +
+		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
+			'<h2>' + song.metadata.title + "</h2>\n" +
 			"<p>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
@@ -117,14 +118,19 @@ function Manifest(manifest) {
 
 	this.displayProgram = function() { 
 
-		var programIndex, number, songIndex, song, baseUrl, html ; 
+		var programIndex, number, songIndex, song, baseUrl, 
+			html = "<h1>Program</h1>\n<ul>\n",
+			songHtml = ''  ;
+
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += this.displaySong(this, song) ; 
+			songHtml += this.displaySong(this, song) ; 
+			html += '<li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
+		html += "</ul>\n" + songHtml ; 
 
 		return html ; 
 	} ; 
