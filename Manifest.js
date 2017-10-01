@@ -22,14 +22,14 @@ function Manifest(manifest) {
 		return '' ;
 	} ;
 
-    this.displaySong = function(song) {
+    this.displaySong = function(manifest, song) {
     	
 		var scoreIndex, 
 		    songIndex, 
 		    score, 
 		    part,
 		    href, 
-			webDir = this.getBaseUrl(song) + song.fileLocation + '/pdf/',
+			webDir = manifest.getBaseUrl(song) + song.fileLocation + '/pdf/',
 		    html = '<h3>' + song.title + '</h3>' +
 				"<p>Composed by " + song.composer ; 
 
@@ -108,13 +108,13 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += this.displaySong(song) ; 
+			html += this.displaySong(this, song) ; 
 		}
 
 		return html ; 
 	} ; 
 
-	this.displayPartsInBook = function(chair, partsLists) { 
+	this.displayPartsInBook = function(manifest, chair, partsLists) { 
 
 		var songId, 
 			song, 
@@ -132,8 +132,8 @@ function Manifest(manifest) {
 			html += '<li>' + song.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				console.log('    this', this, 'this.getBaseUrl', this.getBaseUrl); 
-				href = this.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				console.log('    manifest', manifest, 'manifest.getBaseUrl', manifest.getBaseUrl); 
+				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
 				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
 				if ( partIndex+1 < partsList.length ) { 
 					html += ',' ; 
@@ -156,7 +156,7 @@ function Manifest(manifest) {
 
 			if ( books.hasOwnProperty(key) ) {
 
-				html += this.displayPartsInBook( key, books[key] ) ; 
+				html += this.displayPartsInBook( this, key, books[key] ) ; 
 
 			}
 		}
