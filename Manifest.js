@@ -47,13 +47,13 @@ function Manifest(manifest) {
 
 	this.displayMetadata = function(song) { 
 
-		var html = '<h3>' + song.title + "</h3>\n" +
+		var html = '<h3>' + song.metadata.title + "</h3>\n" +
 			"<p>Composed by " + song.composer ; 
 
-		if ( song.hasOwnProperty('arranger') && 
-			 song.arranger !== '' && 
-			 song.composer !== song.arranger ) {  
-			html += ', Arranged by ' + song.arranger ;
+		if ( song.metadata.hasOwnProperty('arranger') && 
+			 song.metadata.arranger !== '' && 
+			 song.metadata.composer !== song.metadata.arranger ) {  
+			html += ', Arranged by ' + song.metadata.arranger ;
 		}
 		
 		html += "</p>\n" ; 
@@ -144,7 +144,7 @@ function Manifest(manifest) {
 
 	    	song = this.manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
-			html += '<li>' + song.title ;
+			html += '<li>' + song.metadata.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
 				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
