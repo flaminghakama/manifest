@@ -161,7 +161,7 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
-	this.displayPartsInBook = function(entity, chair, partsLists) { 
+	this.displayPartsInBook = function(manifest, chair, partsLists) { 
 
 		var songId, 
 			song, 
@@ -173,12 +173,12 @@ function Manifest(manifest) {
 
 		Object.keys(partsLists).forEach(function(songId) {
 
-	    	song = entity.songs[songId] ; 
+	    	song = manifest.manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			html += '<li>' + song.metadata.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				href = entity.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
 				html += '    <a target="_blank" href="' + href + '">' + part + "</a>" ; 
 				if ( partIndex+1 < partsList.length ) { 
 					html += ",\n"; 
