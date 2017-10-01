@@ -264,7 +264,8 @@ var manifest = {
 };
 
 var windReading = new Manifest(manifest);
-console.log ( windReading.displayManifest() ); 
+var content = windReading.displayManifest() ;
+document.body.innerHTML = content ; 
 
 </script>
 </head>
