@@ -64,7 +64,7 @@ function Manifest(manifest) {
 			}
 		}
 
-		html +=</div>\n" ; 
+		html += "</div>\n" ; 
 
 		return html ; 
 	} ; 
