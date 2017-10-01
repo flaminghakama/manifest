@@ -263,10 +263,12 @@ var manifest = {
 	} 
 };
 
-var windReading = new Manifest(manifest);
-var content = windReading.displayManifest() ;
-document.getElementsByTagName('BODY')[0].innerHTML = content ;
- 
+document.addEventListener('DOMContentLoaded', function(){
+	var windReading = new Manifest(manifest);
+	var content = windReading.displayManifest() ;
+	document.getElementsByTagName('BODY')[0].innerHTML = content ;
+}, false);
+
 </script>
 </head>
 <body>
