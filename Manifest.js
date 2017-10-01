@@ -166,6 +166,7 @@ function Manifest(manifest) {
 	this.displayManifest = function() { 
 		var html = this.displayProgram() + 	
 			this.displayPartsInBooks() ; 
+		return html ; 
 	}
 }
 
