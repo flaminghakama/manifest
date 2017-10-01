@@ -21,8 +21,8 @@
 }
 .program-songs h4, .parts-in-books h3 { 
     margin-left: 1em ;
-    margin-top: 3px ; 
-    margin-bottom: 6px ; 
+    margin-top: 6px ; 
+    margin-bottom: 4px ; 
 }
 .book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
 	/* padding-left: 2em; */
