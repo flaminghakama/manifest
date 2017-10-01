@@ -5,7 +5,11 @@
 var windReading = {
 
 	title: 'alt.musica winds reading 27 October, 2017',
-	
+
+	description: 'Rehearsal for the winds and rhythm section' + 
+		' to introduce arrangements of Jazz standards and originals,' +
+		' for which string quartet arrangements already exist.',
+
 	selector: '#manifest-wind-reading',
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
@@ -186,7 +190,7 @@ var windReading = {
 		"Softly, As In A Morning Sunrise alt.musica": {
 			metadata: {
 				title: "Softly, As In A Morning Sunrise",
-				composer: "TBD",
+				composer: "S. Romberg/O. Hammerstein",
 				arranger: "D. Elaine Alt"
 			},
 			fileLocation: "strings",
