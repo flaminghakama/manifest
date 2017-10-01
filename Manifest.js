@@ -55,7 +55,16 @@ function Manifest(manifest) {
 			html += ', Arranged by ' + song.metadata.arranger ;
 		}
 		
-		html += "    </p>\n</div>\n" ; 
+		html += "</p>\n" ; 
+
+		for ( name in song.metadata ) { 
+			if ( name !== 'title'  &&  name !== 'composer'  &&  name !== 'arranger' ) { 
+		 		value = song.metadata[name] ; 
+				html += "<p><b>" + name + "<b> " + value + "</p>\n" ; 
+			}
+		}
+
+		html +=</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -77,7 +86,7 @@ function Manifest(manifest) {
 				html += '        <li><a target="_blank" href="' + recording.url + '">' + recording.description + "</a></li>\n" ; 
 				howManyRecordings += 1 ; 
 			}
-		};
+		}
 
 		if ( howManyRecordings == 0 ) { 
 			html = '' ; 
@@ -213,7 +222,9 @@ function Manifest(manifest) {
 
 		var key, name
 			books = this.manifest.partsInBooks, 
-			html = "<h2>Instrumental books</h2>\n<div class='book-summary'>\n    <ul>\n" ; 
+			html = "<h2>Instrumental books</h2>\n<div class='book-summary'>\n" ; 
+
+		html += "    <p>Links to the list of pdf files for each instrument</p>\n    <ul>\n" ;
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {

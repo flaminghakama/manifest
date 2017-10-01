@@ -115,7 +115,9 @@ var windReading = {
 			metadata: {
 				title: "Smooch",
 				composer: "Miles Davis & Charles Mingus",
-				arranger: "D. Elaine Alt"
+				arranger: "D. Elaine Alt",
+				bpm: '60',
+				genre: 'Jazz Ballad'
 			},
 			fileLocation: "strings",
 			filePrefix: "smooch-",
