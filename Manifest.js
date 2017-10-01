@@ -179,11 +179,15 @@ function Manifest(manifest) {
 	} ; 
 
 	this.displayManifest = function() { 
+
 		var html = '' ; 
 
-		html += this.displayProgram() ; 
+		console.log('displayProgram is', this.displayProgram()) ;  
+		console.log('displayPartsInBooks is', this.displayPartsInBooks()) ;  
 
-		// html += this.displayPartsInBooks() ; 
+		html += this.displayProgram() ; 
+		html += this.displayPartsInBooks() ; 
+
 
 		return html ; 
 	}
