@@ -24,28 +24,39 @@ function Manifest(manifest) {
 
     this.displaySong = function(manifest, song) {
     	
-		var scoreIndex, 
-		    songIndex, 
-		    score, 
-		    part,
-		    href, 
-			webDir = manifest.getBaseUrl(song) + song.fileLocation + '/pdf/',
-		    html = '<h3>' + song.title + '</h3>' +
-				"<p>Composed by " + song.composer ; 
+		var html = '' ; 
+
+		if ( song.hasOwnProperty('metadata') ) {
+			html += this.displayMetadata(song) ; 
+		}
+
+		if ( song.hasOwnProperty('scores') ) {
+			html += this.displayScores(song) ; 
+		}
+
+		if ( song.hasOwnProperty('parts') ) {
+			html += this.displayParts(song) ; 
+		}
+
+		if ( song.hasOwnProperty('recordings') ) {
+			html += this.displayRecordings(song) ; 
+		}
+
+		return html ; 
+	} ; 
+
+	this.displayMetadata = function(song) { 
+
+		var html = '<h3>' + song.title + "</h3>\n" +
+			"<p>Composed by " + song.composer ; 
 
 		if ( song.hasOwnProperty('arranger') && 
 			 song.arranger !== '' && 
 			 song.composer !== song.arranger ) {  
 			html += ', Arranged by ' + song.arranger ;
 		}
-
+		
 		html += "</p>\n" ; 
-
-		if ( song.hasOwnProperty('recordings') ) {
-			html += this.displayRecordings(song) ; 
-		}
-
-		html += this.displayScoresAndParts(song) ; 
 
 		return html ; 
 	} ; 
@@ -60,7 +71,9 @@ function Manifest(manifest) {
 		for ( name in song.recordings ) { 
 	 		recording = song.recordings[name] ; 
 			href = song.recordings[name] ; 
-			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+			if ( href !== '' ) { 
+				html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+			}
 		};
 
 		html += "</ul>\n" ; 
@@ -68,12 +81,12 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
-	this.displayScoresAndParts = function(song) { 
+	this.displayScores = function(song) { 
 
 		var name, 
 			score, 
 			href, 
-			html = "<h3>Scores<ul>\n<ul>\n" ; 
+			html = "<h3>Scores</h3>\n<ul>\n" ; 
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
@@ -81,7 +94,16 @@ function Manifest(manifest) {
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		}
 
-		html += "</ul>\n<h3>Parts<ul>\n" ; 
+		html += "</ul>\n" ; 
+
+		return html ; 
+	} ;
+
+	this.displayParts = function(song) { 
+
+		var name,  
+			href, 
+			html = "<h3>Parts</h3>\n<ul>\n" ; 
 
 		for ( name in song.parts ) { 
 			part = song.parts[name] ; 
