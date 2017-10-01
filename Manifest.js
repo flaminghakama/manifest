@@ -112,7 +112,7 @@ function Manifest(manifest) {
 			part = song.parts[name] ; 
 			href = this.getBaseUrl(song) + 
 				song.fileLocation + '/pdf/' + 
-				song.filePrefix + score.fileSuffix + '.pdf' ;
+				song.filePrefix + part.fileSuffix + '.pdf' ;
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		};
 		html += "</ul>\n" ; 
