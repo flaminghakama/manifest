@@ -247,7 +247,7 @@ function Manifest(manifest) {
 
 				function(){
 					var container = document.getElementById(entity.manifest.selector) ; 
-					if ( container !== undefined  &&  typeof container === 'object' ) { 
+					if ( container  &&  typeof container === 'object' ) { 
 						container.innerHTML = content ;
 						return ; 
 					} 
