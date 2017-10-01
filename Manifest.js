@@ -181,7 +181,7 @@ function Manifest(manifest) {
 	this.displayManifest = function() { 
 		var html = '' ; 
 
-		// html += this.displayProgram() ; 
+		html += this.displayProgram() ; 
 
 		// html += this.displayPartsInBooks() ; 
 
