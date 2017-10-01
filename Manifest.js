@@ -82,7 +82,7 @@ function Manifest(manifest) {
 		if ( howManyRecordings == 0 ) { 
 			html = '' ; 
 		} else {
-			html += "    </ul>\n</div>\n" ; 
+			html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 		}
 
 		return html ; 
@@ -103,7 +103,7 @@ function Manifest(manifest) {
 			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		}
 
-		html += "    </ul>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -121,7 +121,7 @@ function Manifest(manifest) {
 				song.filePrefix + part.fileSuffix + '.pdf' ;
 			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		} 
-		html += "    </ul>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -140,7 +140,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songIndex] ; 
 			html += '        <li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
-		html += "    </ul>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -205,7 +205,7 @@ function Manifest(manifest) {
 			}
 		});
 
-		html += "    </ul>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -221,7 +221,7 @@ function Manifest(manifest) {
 				html += '        <li><a href="#' + key + '">' + key + "</a></li>\n";
 			}
 		}
-		html += "    </ul>\n</div>\n" ; 
+		html += "    </ul>\n    <div class='clear'>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
