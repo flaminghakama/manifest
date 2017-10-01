@@ -179,7 +179,9 @@ function Manifest(manifest) {
 	} ; 
 
 	this.displayManifest = function() { 
-		var html = this.displayProgram() ; 
+		var html = '' ; 
+
+		// html += this.displayProgram() ; 
 
 		// html += this.displayPartsInBooks() ; 
 
