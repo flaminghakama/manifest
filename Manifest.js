@@ -173,7 +173,7 @@ function Manifest(manifest) {
 
 		Object.keys(partsLists).forEach(function(songId) {
 
-	    	song = this.manifest.songs[songId] ; 
+	    	song = this.manifest.manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			html += '<li>' + song.metadata.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
