@@ -246,7 +246,7 @@ function Manifest(manifest) {
 
 	this.displayManifest = function() { 
 
-		var html = "<h1>Program for " + this.title + "</h1>\n<div class='program'>\n" ;
+		var html = "<h1>Program for " + this.manifest.title + "</h1>\n<div class='program'>\n" ;
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
 		html += this.displayProgramSongs() ; 
