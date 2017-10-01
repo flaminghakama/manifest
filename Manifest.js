@@ -45,7 +45,7 @@ function Manifest(manifest) {
 
 	this.displaySongMetadata = function(song) { 
 
-		var html = '<a name="SONG-' + song.metadata.title + '"></a>\n' + 
+		var html = "<a name='SONG-" + song.metadata.title + "'></a>\n" + 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <p>Composed by " + song.metadata.composer ; 
 
@@ -138,7 +138,7 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += '        <li><a href="#SONG-' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
+			html += "       <li><a href='#SONG-" + song.metadata.title + "'>" + song.metadata.title + "</a></li>\n";
 		}
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
