@@ -172,7 +172,7 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
+			html = "<a name='" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
