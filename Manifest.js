@@ -159,11 +159,13 @@ function Manifest(manifest) {
 
 			}
 		}
+
+		return html ; 
 	} ; 
 
 	this.displayManifest = function() { 
-		this.displayProgram() ; 
-		this.displayPartsInBooks() ; 
+		var html = this.displayProgram() + 	
+			this.displayPartsInBooks() ; 
 	}
 }
 
