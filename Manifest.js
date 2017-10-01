@@ -265,8 +265,10 @@ function Manifest(manifest) {
 			'DOMContentLoaded', 
 
 				function(){
-					var container = document.getElementById(entity.manifest.selector) ; 
-					if ( container  &&  typeof container === 'object' ) { 
+					var containers = document.querySelectorAll(entity.manifest.selector), 
+						container ; 
+					if ( containers.length > 0 ) { 
+						container = containers[0] ;
 						container.innerHTML = content ;
 						return ; 
 					} 
