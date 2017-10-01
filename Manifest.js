@@ -64,15 +64,17 @@ function Manifest(manifest) {
 
 		var name, 
 			recording, 
+			description,
 			href, 
 			html = "<div class='song-recordings'>\n    <h3>Recordings</h3>\n    <ul>\n",
 			howManyRecordings ; 
 
 		for ( name in song.recordings ) { 
 	 		recording = song.recordings[name] ; 
-			href = song.recordings[name] ; 
-			if ( href !== '' ) { 
-				html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+	 		description = ( recording.description !== '' ) ? recording.description : name ; 
+
+			if ( recording.url !== '' ) { 
+				html += '        <li><a target="_blank" href="' + recording.url + '">' + recording.description + "</a></li>\n" ; 
 				howManyRecordings += 1 ; 
 			}
 		};
@@ -195,13 +197,11 @@ function Manifest(manifest) {
 
 		var key, name
 			books = this.manifest.partsInBooks, 
-			html = "<div class='book-summary'>\n    <ul>\n" ; 
+			html = "<div class='book-summary'>\n    <h2>Books</h2>\n    <ul>\n" ; 
 
 		for ( key in books ) {
-
 			if ( books.hasOwnProperty(key) ) {
-				name = books[key] ; 
-				html += '        <li><a href="#' + name + '">' + name + "</a></li>\n";
+				html += '        <li><a href="#' + key + '">' + key + "</a></li>\n";
 			}
 		}
 		html += "    </ul>\n</div>\n" ; 

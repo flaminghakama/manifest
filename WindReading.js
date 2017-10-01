@@ -127,9 +127,14 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			}, 
 			recordings: {
-				midi: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi',
-				track: 'https://soundcloud.com/david-elaine-alt/smooch-strings-accompaniment',
-				performance: ''
+				midi: {
+					description: 'MIDI recording of wind and rhythm parts',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
+				},
+				track: {
+					description: 'Live string quartet and drums',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-strings-accompaniment'
+				} 
 			}
 		},
 
@@ -158,9 +163,18 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: '',
-				track: '',
-				performance: ''
+				midi: {
+					description: '',
+					url: ''
+				},
+				track: {
+					description: '',
+					url: ''
+				},
+				performance: {
+					description: '',
+					url: ''
+				} 
 			}
 		},
 
@@ -189,9 +203,18 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: '',
-				track: '',
-				performance: ''
+				midi: {
+					description: '',
+					url: ''
+				},
+				track: {
+					description: '',
+					url: ''
+				},
+				performance: {
+					description: '',
+					url: ''
+				} 
 			}
 		},
 
@@ -220,9 +243,18 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: '',
-				track: '',
-				performance: ''
+				midi: {
+					description: '',
+					url: ''
+				},
+				track: {
+					description: '',
+					url: ''
+				},
+				performance: {
+					description: '',
+					url: ''
+				} 
 			}
 		},
 
@@ -252,9 +284,14 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: '',
-				track: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings',
-				performance: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
+				midi: {
+					description: 'MIDI version of wind parts',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
+				},
+				track: {
+					description: 'Live string quartet and rhythm section',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
+				}
 			}
 		}
 	} 

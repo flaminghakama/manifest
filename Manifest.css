@@ -7,10 +7,10 @@
 .song-parts { 
 	border: solid red 2px ; 
 }
-.song-parts ul { 
+.song-scores ul, .song-parts ul { 
     list-style-type: none;
 }
-.song-parts li {
+.song-scores li, .song-parts li {
 	/* padding-left: 2em; */
 	/* text-indent: -2em; */
 	/* overflow: hidden; */
@@ -31,6 +31,6 @@
 .parts-in-book { 
 	border: solid orange 2px ; 
 }
-.book-summar { 
+.book-summary { 
 	border: solid gray 2px ; 
 }
