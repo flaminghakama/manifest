@@ -132,7 +132,6 @@ function Manifest(manifest) {
 			html += '<li>' + song.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				console.log('    manifest', manifest, 'manifest.getBaseUrl', manifest.getBaseUrl); 
 				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
 				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
 				if ( partIndex+1 < partsList.length ) { 
