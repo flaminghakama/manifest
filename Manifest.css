@@ -13,11 +13,16 @@
 .parts-in-books { }
 .parts-in-book { }
 
+.clear {
+	clear: both;
+}
 .book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
 }
 .program-songs h4, .parts-in-books h3 { 
-    margin-left: 1em;
+    margin-left: 1em ;
+    margin-top: 3px ; 
+    margin-bottom: 6px ; 
 }
 .book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
 	/* padding-left: 2em; */
@@ -28,6 +33,6 @@
 	float: left;
 	margin-right: 1em;
 }
-.clear {
-	clear: both;
+.song-metadata p {
+	margin-left: 2em;
 }

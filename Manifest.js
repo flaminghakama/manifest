@@ -60,7 +60,7 @@ function Manifest(manifest) {
 		for ( name in song.metadata ) { 
 			if ( name !== 'title'  &&  name !== 'composer'  &&  name !== 'arranger' ) { 
 		 		value = song.metadata[name] ; 
-				html += "<p><b>" + name + "<b> " + value + "</p>\n" ; 
+				html += "<p><b>" + name + "</b>: " + value + "</p>\n" ; 
 			}
 		}
 
