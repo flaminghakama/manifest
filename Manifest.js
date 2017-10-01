@@ -187,13 +187,8 @@ function Manifest(manifest) {
 	this.displayManifest = function() { 
 
 		var html = '' ; 
-
-		console.log('displayProgram is', this.displayProgram()) ;  
-		console.log('displayPartsInBooks is', this.displayPartsInBooks()) ;  
-
 		html += this.displayProgram() ; 
 		html += this.displayPartsInBooks() ; 
-
 
 		return html ; 
 	}
