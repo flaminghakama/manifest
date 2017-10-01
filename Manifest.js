@@ -117,13 +117,6 @@ function Manifest(manifest) {
 
 	this.displayProgram = function() { 
 
-		console.log('in displayProgram with' +
-			"\n    this", this,
-		    "\n    and this.manifest", this.manifest,
-		    "\n    and this.manifest.songs ", this.manifest.songs, 
-		    "\n    and this.manifest.programOrder ", this.manifest.programOrder, 
-		    "\n    and this.manifest.programOrder.length ", this.manifest.programOrder.length ) ; 
-
 		var programIndex, number, songIndex, song, baseUrl, html ; 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
