@@ -163,7 +163,7 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
-	this.displayPartsInBook = function(manifest, chair, partsLists) { 
+	this.displayPartsInBook = function(chair, partsLists) { 
 
 		var songId, 
 			song, 
@@ -171,13 +171,15 @@ function Manifest(manifest) {
 			partIndex, 
 			part, 
 			href, 
+			that = this,
+			manifest = this.manifest,  
 			html = "<div class='parts-in-book'>\n    <h3>" + chair + "</h3>\n    <ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
-	    	song = manifest.manifest.songs[songId] ; 
+	    	song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
-			songUrl = this.getBaseUrl(song) + 
+			songUrl = that.getBaseUrl(song) + 
 				song.fileLocation + '/pdf/' + 
 				song.filePrefix ; 
 
@@ -233,7 +235,7 @@ function Manifest(manifest) {
 
 			if ( books.hasOwnProperty(key) ) {
 
-				html += this.displayPartsInBook( this, key, books[key] ) ; 
+				html += this.displayPartsInBook( key, books[key] ) ; 
 
 			}
 		}
