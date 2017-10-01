@@ -186,8 +186,10 @@ function Manifest(manifest) {
 	} ; 
 
 	this.displayManifest = function() { 
-		var html = this.displayProgram() + 	
-			this.displayPartsInBooks() ; 
+		var html = this.displayProgram() ; 
+
+		// html += this.displayPartsInBooks() ; 
+
 		return html ; 
 	}
 }
