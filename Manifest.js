@@ -48,7 +48,7 @@ function Manifest(manifest) {
 	this.displayMetadata = function(song) { 
 
 		var html = '<h3>' + song.metadata.title + "</h3>\n" +
-			"<p>Composed by " + song.composer ; 
+			"<p>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
 			 song.metadata.arranger !== '' && 
