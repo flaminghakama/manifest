@@ -1,7 +1,7 @@
 /*
  *  Example manifest definition
  */
- 
+
 var windReading = {
 
 	title: 'alt.musica winds reading 27 October, 2017',
@@ -300,3 +300,9 @@ var windReading = {
 		}
 	} 
 };
+
+var manifest = new Manifest(windReading);
+var content = manifest.displayManifest() ;
+console.log('manifest is', manifest, 'content is', content) ; 
+manifest.placeManifestOnReady(content) ; 
+
