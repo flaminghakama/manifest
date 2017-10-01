@@ -259,8 +259,3 @@ var windReading = {
 		}
 	} 
 };
-
-var manifest = new Manifest(windReading);
-var content = manifest.displayManifest() ;
-console.log("content is: \n", content) ; 
-manifest.placeManifestOnReady() ; 

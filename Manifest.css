@@ -1,0 +1,36 @@
+.song-scores { 
+	border: solid pink 2px ; 
+}
+.song-metadata { 
+	border: solid lavender 2px ; 
+}
+.song-parts { 
+	border: solid red 2px ; 
+}
+.song-parts ul { 
+    list-style-type: none;
+}
+.song-parts li {
+	/* padding-left: 2em; */
+	/* text-indent: -2em; */
+	/* overflow: hidden; */
+	/*text-overflow: ellipsis; */ 
+	white-space: nowrap;
+}
+
+
+.song-recordings { 
+	border: solid yellow 2px ; 
+}
+.program-summary { 
+	border: solid blue 2px ; 
+}
+.program { 
+	border: solid green 2px ; 
+}
+.parts-in-book { 
+	border: solid orange 2px ; 
+}
+.book-summar { 
+	border: solid gray 2px ; 
+}
