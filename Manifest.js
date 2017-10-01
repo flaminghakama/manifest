@@ -48,7 +48,7 @@ function Manifest(manifest) {
 	this.displaySongMetadata = function(song) { 
 
 		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
-			'<h2>' + song.metadata.title + "</h2>\n" +
+			"<div class='song-metadata'>\n<h2>" + song.metadata.title + "</h2>\n" +
 			"<p>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
@@ -57,7 +57,7 @@ function Manifest(manifest) {
 			html += ', Arranged by ' + song.metadata.arranger ;
 		}
 		
-		html += "</p>\n" ; 
+		html += "</p>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -67,7 +67,7 @@ function Manifest(manifest) {
 		var name, 
 			recording, 
 			href, 
-			html = "<h3>Recordings</h3>\n<ul>\n",
+			html = "<div class='song-recordings'>\n<h3>Recordings</h3>\n<ul>\n",
 			howManyRecordings ; 
 
 		for ( name in song.recordings ) { 
@@ -82,7 +82,7 @@ function Manifest(manifest) {
 		if ( howManyRecordings == 0 ) { 
 			html = '' ; 
 		} else {
-			html += "</ul>\n" ; 
+			html += "</ul>\n</div>\n" ; 
 		}
 
 		return html ; 
@@ -93,7 +93,7 @@ function Manifest(manifest) {
 		var name, 
 			score, 
 			href, 
-			html = "<h3>Scores</h3>\n<ul>\n" ; 
+			html = "<div class='song-scores'>\n<h3>Scores</h3>\n<ul>\n" ; 
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
@@ -103,7 +103,7 @@ function Manifest(manifest) {
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		}
 
-		html += "</ul>\n" ; 
+		html += "</ul>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -112,7 +112,7 @@ function Manifest(manifest) {
 
 		var name,  
 			href, 
-			html = "<h3>Parts</h3>\n<ul>\n" ; 
+			html = "<div class='song-parts'>\n<h3>Parts</h3>\n<ul>\n" ; 
 
 		for ( name in song.parts ) { 
 			part = song.parts[name] ; 
@@ -121,7 +121,7 @@ function Manifest(manifest) {
 				song.filePrefix + part.fileSuffix + '.pdf' ;
 			html += '<li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 		};
-		html += "</ul>\n" ; 
+		html += "</ul>\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -129,7 +129,7 @@ function Manifest(manifest) {
 	this.displayProgramSummary = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<h1>Program</h1>\n<ul>\n",
+			html = "<div class='program-summary'>\n<h1>Program</h1>\n<ul>\n",
 			songHtml = ''  ;
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
@@ -139,7 +139,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songIndex] ; 
 			html += '<li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
-		html += "</ul>\n" ; 
+		html += "</ul>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -147,7 +147,7 @@ function Manifest(manifest) {
 	this.displayProgram = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<ul>\n",
+			html = "<div class='program'>\n",
 			songHtml = ''  ;
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
@@ -157,7 +157,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songIndex] ; 
 			html += this.displaySong(song) ; 
 		}
-		html += "</ul>\n" ; 
+		html += "</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -170,8 +170,7 @@ function Manifest(manifest) {
 			partIndex, 
 			part, 
 			href, 
-			html = '<h3>' + chair + '</h3>' +
-				"\n\n<ul>\n" ; 
+			html = "<div class='parts-in-book'>\n<h3>" + chair + "</h3>\n\n<ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
@@ -189,31 +188,25 @@ function Manifest(manifest) {
 			html += "</li>\n" ; 
 		});
 
-		html += "</ul>\n" ; 
+		html += "</ul>\n</div>\n" ; 
 
 		return html ; 
 	} ;
 
 	this.displayBookSummary= function() { 
 
-		var html, key,
-			books = this.manifest.partsInBooks ; 
+		var key, name
+			books = this.manifest.partsInBooks, 
+			html = "<div class='book-summary'>\n<ul>\n" ; 
 
 		for ( key in books ) {
 
 			if ( books.hasOwnProperty(key) ) {
-
-				html += books[key] ;
-
+				name = books[key] ; 
+				html += '<li><a href="#' + name + '">' + name + "</a></li>\n";
 			}
 		}
-
-
-	books: {
-		"01": "Flute",
-		"02": "English Horn",
-		"03": "Bass Clarinet",
-
+		html += "</ul>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -268,9 +261,4 @@ function Manifest(manifest) {
 	}
 
 } ; 
-
-
-
-}
-
 
