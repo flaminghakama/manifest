@@ -4,12 +4,10 @@
  
 function Manifest(manifest) {
 
-	var manifest = manifest ; 
-
-	var __Manifest = function(that) {
-		that.manifest = this.manifest ; 
+	var __Manifest = function(that, manifest) {
+		that.manifest = manifest ; 
 		console.log('Creating manifest ', that.manifest) ;  
-	}(this) ; 
+	}(this, manifest) ; 
 
 	this.getBaseUrl = function(song) { 
 
@@ -132,6 +130,7 @@ function Manifest(manifest) {
 			html = "<div class='program-summary'>\n<h1>Program</h1>\n<ul>\n",
 			songHtml = ''  ;
 
+		console.log
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
