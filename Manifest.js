@@ -230,7 +230,7 @@ function Manifest(manifest) {
 
 		var key,
 			books = this.manifest.partsInBooks, 
-			html = "<div class='parts-in-books'>\n    <h2>Instrumental Books<h2>\n" ; 
+			html = "<div class='parts-in-books'>\n    <h2>Instrumental Books</h2>\n" ; 
 
 		for ( key in books ) {
 
