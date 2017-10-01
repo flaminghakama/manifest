@@ -1,4 +1,7 @@
-
+/*
+ *  Example manifest definition
+ */
+ 
 var windReading = {
 
 	title: 'alt.musica winds reading 27 October, 2017',

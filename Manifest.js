@@ -129,7 +129,7 @@ function Manifest(manifest) {
 	this.displayProgramSummary = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<h2>Links to songs in program</h2>\n<div class='program-summary'>\n    <ul>\n",
+			html = "<h2>Songs in program</h2>\n<div class='program-summary'>\n    <ul>\n",
 			songHtml = ''  ;
 
 		console.log
@@ -148,7 +148,7 @@ function Manifest(manifest) {
 	this.displayProgramSongs = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<h2>Songs in Program</h2>\n<div class='program-songs'>\n" ; 
+			html = "<h2>Song Details</h2>\n<div class='program-songs'>\n" ; 
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
@@ -213,7 +213,7 @@ function Manifest(manifest) {
 
 		var key, name
 			books = this.manifest.partsInBooks, 
-			html = "<h2>Links to instrumental books</h2>\n<div class='book-summary'>\n    <ul>\n" ; 
+			html = "<h2>Instrumental books</h2>\n<div class='book-summary'>\n    <ul>\n" ; 
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
