@@ -45,7 +45,7 @@ function Manifest(manifest) {
 
 	this.displaySongMetadata = function(song) { 
 
-		var html = '<a name="' + song.metadata.title + '"></a>\n' + 
+		var html = '<a name="SONG-' + song.metadata.title + '"></a>\n' + 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <p>Composed by " + song.metadata.composer ; 
 
@@ -138,7 +138,7 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += '        <li><a href="#' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
+			html += '        <li><a href="#SONG-' + song.metadata.title + '">' + song.metadata.title + "</a></li>\n";
 		}
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
@@ -172,7 +172,7 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<a name='" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
+			html = "<a name='#CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
@@ -217,7 +217,7 @@ function Manifest(manifest) {
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
-				html += '        <li><a href="#' + key + '">' + key + "</a></li>\n";
+				html += '        <li><a href="#CHAIR-' + key + '">' + key + "</a></li>\n";
 			}
 		}
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
