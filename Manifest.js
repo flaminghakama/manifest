@@ -171,24 +171,39 @@ function Manifest(manifest) {
 			partIndex, 
 			part, 
 			href, 
-			html = "<div class='parts-in-book'>\n    <h3>" + chair + "</h3>\n" ; 
+			html = "<div class='parts-in-book'>\n    <h3>" + chair + "</h3>\n    <ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
 	    	song = manifest.manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
-			html += '<li>' + song.metadata.title ;
-			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
-				part = partsList[partIndex] ; 
-				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
-				html += '    <a target="_blank" href="' + href + '">' + part + "</a>" ; 
-				if ( partIndex+1 < partsList.length ) { 
-					html += ",\n"; 
+			songUrl = this.getBaseUrl(song) + 
+				song.fileLocation + '/pdf/' + 
+				song.filePrefix ; 
+
+			if ( partsList.length == 1 ) { 
+				part += partsList[0] ; 
+				href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
+				html += '        <li><a target="_blank" href="' + href + '">' + song.metadata.title + "</a></li>\n" ; 
+			} else { 
+				if ( partsList.length > 1 ) { 
+					html += '        <li>' + song.metadata.title + ' ';
+					for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
+						part = partsList[partIndex] ; 
+						href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
+						html += '    for <a target="_blank" href="' + href + '">' + part + "</a>" ; 
+						if ( partIndex+1 < partsList.length ) { 
+							html += ", and \n"; 
+						}
+					}
+					html += "</li>\n" ; 
+				} else { 
+					console.log('No parts found for song ' + song.title + ' for chair ' + chair) ; 
 				}
 			}
 		});
 
-		html += "\n</div>\n" ; 
+		html += "    </ul>\n</div>\n" ; 
 
 		return html ; 
 	} ;

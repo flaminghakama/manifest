@@ -1,16 +1,36 @@
-.song-scores { 
-	border: solid pink 2px ; 
+.program-summary { 
+	border: solid blue 2px ; 
 }
+.book-summary { 
+	border: solid gray 2px ; 
+}
+
+.program { 
+	border: solid green 2px ; 
+}
+
 .song-metadata { 
 	border: solid lavender 2px ; 
+}
+.song-scores { 
+	border: solid pink 2px ; 
 }
 .song-parts { 
 	border: solid red 2px ; 
 }
-.song-scores ul, .song-parts ul { 
+.song-recordings { 
+	border: solid yellow 2px ; 
+}
+
+.parts-in-book { 
+	border: solid orange 2px ; 
+}
+
+
+.song-scores ul, .song-parts ul, .parts-in-book ul { 
     list-style-type: none;
 }
-.song-scores li, .song-parts li {
+.song-scores li, .song-parts li, .parts-in-book li {
 	/* padding-left: 2em; */
 	/* text-indent: -2em; */
 	/* overflow: hidden; */
@@ -18,19 +38,3 @@
 	white-space: nowrap;
 }
 
-
-.song-recordings { 
-	border: solid yellow 2px ; 
-}
-.program-summary { 
-	border: solid blue 2px ; 
-}
-.program { 
-	border: solid green 2px ; 
-}
-.parts-in-book { 
-	border: solid orange 2px ; 
-}
-.book-summary { 
-	border: solid gray 2px ; 
-}
