@@ -240,17 +240,19 @@ function Manifest(manifest) {
 
 	this.placeManifestOnReady = function(content) {
 
+		var manifest = this ; 
+
 		document.addEventListener(
 		
 			'DOMContentLoaded', 
 
 				function(){
-					var container = document.getElementById(this.manifest.selector) ; 
+					var container = document.getElementById(manifest.selector) ; 
 					if ( container !== undefined  &&  typeof container === 'object' ) { 
 						container.innerHTML = content ;
 						return ; 
 					} 
-					console.log('Could not find elmement with id ' + this.manifest.selector + 'so addding child.') ;
+					console.log('Could not find elmement with id ' + manifest.selector + 'so addding child.') ;
 					document.getElementsByTagName('BODY')[0].innerHTML = content ;
 				}, 
 
