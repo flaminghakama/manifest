@@ -169,24 +169,24 @@ function Manifest(manifest) {
 			partIndex, 
 			part, 
 			href, 
-			html = "<div class='parts-in-book'>\n    <h3>" + chair + "</h3>\n    " ; 
+			html = "<div class='parts-in-book'>\n    <h3>" + chair + "</h3>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
-	    	song = this.manifest.manifest.songs[songId] ; 
+	    	song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			html += '<li>' + song.metadata.title ;
 			for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 				part = partsList[partIndex] ; 
-				href = manifest.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
-				html += ' <a target="_blank" href="' + href + '">' + part + '</a>' ; 
+				href = this.getBaseUrl(song) + song.filePrefix + song.parts[part].fileSuffix + '.pdf' ;
+				html += '    <a target="_blank" href="' + href + '">' + part + "</a>" ; 
 				if ( partIndex+1 < partsList.length ) { 
-					html += ',' ; 
+					html += ",\n"; 
 				}
 			}
 		});
 
-		html += "</div>\n" ; 
+		html += "\n</div>\n" ; 
 
 		return html ; 
 	} ;
@@ -212,13 +212,14 @@ function Manifest(manifest) {
 	this.displayPartsInBooks = function() { 
 
 		var html, key,
-			books = this.manifest.partsInBooks ; 
+			books = this.manifest.partsInBooks, 
+			manifest = this.manifest ; 
 
 		for ( key in books ) {
 
 			if ( books.hasOwnProperty(key) ) {
 
-				html += this.displayPartsInBook( this, key, books[key] ) ; 
+				html += this.displayPartsInBook( manifest, key, books[key] ) ; 
 
 			}
 		}
@@ -239,19 +240,19 @@ function Manifest(manifest) {
 
 	this.placeManifestOnReady = function(content) {
 
-		var manifest = this ; 
+		var entity = this ; 
 
 		document.addEventListener(
 		
 			'DOMContentLoaded', 
 
 				function(){
-					var container = document.getElementById(manifest.selector) ; 
+					var container = document.getElementById(entity.manifest.selector) ; 
 					if ( container !== undefined  &&  typeof container === 'object' ) { 
 						container.innerHTML = content ;
 						return ; 
 					} 
-					console.log('Could not find elmement with id ' + manifest.selector + 'so addding child.') ;
+					console.log('Could not find elmement with id ' + entity.manifest.selector + 'so addding child.') ;
 					document.getElementsByTagName('BODY')[0].innerHTML = content ;
 				}, 
 
