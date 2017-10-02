@@ -41,22 +41,28 @@ var windReading = {
 	partsInBooks: {
 		"Flute": {
 			"Smooch alt.musica": [ "Flute" ], 
+			/*
 			"You Don't Know What Love Is alt.musica": [ "Flute" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Flute" ],
+			*/
 			"Self-Immolation alt.musica": [ "Flute" ], 
 			"We Declare alt.musica": [ "Piccolo", "Flute" ]
 		},
 		"English Horn": {
 			"Smooch alt.musica": [ "English Horn" ], 
+			/*
 			"You Don't Know What Love Is alt.musica": [ "English Horn" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn" ],
+			*/
 			"Self-Immolation alt.musica": [ "English Horn" ], 
 			"We Declare alt.musica": [ "English Horn" ]
 		},
 		"Bass Clarinet": {
 			"Smooch alt.musica": [ "Bass Clarinet" ], 
+			/*
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet" ],
+			*/
 			"Self-Immolation alt.musica": [ "Bass Clarinet" ], 
 			"We Declare alt.musica": [ "Bass Clarinet" ]
 		},
@@ -67,8 +73,10 @@ var windReading = {
 		},
 		"Drums": {
 			"Smooch alt.musica": [ "Drums" ], 
+			/*
 			"You Don't Know What Love Is alt.musica": [ "Drums" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Drums" ],
+			*/
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
 			"We Declare alt.musica": [ "Drums" ]
 		},
