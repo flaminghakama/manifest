@@ -203,7 +203,7 @@ function Manifest(manifest) {
 				part = partsList[0] ; 
 				if ( typeof song.parts[part] !== 'undefined' ) {   
 					href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
-					html += '        <li><a target="_blank" href="' + href + '">' + song.metadata.title + "</a></li>\n" ; 
+					html += '        <li><a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a></li>\n" ; 
 				}
 			} else { 
 				if ( partsList.length > 1 ) { 
@@ -212,9 +212,9 @@ function Manifest(manifest) {
 						part = partsList[partIndex] ; 
 						if ( typeof song.parts[part] !== 'undefined' ) {   
 							href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
-							html += '    for <a target="_blank" href="' + href + '">' + part + "</a>" ; 
+							html += '    for <a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a>" ; 
 							if ( partIndex+1 < partsList.length ) { 
-								html += ", and \n"; 
+								html += ", or else\n"; 
 							}
 						}
 					}
