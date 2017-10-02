@@ -124,8 +124,8 @@ var windReading = {
 				title: "Smooch",
 				composer: "Miles Davis & Charles Mingus",
 				arranger: "D. Elaine Alt",
-				bpm: '60',
 				genre: 'Jazz Ballad', 
+				bpm: '64',
 				key: 'D minor'
 			},
 			fileLocation: "strings",
@@ -162,7 +162,10 @@ var windReading = {
 			metadata: { 
 				title: "You Don't Know What Love Is",
 				composer: "Raye & DuPaul",
-				arranger: "D. Elaine Alt"
+				arranger: "D. Elaine Alt", 
+				genre: "Jazz/Afro-Cuban Ballad",
+				bpm: '56',
+				key: "F minor"
 			},
 			fileLocation: "strings",
 			filePrefix: "you-dont-know-what-love-is-",
@@ -204,7 +207,10 @@ var windReading = {
 			metadata: {
 				title: "Softly, As In A Morning Sunrise",
 				composer: "S. Romberg/O. Hammerstein",
-				arranger: "D. Elaine Alt"
+				arranger: "D. Elaine Alt", 
+				genre: "Jazz/Afro-Cuban Ballad",
+				bpm: '88',
+				key: "D minor"
 			},
 			fileLocation: "strings",
 			filePrefix: "softly-as-in-a-morning-sunrise-",
@@ -246,7 +252,10 @@ var windReading = {
 			metadata: {
 				title: "Self-Immolation",
 				composer: "Johannes Brahms & D. Elaine Alt",
-				arranger: "D. Elaine Alt"
+				arranger: "D. Elaine Alt", 
+				genre: "Classica/Funk",
+				bpm: '100',
+				key: "G minor"
 			},
 			fileLocation: "alt.musica",
 			filePrefix: "self-immolation-",
@@ -285,7 +294,10 @@ var windReading = {
 			metadata: { 
 				title: "We Declare",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt"
+				arranger: "D. Elaine Alt", 
+				genre: "Martial Jazz/Afro-Cuban Ballad",
+				bpm: '92',
+				key: "Db"
 			},
 			fileLocation: "alt.musica",
 			filePrefix: "we-declare-",
