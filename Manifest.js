@@ -201,19 +201,21 @@ function Manifest(manifest) {
 
 			if ( partsList.length == 1 ) { 
 				part = partsList[0] ; 
-				console.log('typeof song.parts[part] is', typeof song.parts[part]) ; 
-				console.log('song.parts[part] is', song.parts[part]) ; 
-				href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
-				html += '        <li><a target="_blank" href="' + href + '">' + song.metadata.title + "</a></li>\n" ; 
+				if ( typeof song.parts[part] !== 'undefined' ) {   
+					href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
+					html += '        <li><a target="_blank" href="' + href + '">' + song.metadata.title + "</a></li>\n" ; 
+				}
 			} else { 
 				if ( partsList.length > 1 ) { 
 					html += '        <li>' + song.metadata.title + ' ';
 					for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 						part = partsList[partIndex] ; 
-						href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
-						html += '    for <a target="_blank" href="' + href + '">' + part + "</a>" ; 
-						if ( partIndex+1 < partsList.length ) { 
-							html += ", and \n"; 
+						if ( typeof song.parts[part] !== 'undefined' ) {   
+							href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
+							html += '    for <a target="_blank" href="' + href + '">' + part + "</a>" ; 
+							if ( partIndex+1 < partsList.length ) { 
+								html += ", and \n"; 
+							}
 						}
 					}
 					html += "</li>\n" ; 
