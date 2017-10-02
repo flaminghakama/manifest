@@ -147,10 +147,9 @@ function Manifest(manifest) {
 	this.displayProgramSummary = function() { 
 
 		var programIndex, number, songIndex, song, baseUrl, 
-			html = "<h2>Songs in program</h2>\n<div class='program-summary'>\n    <ul>\n",
-			songHtml = ''  ;
+			html = "<h2>Songs in program</h2>\n<div class='program-summary'>\n" + 
+				"    <p>Links to details about each song</p>\n    <ul>\n" ;
 
-		console.log
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;

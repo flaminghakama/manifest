@@ -23,7 +23,7 @@
 .clear {
 	clear: both;
 }
-.book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
+.program-summary ul, .book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
     line-height: 1.2em ;
 }

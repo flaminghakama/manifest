@@ -14,7 +14,7 @@ var windReading = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04', '05' ],
+	programOrder: [ '01', '05', '04', '02', '03' ],
 
 	program: {
 		'01': "Smooch alt.musica",
@@ -117,7 +117,8 @@ var windReading = {
 				composer: "Miles Davis & Charles Mingus",
 				arranger: "D. Elaine Alt",
 				bpm: '60',
-				genre: 'Jazz Ballad'
+				genre: 'Jazz Ballad', 
+				key: 'D minor'
 			},
 			fileLocation: "strings",
 			filePrefix: "smooch-",
@@ -158,9 +159,11 @@ var windReading = {
 			fileLocation: "strings",
 			filePrefix: "you-dont-know-what-love-is-",
 			parts: {
+				/*
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				*/
 				"Voice": { fileSuffix: "Voice" },
 				"Drums": { fileSuffix: "Drums" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -198,16 +201,18 @@ var windReading = {
 			fileLocation: "strings",
 			filePrefix: "softly-as-in-a-morning-sunrise-",
 			parts: {
+				/*
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
+				*/
 				"Drums": { fileSuffix: "Drums" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
-				"'Cello": { fileSuffix: "Cello" },
-				"Bass": { fileSuffix: "Bass" }
+				"'Cello": { fileSuffix: "Cello" } /*,
+				"Bass": { fileSuffix: "Bass" } */
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
