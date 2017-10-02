@@ -3,6 +3,9 @@
  */
 
 .program { }
+.program h2 { 
+	margin-bottom: 1.2em;
+}
 .program-summary { }
 .book-summary { }
 .program-songs { }
@@ -20,7 +23,7 @@
 }
 .book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
-    line-height: 0.1em ;
+    line-height: 1.2em ;
 }
 .book-summary h2 { 
     margin-top: 14px ; 
@@ -47,10 +50,13 @@
 	margin-right: 1.2em;
 }
 .song-recordings li, song-parts li {
-	line-height: 1.2em ; 
+	line-height: 1.4em ; 
 }
 .song-metadata p {
 	line-height: 1.2em ; 
 	margin-left: 2em;
 	margin-bottom: 4px ; 
+}
+.song-metadata h3 {
+	margin-top: 0.2em ; 
 }
