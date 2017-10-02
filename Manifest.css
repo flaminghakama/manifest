@@ -37,14 +37,7 @@
     margin-bottom: 0.6em ; 
 }
 .parts-in-books h3 { 
-    margin-left: 1em ;
-    margin-top: 12px ; 
-    margin-bottom: 0px ;
-    padding:0 ;
-    -webkit-margin-before:0 ; 
-    -webkit-margin-after:0 ;
-    -webkit-margin-end:0 ; 
-    -webkit-margin-start:0 ;   
+	line-height: 0.0em ; 
 }
 .book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
 	white-space: nowrap;
