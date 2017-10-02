@@ -201,6 +201,7 @@ function Manifest(manifest) {
 
 			if ( partsList.length == 1 ) { 
 				part = partsList[0] ; 
+				console.log('song is', song, 'song.parts is', song.parts, 'and song.parts[part] is', song.parts[part]) ; 
 				href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
 				html += '        <li><a target="_blank" href="' + href + '">' + song.metadata.title + "</a></li>\n" ; 
 			} else { 
