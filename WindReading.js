@@ -72,11 +72,9 @@ var windReading = {
 			"We Declare alt.musica": [ "Voice" ]
 		},
 		"Drums": {
-			/*
 			"Smooch alt.musica": [ "Drums" ], 
 			"You Don't Know What Love Is alt.musica": [ "Drums" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Drums" ],
-			*/
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
 			"We Declare alt.musica": [ "Drums" ]
 		},
@@ -225,8 +223,8 @@ var windReading = {
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
-				"'Cello": { fileSuffix: "Cello" } /*,
-				"Bass": { fileSuffix: "Bass" } */
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
