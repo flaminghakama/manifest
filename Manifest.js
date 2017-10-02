@@ -207,12 +207,12 @@ function Manifest(manifest) {
 				}
 			} else { 
 				if ( partsList.length > 1 ) { 
-					html += '        <li>' + song.metadata.title + ' ';
+					html += "        <li>\n";
 					for ( partIndex = 0 ; partIndex < partsList.length ; partIndex++ ) { 
 						part = partsList[partIndex] ; 
 						if ( typeof song.parts[part] !== 'undefined' ) {   
 							href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
-							html += '    for <a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a>" ; 
+							html += '            <a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a>" ; 
 							if ( partIndex+1 < partsList.length ) { 
 								html += ", or else\n"; 
 							}
