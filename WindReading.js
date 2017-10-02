@@ -193,8 +193,8 @@ var windReading = {
 					url: ''
 				},
 				track: {
-					description: '',
-					url: ''
+					description: 'Live string quartet and rhythm section',
+					url: 'https://soundcloud.com/david-elaine-alt/you-dont-know-what-love-is-string-arrangement'
 				},
 				performance: {
 					description: '',
@@ -238,8 +238,8 @@ var windReading = {
 					url: ''
 				},
 				track: {
-					description: '',
-					url: ''
+					description: 'Live string quartet and drums',
+					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-dry'
 				},
 				performance: {
 					description: '',
@@ -280,12 +280,12 @@ var windReading = {
 					url: ''
 				},
 				track: {
-					description: '',
-					url: ''
+					description: 'String quartet arrangement of Brahms Op. 79, No. 2',
+					url: 'https://soundcloud.com/david-elaine-alt/string-quartet-arrangement-of-brahms-op-79-no2'
 				},
 				performance: {
-					description: '',
-					url: ''
+					description: 'Jazz Combustion Uprising title track from CD',
+					url: 'https://soundcloud.com/jazzcombustion/self-immolation'
 				} 
 			}
 		},
