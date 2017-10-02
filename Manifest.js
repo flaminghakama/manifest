@@ -45,7 +45,7 @@ function Manifest(manifest) {
 
 	this.displaySongMetadata = function(song) { 
 
-		var html = "<a name='SONG-" + song.metadata.title + "'></a>\n" + 
+		var html = "<a class='name' name='SONG-" + song.metadata.title + "'></a>\n" + 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <p>Composed by " + song.metadata.composer ; 
 
@@ -59,8 +59,17 @@ function Manifest(manifest) {
 
 		for ( name in song.metadata ) { 
 			if ( name !== 'title'  &&  name !== 'composer'  &&  name !== 'arranger' ) { 
-		 		value = song.metadata[name] ; 
-				html += "<p><b>" + name + "</b>: " + value + "</p>\n" ; 
+
+				if ( name === 'bpm' ) { 
+			 		value = song.metadata[name] ; 
+					html += "<p>" + value + ' ' + name + "</p>\n" ; 
+				} else if ( name === 'genre' ) {
+			 		value = song.metadata[name] ; 
+					html += "<p>" + value + "</p>\n" ; 
+				} else {
+			 		value = song.metadata[name] ; 
+					html += "<p><b>" + name + "</b>: " + value + "</p>\n" ; 
+				}
 			}
 		}
 
@@ -181,7 +190,7 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<a name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
+			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
 
 		Object.keys(partsLists).forEach(function(songId) {
 
