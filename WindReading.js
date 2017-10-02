@@ -317,9 +317,9 @@ var windReading = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: {
-					description: 'MIDI version of wind parts',
-					url: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
+				performance: {
+					description: 'Trumpet/Sax/Fute version (not quite the same as our version)',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
 				},
 				track: {
 					description: 'Live string quartet and rhythm section',
