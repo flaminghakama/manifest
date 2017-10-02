@@ -49,22 +49,22 @@ var windReading = {
 			"We Declare alt.musica": [ "Piccolo", "Flute" ]
 		},
 		"English Horn": {
-			"Smooch alt.musica": [ "English Horn" ], 
+			"Smooch alt.musica": [ "English Horn in F" ], 
 			/*
-			"You Don't Know What Love Is alt.musica": [ "English Horn" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn" ],
+			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
+			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
 			*/
-			"Self-Immolation alt.musica": [ "English Horn" ], 
-			"We Declare alt.musica": [ "English Horn" ]
+			"Self-Immolation alt.musica": [ "English Horn in F" ], 
+			"We Declare alt.musica": [ "English Horn in F" ]
 		},
 		"Bass Clarinet": {
-			"Smooch alt.musica": [ "Bass Clarinet" ], 
+			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
 			/*
-			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet" ],
+			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb" ], 
+			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
 			*/
-			"Self-Immolation alt.musica": [ "Bass Clarinet" ], 
-			"We Declare alt.musica": [ "Bass Clarinet" ]
+			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
+			"We Declare alt.musica": [ "Bass Clarinet in Bb" ]
 		},
 		"Voice": {
 			"Smooch alt.musica": [ "Voice" ], 
@@ -130,8 +130,8 @@ var windReading = {
 			filePrefix: "smooch-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
 				"Drums": { fileSuffix: "Drums" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -170,8 +170,8 @@ var windReading = {
 			parts: {
 				/*
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				*/
 				"Voice": { fileSuffix: "Voice" },
 				"Drums": { fileSuffix: "Drums" },
@@ -215,8 +215,8 @@ var windReading = {
 			parts: {
 				/*
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
 				*/
 				"Drums": { fileSuffix: "Drums" },
@@ -259,8 +259,8 @@ var windReading = {
 			filePrefix: "self-immolation-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Condensed Score": { fileSuffix: "Condensed-Score" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -302,8 +302,8 @@ var windReading = {
 			parts: {
 				"Piccolo": { fileSuffix: "Piccolo" },
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
 				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
