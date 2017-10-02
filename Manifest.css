@@ -10,13 +10,15 @@
 .book-summary { }
 .program-songs { }
 .song-metadata { 
-	margin-top: 1.2em;
+	margin-top: 1.8em;
 }
 .song-scores { }
 .song-parts { }
 .song-recordings { }
 .parts-in-books { }
-.parts-in-book { }
+.parts-in-book { 
+	margin-bottom: 1.2em;
+}
 
 .clear {
 	clear: both;
@@ -59,4 +61,7 @@
 }
 .song-metadata h3 {
 	margin-top: 0.2em ; 
+}
+a.name { 
+	line-height: 0.2em;
 }
