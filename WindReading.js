@@ -322,6 +322,5 @@ var windReading = {
 
 var manifest = new Manifest(windReading);
 var content = manifest.displayManifest() ;
-console.log('manifest is', manifest, 'content is', content) ; 
 manifest.placeManifestOnReady(content) ; 
 
