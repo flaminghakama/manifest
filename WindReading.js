@@ -72,8 +72,8 @@ var windReading = {
 			"We Declare alt.musica": [ "Voice" ]
 		},
 		"Drums": {
-			"Smooch alt.musica": [ "Drums" ], 
 			/*
+			"Smooch alt.musica": [ "Drums" ], 
 			"You Don't Know What Love Is alt.musica": [ "Drums" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Drums" ],
 			*/
