@@ -43,8 +43,8 @@ var windReading = {
 			"Smooch alt.musica": [ "Flute" ], 
 			/*
 			"You Don't Know What Love Is alt.musica": [ "Flute" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "Flute" ],
 			*/
+			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
 			"We Declare alt.musica": [ "Piccolo", "Flute" ]
 		},
@@ -52,8 +52,8 @@ var windReading = {
 			"Smooch alt.musica": [ "English Horn in F" ], 
 			/*
 			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
 			*/
+			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
 			"We Declare alt.musica": [ "English Horn in F" ]
 		},
@@ -61,8 +61,8 @@ var windReading = {
 			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
 			/*
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
 			*/
+			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
 			"We Declare alt.musica": [ "Bass Clarinet in Bb" ]
 		},
@@ -213,12 +213,10 @@ var windReading = {
 			fileLocation: "strings",
 			filePrefix: "softly-as-in-a-morning-sunrise-",
 			parts: {
-				/*
-				"Flute": { fileSuffix: "Flute" },
+				"Alto Flute in G": { fileSuffix: "Alto-Flute-in-G" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
-				*/
 				"Drums": { fileSuffix: "Drums" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
@@ -232,8 +230,8 @@ var windReading = {
 			},
 			recordings: {
 				midi: {
-					description: '',
-					url: ''
+					description: 'MIDI recording of wind and rhythm parts',
+					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-synth-winds-arrangement/s-zcBJ0'
 				},
 				track: {
 					description: 'Live string quartet and drums',
