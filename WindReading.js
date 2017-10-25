@@ -41,27 +41,21 @@ var windReading = {
 	partsInBooks: {
 		"Flute": {
 			"Smooch alt.musica": [ "Flute" ], 
-			/*
 			"You Don't Know What Love Is alt.musica": [ "Flute" ], 
-			*/
 			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
 			"We Declare alt.musica": [ "Piccolo", "Flute" ]
 		},
 		"English Horn": {
 			"Smooch alt.musica": [ "English Horn in F" ], 
-			/*
 			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
-			*/
 			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
 			"We Declare alt.musica": [ "English Horn in F" ]
 		},
 		"Bass Clarinet": {
 			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
-			/*
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb" ], 
-			*/
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
 			"We Declare alt.musica": [ "Bass Clarinet in Bb" ]
@@ -165,20 +159,22 @@ var windReading = {
 				bpm: '56',
 				key: "F minor"
 			},
-			fileLocation: "strings",
+			fileLocation: "alt.musica",
 			filePrefix: "you-dont-know-what-love-is-",
 			parts: {
-				/*
-				"Flute": { fileSuffix: "Flute" },
+					"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				*/
+				/* 
 				"Voice": { fileSuffix: "Voice" },
+				*/
 				"Drums": { fileSuffix: "Drums" },
+				/*
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
 				"'Cello": { fileSuffix: "Cello" },
+				*/
 				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
