@@ -231,7 +231,7 @@ var windReading = {
 				},
 				track: {
 					description: 'Live string quartet and drums',
-					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-dry'
+					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-dry/s-U9eVi'
 				},
 				performance: {
 					description: '',
