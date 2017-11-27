@@ -12,6 +12,9 @@
 .song-metadata { 
 	margin-top: 1.8em;
 }
+.song-metadata ul li { 
+	list-style-type: none; 
+}
 .song-scores { }
 .song-parts { }
 .song-recordings { }

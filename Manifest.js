@@ -47,7 +47,8 @@ function Manifest(manifest) {
 
 		var html = "<a class='name' name='SONG-" + song.metadata.title + "'></a>\n" + 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
-			"    <p>Composed by " + song.metadata.composer ; 
+			"    <ul>\n" + 
+			"    <li>Composed by " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
 			 song.metadata.arranger !== '' && 
@@ -55,25 +56,25 @@ function Manifest(manifest) {
 			html += ', Arranged by ' + song.metadata.arranger ;
 		}
 		
-		html += "</p>\n" ; 
+		html += "</li>\n" ; 
 
 		for ( name in song.metadata ) { 
 			if ( name !== 'title'  &&  name !== 'composer'  &&  name !== 'arranger' ) { 
 
 				if ( name === 'bpm' ) { 
 			 		value = song.metadata[name] ; 
-					html += "<p>" + value + ' ' + name + "</p>\n" ; 
+					html += "<li>" + value + ' ' + name + "</li>\n" ; 
 				} else if ( name === 'genre' ) {
 			 		value = song.metadata[name] ; 
-					html += "<p>" + value + "</p>\n" ; 
+					html += "<li>" + value + "</li>\n" ; 
 				} else {
 			 		value = song.metadata[name] ; 
-					html += "<p><b>" + name + "</b>: " + value + "</p>\n" ; 
+					html += "<li><b>" + name + "</b>: " + value + "</li>\n" ; 
 				}
 			}
 		}
 
-		html += "</div>\n" ; 
+		html += "    </ul>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
