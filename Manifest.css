@@ -42,7 +42,7 @@
 .parts-in-books h3 { 
 	line-height: 0.0em ; 
 }
-.book-summary li, .song-scores li, .song-parts li, .parts-in-book li {
+.book-summary li, .song-scores li, .song-parts li {
 	white-space: nowrap;
 	float: left;
 	margin-right: 1.2em;

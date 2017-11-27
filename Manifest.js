@@ -224,12 +224,10 @@ function Manifest(manifest) {
 							}
 							if ( partIndex+1 === partsList.length ) {
 								html += ')' ; 
-							} else {
-								html += "<!-- partIndex, partsList.length: " + partIndex + ', ' + partsList.length + " -->\n" ; 
 							}
 						}
 					}
-					html += "</li><br>\n" ; 
+					html += "</li>\n" ; 
 				} else { 
 					console.log('No parts found for song ' + song.title + ' for chair ' + chair) ; 
 				}
