@@ -134,7 +134,7 @@ var januaryRepertoire = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
 			"We Declare alt.musica": [ "Bass" ], 
-            "Windows": [ "Rhythm" ],
+            "Windows": [ "Bass" ],
             "Don't Wait for Me": [ "Bass" ],
             "Stomping Ground": [ "Bass" ]
 		}
@@ -377,7 +377,7 @@ var januaryRepertoire = {
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
 				"'Cello": { fileSuffix: "Cello" },
-				"Rhythm": { fileSuffix: "Rhythm" }
+				"Bass": { fileSuffix: "Rhythm" }
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
