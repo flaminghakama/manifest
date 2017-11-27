@@ -99,11 +99,11 @@ var januaryRepertoire = {
             "Stomping Ground": [ "Violin I" ]
 		},
 		"Violin II": {
-			"Smooch alt.musica": [ "Violin I" ], 
-			"You Don't Know What Love Is alt.musica": [ "Violin I" ], 
-			"Softly, As In A Morning Sunrise alt.musica": [ "Violin I" ],
-			"Self-Immolation alt.musica": [ "Violin I" ], 
-			"We Declare alt.musica": [ "Violin I" ], 
+			"Smooch alt.musica": [ "Violin II" ], 
+			"You Don't Know What Love Is alt.musica": [ "Violin II" ], 
+			"Softly, As In A Morning Sunrise alt.musica": [ "Violin II" ],
+			"Self-Immolation alt.musica": [ "Violin II" ], 
+			"We Declare alt.musica": [ "Violin II" ], 
             "Windows": [ "Violin II" ],
             "Don't Wait for Me": [ "Violin II" ],
             "Stomping Ground": [ "Violin II" ]
