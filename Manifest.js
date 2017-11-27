@@ -180,6 +180,17 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
+
+
+	this.displayPartsInBooks = function() { 
+		var key,
+			books = this.manifest.partsInBooks, 
+		for ( key in books ) {
+			if ( books.hasOwnProperty(key) ) {
+				html += this.displayPartsInBook( key, books[key] ) ; 
+			}
+		}
+	} ; 
 	this.displayPartsInBook = function(chair, partsLists) { 
 
 		var songId, 

@@ -85,7 +85,7 @@ var januaryRepertoire = {
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
 			"We Declare alt.musica": [ "Drums" ], 
             "Windows": [ "Drums" ],
-            "Don't Wait for Me": [ "Rhythm" ],
+            "Don't Wait for Me": [ "Drums" ],
             "Stomping Ground": [ "Drums" ]
 		},
 		"Violin I": {
