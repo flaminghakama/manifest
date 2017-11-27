@@ -344,11 +344,11 @@ var januaryRepertoire = {
 			},
 			recordings: {
 				video: {
-					description: 'Original trio video version',
+					description: 'Original trio video version (different arrangment)',
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
 				},
 				performance: {
-					description: 'Trumpet/Sax/Fute version (not quite the same as our versionz)',
+					description: 'Jazz Combustion sextet version (different arrangement)',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
 				},
 				track: {
