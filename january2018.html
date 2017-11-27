@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Manifest Example</title>
+
+<script src="http://davidelainealt.com/manifest/Manifest.js"></script>
+<script src="http://davidelainealt.com/manifest/January2018.js"></script>
+<script type="text/javascript">
+
+	var manifest = new Manifest(januaryRepertoire);
+	var content = manifest.displayManifest() ;
+	console.log("content is: \n", content) ; 
+	manifest.placeManifestOnReady(content) ; 
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://davidelainealt.com/manifest/Manifest.css">
+
+</head>
+<body>
+</body>
+</html>
