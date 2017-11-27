@@ -348,7 +348,7 @@ var januaryRepertoire = {
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
 				},
 				performance: {
-					description: 'Trumpet/Sax/Fute version (not quite the same as our version)',
+					description: 'Trumpet/Sax/Fute version (not quite the same as our versionz)',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
 				},
 				track: {
