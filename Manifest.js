@@ -222,7 +222,7 @@ function Manifest(manifest) {
 								}
 								html += "or else "; 
 							}
-							if ( partIndex === partsList.length ) {
+							if ( partIndex+1 === partsList.length ) {
 								html += ')' ; 
 							} else {
 								html += "<!-- partIndex, partsList.length: " + partIndex + ', ' + partsList.length + " -->\n" ; 
