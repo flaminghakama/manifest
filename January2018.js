@@ -1,5 +1,5 @@
 /*
- *  Example manifest definition
+ *  alt.musica repertoire
  */
 
 var januaryRepertoire = {
