@@ -225,7 +225,7 @@ function Manifest(manifest) {
 							if ( partIndex === partsList.length ) {
 								html += ')' ; 
 							} else {
-								html += "<!-- partIndex, partsList.length: ' + partIndex + ', ' + partsList.length + ' -->\n" ; 
+								html += "<!-- partIndex, partsList.length: " + partIndex + ', ' + partsList.length + " -->\n" ; 
 							}
 						}
 					}
