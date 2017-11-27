@@ -426,7 +426,7 @@ var januaryRepertoire = {
 				"Concert": { fileSuffix: "Score-Concert" },
 				"Transposed": { fileSuffix: "Score-Transposed" },
 				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
-			}
+			},
 			recordings: {
 				performance: {
 					description: 'original alt.musica version',
