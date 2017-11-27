@@ -27,7 +27,7 @@ var januaryRepertoire = {
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10' ],
 	books: {
-		'01': "Flute",
+		'01': "Flute, Alto Flute & Piccolo",
 		'02': "English Horn",
 		'03': "Bass Clarinet",
 		'04': "Voice",
@@ -40,7 +40,7 @@ var januaryRepertoire = {
 	},
 
 	partsInBooks: {
-		"Flute": {
+		"Flute, Alto Flute & Piccolo": {
 			"Smooch alt.musica": [ "Flute" ], 
 			"You Don't Know What Love Is alt.musica": [ "Flute" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
