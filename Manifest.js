@@ -269,7 +269,7 @@ function Manifest(manifest) {
 
 	this.displayManifest = function() { 
 
-		var html = "<h1>Program for " + this.manifest.title + "</h1>\n<div class='program'>\n" ;
+		var html = "<h1>" + this.manifest.title + "</h1>\n<div class='program'>\n" ;
 		html += "<p>" + this.manifest.description + "</p>\n" ; 
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
