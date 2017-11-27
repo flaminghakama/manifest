@@ -215,7 +215,15 @@ function Manifest(manifest) {
 							href = songUrl + song.parts[part].fileSuffix + '.pdf' ;
 							html += '            <a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a>" ; 
 							if ( partIndex+1 < partsList.length ) { 
-								html += ", or else\n"; 
+								if ( partIndex === 0 ) { 
+									html += '(' ;
+								} else {
+									html += ', ' ; 
+								}
+								html += "or else "; 
+							}
+							if ( partIndex === partsList.length ) {
+								html += ')' ; 
 							}
 						}
 					}

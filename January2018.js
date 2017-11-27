@@ -4,7 +4,7 @@
 
 var januaryRepertoire = {
 
-	title: 'alt.musica repertoire January, 2018',
+	title: 'alt.musica Repertoire for January, 2018',
 
 	description: 'Songs with winds, string quartet and rhythm section', 
 
@@ -343,6 +343,10 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				video: {
+					description: 'Original trio video version',
+					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
+				},
 				performance: {
 					description: 'Trumpet/Sax/Fute version (not quite the same as our version)',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
