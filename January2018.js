@@ -343,13 +343,13 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				performance: {
-					description: 'Trumpet/Sax/Fute version (not quite the same as our versionz)',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
-				},
 				video: {
 					description: 'Original trio video version',
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
+				},
+				performance: {
+					description: 'Trumpet/Sax/Fute version (not quite the same as our versionz)',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
 				},
 				track: {
 					description: 'Live string quartet and rhythm section',
