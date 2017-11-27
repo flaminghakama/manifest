@@ -469,7 +469,7 @@ var januaryRepertoire = {
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
 				"Transposed": { fileSuffix: "Score-Transposed" },
-				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
+				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" },
 				"Winds": { fileSuffix: "Score-Transposed-Winds" }
 			},
 			recordings: {
