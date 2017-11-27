@@ -216,7 +216,7 @@ function Manifest(manifest) {
 							html += '            <a target="_blank" href="' + href + '">' + part + '&nbsp;-&nbsp;' + song.metadata.title + "</a>" ; 
 							if ( partIndex+1 < partsList.length ) { 
 								if ( partIndex === 0 ) { 
-									html += '(' ;
+									html += ' (' ;
 								} else {
 									html += ', ' ; 
 								}
@@ -224,10 +224,12 @@ function Manifest(manifest) {
 							}
 							if ( partIndex === partsList.length ) {
 								html += ')' ; 
+							} else {
+								html += "<!-- partIndex, partsList.length: ' + partIndex + ', ' + partsList.length + ' -->\n" ; 
 							}
 						}
 					}
-					html += "</li>\n" ; 
+					html += "</li><br>\n" ; 
 				} else { 
 					console.log('No parts found for song ' + song.title + ' for chair ' + chair) ; 
 				}
