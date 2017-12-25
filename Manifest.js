@@ -195,7 +195,7 @@ function Manifest(manifest) {
 
 		manifest.programOrder.forEach( function(songNumber) {
 
-			songId = program[songNumber] ;
+			songId = manifest.program[songNumber] ;
 			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			songUrl = that.getBaseUrl(song) + 
