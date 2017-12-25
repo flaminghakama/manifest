@@ -192,9 +192,12 @@ function Manifest(manifest) {
 			that = this,
 			manifest = this.manifest,  
 			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
+ 
+ 		console.log('partsLists is', partsLists,' for chair', chair) ;
 
 		manifest.programOrder.forEach( function(songNumber) {
 
+			console.log('songNumber is', songNumber) ; 
 			songId = manifest.program[songNumber] ;
 			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
@@ -202,6 +205,10 @@ function Manifest(manifest) {
 				song.fileLocation + '/pdf/' + 
 				song.filePrefix ; 
 
+			if ( partsList === undefined ) {
+				return ; 
+			}
+			 
 			if ( partsList.length == 1 ) { 
 				part = partsList[0] ; 
 				if ( typeof song.parts[part] !== 'undefined' ) {   
