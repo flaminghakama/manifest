@@ -12,7 +12,7 @@ var januaryRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '05', '08', '02', '03', '07', '06', '01', '04' ],
+	programOrder: [ '02', '01', '03', '05', '06', '07', '08', '04' ],
 
 	program: {
 		'01': "Smooch alt.musica",
