@@ -151,7 +151,7 @@ var januaryRepertoire = {
 				bpm: '64',
 				key: 'D minor'
 			},
-			fileLocation: "strings",
+			fileLocation: "alt.musica",
 			filePrefix: "smooch-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
