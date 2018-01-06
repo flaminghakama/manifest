@@ -468,7 +468,7 @@ var januaryRepertoire = {
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
 				"'Cello": { fileSuffix: "Cello" },
-				"Bass": { fileSuffix: "Rhythm" }
+				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
