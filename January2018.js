@@ -12,7 +12,7 @@ var januaryRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '05', '08', '02', '03', '07', '06', '01', '04' ],
+	programOrder: [ '05', '03', '06', '07', '01', '08', '02', '04' ],
 
 	program: {
 		'01': "Smooch alt.musica",
@@ -170,18 +170,22 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			}, 
 			recordings: {
-				midi: {
-					description: 'Synth version of wind and rhythm parts',
-					url: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
-				},
-				track: {
+				accompaniment: {
+					description: 'Winds, string quartet and drums',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-rough-last-takes/s-JlFyT'
+				}, 
+				strings: {
 					description: 'String quartet and drums',
 					url: 'https://soundcloud.com/david-elaine-alt/smooch-strings-accompaniment'
 				}, 
-				rehearsal: {
+				winds: {
 					description: 'Winds rehearsal',
 					url: 'https://soundcloud.com/david-elaine-alt/01-smooch-rehearsal/s-THKWP'
-				} 
+				},
+				midi: {
+					description: 'Synth version of wind and rhythm parts',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-altmusica-winds-midi/s-8fRfi'
+				}
 			}
 		},
 
@@ -214,18 +218,22 @@ var januaryRepertoire = {
 				"Winds": { fileSuffix: "Score-Winds-Transposed" }
 			},
 			recordings: {
-				midi: {
-					description: '',
-					url: ''
+				accompaniment: {
+					description: 'Winds, string quartet and rhythm',
+					url: 'https://soundcloud.com/david-elaine-alt/you-dont-know-what-love-is-rough-last-takes/s-dqlGi'
 				},
-				track: {
+				strings: {
 					description: 'String quartet and rhythm',
 					url: 'https://soundcloud.com/david-elaine-alt/you-dont-know-what-love-is-string-arrangement'
 				},
-				rehearsal: {
+				winds: {
 					description: 'Winds rehearsal',
 					url: 'https://soundcloud.com/david-elaine-alt/03-you-dont-know-what-love-is/s-WTwTD'
-				} 
+				}, 
+				midi: {
+					description: '',
+					url: ''
+				}
 			}
 		},
 
@@ -257,18 +265,22 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				accompaniment: {
+					description: 'Wind parts, string quartet and drums',
+					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-last-takes/s-LqH48'
+				},
+				strings: {
+					description: 'String quartet and drums',
+					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-dry/s-U9eVi'
+				},
+				winds: {
+					description: 'Winds rehearsal',
+					url: 'https://soundcloud.com/david-elaine-alt/04-softly-as-in-a-morning/s-He5Cy'
+				},
 				midi: {
 					description: 'MIDI recording of wind and rhythm parts',
 					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-synth-winds-arrangement/s-zcBJ0'
-				},
-				track: {
-					description: 'Live string quartet and drums',
-					url: 'https://soundcloud.com/david-elaine-alt/softly-as-in-a-morning-sunrise-rough-dry/s-U9eVi'
-				},
-				rehearsal: {
-					description: 'Winds rehearsal',
-					url: 'https://soundcloud.com/david-elaine-alt/04-softly-as-in-a-morning/s-He5Cy'
-				} 
+				}
 			}
 		},
 
@@ -299,18 +311,22 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				midi: {
-					description: '',
-					url: ''
-				},
 				track: {
+					description: 'Strings and Rhythm', 
+					url: 'https://soundcloud.com/david-elaine-alt/self-immolation-strings-and-rhythm/s-bvwlr'
+				},				
+				strings: {
 					description: 'String quartet arrangement of Brahms Op. 79, No. 2',
 					url: 'https://soundcloud.com/david-elaine-alt/string-quartet-arrangement-of-brahms-op-79-no2'
 				},
 				performance: {
 					description: 'Jazz Combustion Uprising title track from CD',
 					url: 'https://soundcloud.com/jazzcombustion/self-immolation'
-				} 
+				}, 
+				midi: {
+					description: '',
+					url: ''
+				}
 			}
 		},
 
@@ -343,6 +359,14 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				accompaniment: {
+					description: 'Winds, string quartet and rhythm',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-rough-with-winds/s-sO6ec'
+				},
+				strings: {
+					description: 'String quartet and rhythm',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
+				},
 				video: {
 					description: 'Original trio video version (different arrangment)',
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
@@ -350,10 +374,6 @@ var januaryRepertoire = {
 				performance: {
 					description: 'Jazz Combustion sextet version (different arrangement)',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
-				},
-				track: {
-					description: 'Live string quartet and rhythm section',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
 				}
 			}
 		},
@@ -388,12 +408,16 @@ var januaryRepertoire = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				track: {
+					description: 'Winds, string quartet and rhythm',
+					url: 'https://soundcloud.com/david-elaine-alt/windows-rough-last-takes/s-VpGsx'
+				},
 				performance: {
 					description: 'alt.musica premiere 2016',
 					url: 'https://soundcloud.com/david-elaine-alt/windows-1'
 				},
-				track: {
-					description: 'String quartet and rhythm section',
+				strings: {
+					description: 'String quartet and rhythm',
 					url: 'https://soundcloud.com/david-elaine-alt/windows-string-quartet-with-rhythm'
 				}
 			}
