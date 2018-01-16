@@ -12,7 +12,7 @@ var januaryRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '05', '03', '06', '07', '01', '08', '02', '04' ],
+	programOrder: [ '02', '01', '03', '05', '06', '07', '08', '04' ],
 
 	program: {
 		'01': "Smooch alt.musica",
@@ -151,7 +151,7 @@ var januaryRepertoire = {
 				bpm: '64',
 				key: 'D minor'
 			},
-			fileLocation: "strings",
+			fileLocation: "alt.musica",
 			filePrefix: "smooch-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
@@ -401,7 +401,7 @@ var januaryRepertoire = {
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
 				"'Cello": { fileSuffix: "Cello" },
-				"Bass": { fileSuffix: "Rhythm" }
+				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },
@@ -492,7 +492,7 @@ var januaryRepertoire = {
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
 				"'Cello": { fileSuffix: "Cello" },
-				"Bass": { fileSuffix: "Rhythm" }
+				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
 				"Concert": { fileSuffix: "Score-Concert" },

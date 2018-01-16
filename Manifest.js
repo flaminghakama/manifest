@@ -182,7 +182,8 @@ function Manifest(manifest) {
 
 	this.displayPartsInBook = function(chair, partsLists) { 
 
-		var songId, 
+		var songNumber, 
+			songId, 
 			song, 
 			partsList,
 			partIndex, 
@@ -191,15 +192,23 @@ function Manifest(manifest) {
 			that = this,
 			manifest = this.manifest,  
 			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
+ 
+ 		console.log('partsLists is', partsLists,' for chair', chair) ;
 
-		Object.keys(partsLists).forEach(function(songId) {
+		manifest.programOrder.forEach( function(songNumber) {
 
-	    	song = manifest.songs[songId] ; 
+			console.log('songNumber is', songNumber) ; 
+			songId = manifest.program[songNumber] ;
+			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
 			songUrl = that.getBaseUrl(song) + 
 				song.fileLocation + '/pdf/' + 
 				song.filePrefix ; 
 
+			if ( partsList === undefined ) {
+				return ; 
+			}
+			 
 			if ( partsList.length == 1 ) { 
 				part = partsList[0] ; 
 				if ( typeof song.parts[part] !== 'undefined' ) {   
