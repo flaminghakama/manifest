@@ -620,7 +620,7 @@ var springRepertoire = {
 				key: "C"
 			},
 			fileLocation: "strings",
-			filePrefix: "stomping-ground-",
+			filePrefix: "sweet-georgia-bright-",
 			parts: {
 				"Piccolo": { fileSuffix: "Piccolo" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
