@@ -151,9 +151,9 @@ var springRepertoire = {
             "Windows": [ "'Cello" ],
             "Don't Wait for Me": [ "'Cello" ],
             "Stomping Ground": [ "'Cello" ],
-            "Have You Met Miss Jones": [ "'Cello' ],
-            "Take Five": [ "'Cello' ],
-            "Sweet Georgia Bright": [ "'Cello' ] 
+            "Have You Met Miss Jones": [ "'Cello" ],
+            "Take Five": [ "'Cello" ],
+            "Sweet Georgia Bright": [ "'Cello" ] 
 		},
 		"Bass": {
 			"Smooch alt.musica": [ "Bass" ], 
