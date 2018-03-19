@@ -26,8 +26,8 @@ var aprilRepertoire = {
 		'09': "Have You Met Miss Jones",
 		'10': "Take Five",
 		'11': "Sweet Georgia Bright",
-		'12': "Beautiful Moons Ago"
-		'13': "It Only Happens Once", 
+		'12': "Beautiful Moons Ago",
+		'13': "It Only Happens Once" 
 	},
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10' ],
