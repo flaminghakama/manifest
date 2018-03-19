@@ -676,10 +676,8 @@ var aprilRepertoire = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
-				//"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F-for-Clarinet" },
-				"5Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				//"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb-for-Bassoon" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
