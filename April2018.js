@@ -574,7 +574,7 @@ var aprilRepertoire = {
 				key: "F"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "seniorita-jones/seniorita-jones-",
+			filePrefix: "senorita-jones/senorita-jones-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
