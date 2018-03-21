@@ -574,7 +574,7 @@ var aprilRepertoire = {
 				key: "F"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "have-you-met-miss-jones-",
+			filePrefix: "senorita-jones/seniorita-jones-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -590,7 +590,7 @@ var aprilRepertoire = {
 			},
 			recordings: {
 				rehearsal: {
-					description: 'First rehearsal',
+					description: 'Swing version, First rehearsal',
 					url: 'https://soundcloud.com/david-elaine-alt/have-you-met-miss-jones-rehearsal/s-vhE7e'
 				}
 			}
