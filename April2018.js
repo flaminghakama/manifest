@@ -569,7 +569,7 @@ var aprilRepertoire = {
 				title: "Have You Met Miss Jones",
 				composer: "Rogers & Hart",
 				arranger: "D. Elaine Alt", 
-				genre: "Swing",
+				genre: "Salsa (2/3 Son Clave)",
 				bpm: '216',
 				key: "F"
 			},
