@@ -571,7 +571,7 @@ var aprilRepertoire = {
 				arranger: "D. Elaine Alt", 
 				genre: "Salsa (2/3 Son Clave)",
 				bpm: '216',
-				key: "F"
+				key: "Db"
 			},
 			fileLocation: "alt.musica",
 			filePrefix: "senorita-jones/senorita-jones-",
