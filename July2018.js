@@ -798,6 +798,10 @@ var aprilRepertoire = {
 				original: {
 					description: 'Mutual Admiration Org (no strings)',
 					url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
+				},
+				synthesized: {
+					description: 'MIDI',
+					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-midi/s-M74Tf'
 				}
 			}
 		}
