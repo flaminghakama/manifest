@@ -12,7 +12,7 @@ var aprilRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '04', '12', '09', '08', '05', '01', '13', '02', '03', '07', '06', '10', '11' ],
+	programOrder: [ '14', '04', '12', '09', '08', '05', '01', '13', '02', '03', '07', '06', '10', '11' ],
 
 	program: {
 		'01': "Smooch alt.musica",
@@ -27,7 +27,8 @@ var aprilRepertoire = {
 		'10': "Take Five",
 		'11': "Sweet Georgia Bright",
 		'12': "Beautiful Moons Ago",
-		'13': "It Only Happens Once" 
+		'13': "It Only Happens Once",
+		'14': "The Optimist" 
 	},
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10' ],
@@ -58,7 +59,8 @@ var aprilRepertoire = {
             "Take Five": [ "Flute" ],
             "Sweet Georgia Bright": [ "Piccolo", "Flute" ], 
             "Beautiful Moons Ago": [ "Flute" ], 
-            "It Only Happens Once": [ "Flute" ]
+            "It Only Happens Once": [ "Flute" ],
+            "The Optimist": [ "Piccolo", "Flute" ]
         },
 		"English Horn": {
 			"Smooch alt.musica": [ "English Horn in F" ], 
@@ -73,7 +75,9 @@ var aprilRepertoire = {
             "Take Five": [ "English Horn in F" ],
             "Sweet Georgia Bright": [ "English Horn in F" ], 
             "Beautiful Moons Ago": [ "English Horn in F" ], 
-            "It Only Happens Once": [ "English Horn in F", "English Horn in F for Clarinet" ] 
+            "It Only Happens Once": [ "English Horn in F", "English Horn in F for Clarinet" ],
+            "The Optimist": [ "English Horn in F for Clarinet" ]
+
 		},
 		"Bass Clarinet": {
 			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
@@ -88,7 +92,8 @@ var aprilRepertoire = {
             "Take Five": [ "Bass Clarinet in Bb", "Clarinet in A" ],
             "Sweet Georgia Bright": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Beautiful Moons Ago": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
-            "It Only Happens Once": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ]
+            "It Only Happens Once": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
+            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon"  ]
 		},
 		"Voice/Percussion": {
 			"Smooch alt.musica": [ "Voice" ], 
@@ -98,7 +103,8 @@ var aprilRepertoire = {
             "Don't Wait for Me": [ "Clave" ],
             "Stomping Ground": [ "Clave", "Claps"], 
             "Beautiful Moons Ago": [ "Voice" ], 
-            "It Only Happens Once": [ "Voice" ]
+            "It Only Happens Once": [ "Voice" ],
+            "The Optimist": [ "Voice"  ]
 		},
 		"Drums": {
 			"Smooch alt.musica": [ "Drums" ], 
@@ -113,7 +119,8 @@ var aprilRepertoire = {
             "Take Five": [ "Violin I" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Beautiful Moons Ago": [ "Voice" ], 
-            "It Only Happens Once": [ "Voice" ] 
+            "It Only Happens Once": [ "Voice" ], 
+            "The Optimist": [ "Voice"  ]
 		},
 		"Violin I": {
 			"Smooch alt.musica": [ "Violin I" ], 
@@ -128,7 +135,8 @@ var aprilRepertoire = {
             "Take Five": [ "Violin I" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Beautiful Moons Ago": [ "Violin I" ], 
-            "It Only Happens Once": [ "Violin I" ] 
+            "It Only Happens Once": [ "Violin I" ],
+            "The Optimist": [ "Violin I"  ]
 		},
 		"Violin II": {
 			"Smooch alt.musica": [ "Violin II" ], 
@@ -143,7 +151,8 @@ var aprilRepertoire = {
             "Take Five": [ "Violin II" ],
             "Sweet Georgia Bright": [ "Violin II" ], 
             "Beautiful Moons Ago": [ "Violin II" ], 
-            "It Only Happens Once": [ "Violin II" ] 
+            "It Only Happens Once": [ "Violin II" ],
+            "The Optimist": [ "Violin II"  ]
 		},
 		"Viola": {
 			"Smooch alt.musica": [ "Viola" ], 
@@ -158,7 +167,8 @@ var aprilRepertoire = {
             "Take Five": [ "Viola" ],
             "Sweet Georgia Bright": [ "Viola" ], 
             "Beautiful Moons Ago": [ "Viola" ], 
-            "It Only Happens Once": [ "Viola" ]
+            "It Only Happens Once": [ "Viola" ],
+            "The Optimist": [ "Viola"  ]
 		},
 		"'Cello": {
 			"Smooch alt.musica": [ "'Cello" ], 
@@ -173,7 +183,8 @@ var aprilRepertoire = {
             "Take Five": [ "'Cello" ],
             "Sweet Georgia Bright": [ "'Cello" ], 
             "Beautiful Moons Ago": [ "'Cello" ], 
-            "It Only Happens Once": [ "'Cello" ]
+            "It Only Happens Once": [ "'Cello" ],
+            "The Optimist": [ "'Cello"  ]
 		},
 		"Bass": {
 			"Smooch alt.musica": [ "Bass" ], 
@@ -188,7 +199,8 @@ var aprilRepertoire = {
             "Take Five": [ "Bass" ],
             "Sweet Georgia Bright": [ "Bass" ], 
             "Beautiful Moons Ago": [ "Voice", "Bass" ], 
-            "It Only Happens Once": [ "Voice", "Bass" ]
+            "It Only Happens Once": [ "Voice", "Bass" ],
+            "The Optimist": [ "Bass"  ]
 		}
 	},
 
@@ -752,8 +764,43 @@ var aprilRepertoire = {
 					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/tracking/It%20Only%20Happens%20Once.mp3'
 				}
 			}
-		}
+		},
 
+		"The Optimist": {
+			metadata: { 
+				title: "The Optimist",
+				composer: "Aeion Solar",
+				arranger: "D. Elaine Alt", 
+				genre: "Classical",
+				bpm: '116',
+				key: "B"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "optimist/strings/optimist-",
+			parts: {
+				"Piccolo": { fileSuffix: "Piccolo" },
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
+				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bassoon": { fileSuffix: "Bassoon" },
+				"Voice": { fileSuffix: "Voice" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				original: {
+					description: 'Mutual Admiration Org (no strings)',
+					url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
+				}
+			}
+		}
 
 	} 
 };
