@@ -541,7 +541,7 @@ var aprilRepertoire = {
 				key: "Dm"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "stomping-ground/tobridge/stomping-ground-",
+			filePrefix: "stomping-ground/writtenout/stomping-ground-",
 			parts: {
 				"Piccolo": { fileSuffix: "Piccolo" },
 				"Flute": { fileSuffix: "Flute" },
