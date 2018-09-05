@@ -85,7 +85,7 @@ var autumnRepertoire = {
             "Wee": [ "Violin I" ]
 		},
 		"Violin II": {
-            "The Optimist": [ "Violin II" ]
+            "The Optimist": [ "Violin II" ],
             "Rising": [ "Violin II" ],
             "Listening": [ "Violin II" ],
             "Dreams": [ "Violin II" ],
