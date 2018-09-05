@@ -12,7 +12,7 @@ var autumnRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '04', '03', '04' ],
+	programOrder: [ '01', '02', '04', '03', '05' ],
 
 	program: {
 		'01': "The Optimist",
@@ -168,9 +168,7 @@ var autumnRepertoire = {
 			filePrefix: "rising/strings/rising-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
-				//"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
-				//"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -278,7 +276,7 @@ var autumnRepertoire = {
 
 		"Dreams": {
 			metadata: { 
-				title: "Dreams",
+				title: "Wee",
 				composer: "Elaine Paul",
 				genre: "Classical",
 				bpm: '144',
