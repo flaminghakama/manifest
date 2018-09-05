@@ -46,67 +46,67 @@ var autumnRepertoire = {
             "Wee": [ "Flute" ]
         },
 		"English Horn": {
-            "The Optimist": [ "English Horn in F for Clarinet" ]
+            "The Optimist": [ "English Horn in F for Clarinet" ],
             "Rising": [ "English Horn in F for Clarinet" ],
             "Listening": [ "English Horn in F for Clarinet" ],
             "Dreams": [ "English Horn in F for Clarinet" ],
             "Wee": [ "English Horn in F for Clarinet" ]
         },
 		"Bass Clarinet": {
-            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon"  ]
+            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Rising": [ "Clarinet in A" ],
             "Listening": [ "Clarinet in A" ],
             "Dreams": [ "Clarinet in A" ],
             "Wee": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ]
 		},
 		"Bassoon": {
-            "The Optimist": [ "Bassoon"  ]
+            "The Optimist": [ "Bassoon" ],
             "Rising": [ "Bassoon" ],
             "Listening": [ "Bassoon" ],
             "Wee": [ "Bassoon" ]
 		},
 		"Voice/Percussion": {
-            "The Optimist": [ "Voice"  ]
+            "The Optimist": [ "Voice" ],
             "Rising": [ "Voice" ],
             "Listening": [ "Voice" ],
 		},
 		"Drums": {
-            "The Optimist": [ "Voice"  ]
+            "The Optimist": [ "Voice" ],
             "Rising": [ "Bass" ],
             "Listening": [ "Voice" ],
             "Dreams": [ "Violin II" ],
             "Wee": [ "Flute" ]
 		},
 		"Violin I": {
-            "The Optimist": [ "Violin I"  ]
+            "The Optimist": [ "Violin I" ],
             "Rising": [ "Violin I" ],
             "Listening": [ "Violin I" ],
             "Dreams": [ "Violin I" ],
             "Wee": [ "Violin I" ]
 		},
 		"Violin II": {
-            "The Optimist": [ "Violin II"  ]
+            "The Optimist": [ "Violin II" ]
             "Rising": [ "Violin II" ],
             "Listening": [ "Violin II" ],
             "Dreams": [ "Violin II" ],
             "Wee": [ "Violin II" ]
 		},
 		"Viola": {
-            "The Optimist": [ "Viola"  ]
+            "The Optimist": [ "Viola" ],
             "Rising": [ "Viola" ],
             "Listening": [ "Viola" ],
             "Dreams": [ "Viola" ],
             "Wee": [ "Viola" ]
 		},
 		"'Cello": {
-            "The Optimist": [ "'Cello"  ]
+            "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
             "Listening": [ "'Cello" ],
             "Dreams": [ "'Cello" ],
             "Wee": [ "'Cello" ]
 		},
 		"Bass": {
-            "The Optimist": [ "Bass"  ]
+            "The Optimist": [ "Bass" ],
             "Rising": [ "Bass" ],
             "Listening": [ "Bass" ],
             "Dreams": [ "Bass" ],
