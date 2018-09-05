@@ -223,17 +223,9 @@ var autumnRepertoire = {
 					description: 'Charles Mingus - Mingus Moves',
 					url: 'https://www.youtube.com/watch?v=g43EDq1nPHo'
 				},
-				woodwindsOne: {
-					description: 'Mutual Admiration Org (no strings) live #1',
-					url: 'https://ali-cia.net/mutualadmiration/media/mp3/mao/socha01/wee.mp3'
-				},
-				woodwindsTwo: {
-					description: 'Mutual Admiration Org (no strings) live #2',
+				woodwinds: {
+					description: 'Mutual Admiration Org (no strings) - live at SoCha',
 					url: 'https://ali-cia.net/mutualadmiration/media/mp3/mao/socha02/wee.mp3'
-				},
-				woodwindsThree: {
-					description: 'Mutual Admiration Org (no strings) live #3',
-					url: 'https://ali-cia.net/mutualadmiration/media/mp3/mao/cynthia/wee.mp3'
 				}
 			}
 		},
