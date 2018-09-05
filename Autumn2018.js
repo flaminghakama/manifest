@@ -249,7 +249,7 @@ var autumnRepertoire = {
 				key: "Ab minor"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "listening/strings/listeing-",
+			filePrefix: "listening/strings/listening-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
