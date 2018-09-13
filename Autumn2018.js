@@ -268,7 +268,7 @@ var autumnRepertoire = {
 
 		"Dreams": {
 			metadata: { 
-				title: "Wee",
+				title: "Dreams",
 				composer: "Elaine Paul",
 				genre: "Classical",
 				bpm: '144',
