@@ -274,7 +274,12 @@ var autumnRepertoire = {
 				synthesized: {
 					description: 'MIDI',
 					url: 'https://soundcloud.com/david-elaine-alt/listening-midi/s-tjbNk'
+				},
+				original: {
+					description: 'MIT TRME Jazz Collective (original key)',
+					url: 'https://soundcloud.com/david-elaine-alt/listening'
 				}
+
 			}
 		},
 
