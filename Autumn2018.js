@@ -255,7 +255,7 @@ var autumnRepertoire = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
-				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bass Clarinet in Bb sharps": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bass Clarinet in Bb flats": { fileSuffix: "Bass-Clarinet-in-Bb-flats" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
