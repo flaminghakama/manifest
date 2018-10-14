@@ -58,7 +58,7 @@ var autumnRepertoire = {
 		"Bass Clarinet": {
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
-            "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet sharps", "Bass Clarinet in Bb for Clarinet flats" ],
+            "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
             "Dreams": [ "Clarinet in A" ],
             "Wee": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Bechaini": [ "Bass Clarinet in Bb" ]
@@ -256,8 +256,7 @@ var autumnRepertoire = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
-				"Bass Clarinet in Bb for Clarinet sharps": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				"Bass Clarinet in Bb for Clarinet flats": { fileSuffix: "Bass-Clarinet-in-Bb-flats" },
+				"Bass Clarinet in Bb for Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
