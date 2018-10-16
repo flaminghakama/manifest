@@ -56,7 +56,7 @@ var autumnRepertoire = {
             "Bechaini": [ "English Horn in F" ]
         },
 		"Bass Clarinet": {
-            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
+            "The Optimist": [ "Clarinet in A", "Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
             "Dreams": [ "Clarinet in A" ],
@@ -144,6 +144,7 @@ var autumnRepertoire = {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Clarinet in Bb": { fileSuffix: "Clarinet-in-Bb" },
 				"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
