@@ -25,7 +25,7 @@ var januaryRepertoire = {
 		'08': "Beautiful Moons Ago",
 		'09': "The Optimist", 
 		'10': "Bechaini",
-		'11': "As It Was"
+		'11': "As It Was alt.musica"
 	},
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11' ],
@@ -52,7 +52,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Bechaini": [ "Bass Clarinet in Bb" ],
-            "As It Was": [ "Bass Clarinet in Bb" ]
+            "As It Was alt.musica": [ "Bass Clarinet in Bb" ]
 		},
 		"Voice/Percussion": {
 			"Smooch alt.musica": [ "Voice" ], 
@@ -75,7 +75,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Voice" ], 
             "The Optimist": [ "Voice" ],
             "Bechaini": [ "Voice" ],
-            "As It Was": [ "Bass" ]
+            "As It Was alt.musica": [ "Bass" ]
 		},
 		"Violin I": {
 			"Smooch alt.musica": [ "Violin I" ], 
@@ -88,7 +88,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Violin I" ], 
             "The Optimist": [ "Violin I" ],
             "Bechaini": [ "Violin I" ],
-            "As It Was": [ "Violin I" ]
+            "As It Was alt.musica": [ "Violin I" ]
 		},
 		"Violin II": {
 			"Smooch alt.musica": [ "Violin II" ], 
@@ -101,7 +101,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Violin II" ], 
             "The Optimist": [ "Violin II" ],
             "Bechaini": [ "Violin II" ],
-            "As It Was": [ "Violin II" ]
+            "As It Was alt.musica": [ "Violin II" ]
 		},
 		"Viola": {
 			"Smooch alt.musica": [ "Viola" ], 
@@ -114,7 +114,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Viola" ], 
             "The Optimist": [ "Viola" ],
             "Bechaini": [ "Viola" ],
-            "As It Was": [ "Viola" ]
+            "As It Was alt.musica": [ "Viola" ]
 		},
 		"'Cello": {
 			"Smooch alt.musica": [ "'Cello" ], 
@@ -127,7 +127,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "'Cello" ], 
             "The Optimist": [ "'Cello" ],
             "Bechaini": [ "'Cello" ],
-            "As It Was": [ "'Cello" ]
+            "As It Was alt.musica": [ "'Cello" ]
 		},
 		"Bass": {
 			"Smooch alt.musica": [ "Bass" ], 
@@ -141,7 +141,7 @@ var januaryRepertoire = {
             "It Only Happens Once": [ "Voice", "Bass" ],
             "The Optimist": [ "Bass" ],
             "Bechaini": [ "Bass" ],
-            "As It Was": [ "Bass" ]
+            "As It Was alt.musica": [ "Bass" ]
 		}
 	},
 
