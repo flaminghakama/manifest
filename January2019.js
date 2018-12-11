@@ -611,7 +611,7 @@ var januaryRepertoire = {
 					description: 'MIT Festival Jazz Band (original version)',
 					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-big-band/s-IcsAH'
 				},
-				original: {
+				quartet: {
 					description: "The Lydian People's Front (quartet version)",
 					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
 				},
