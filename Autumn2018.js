@@ -12,14 +12,15 @@ var autumnRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '04', '03', '05' ],
+	programOrder: [ '01', '02', '03', '06', '05', '04' ],
 
 	program: {
 		'01': "The Optimist",
 		'02': "Rising",
 		'03': "Listening",
 		'04': "Dreams",
-		'05': "Wee" 
+		'05': "Wee", 
+		'06': "Bechaini" 
 	},
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11' ],
@@ -43,74 +44,85 @@ var autumnRepertoire = {
             "Rising": [ "Flute" ],
             "Listening": [ "Flute" ],
             "Dreams": [ "Flute" ],
-            "Wee": [ "Flute" ]
+            "Wee": [ "Flute" ],
+            "Bechaini": [ "Flute" ]
         },
 		"English Horn": {
             "The Optimist": [ "English Horn in F for Clarinet" ],
             "Rising": [ "English Horn in F for Clarinet" ],
             "Listening": [ "English Horn in F for Clarinet" ],
             "Dreams": [ "English Horn in F for Clarinet" ],
-            "Wee": [ "English Horn in F for Clarinet" ]
+            "Wee": [ "English Horn in F for Clarinet" ],
+            "Bechaini": [ "English Horn in F" ]
         },
 		"Bass Clarinet": {
-            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
-            "Rising": [ "Clarinet in A" ],
-            "Listening": [ "Clarinet in A" ],
+            "The Optimist": [ "Clarinet in A", "Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
+            "Rising": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
+            "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
             "Dreams": [ "Clarinet in A" ],
-            "Wee": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ]
+            "Wee": [ "Clarinet in A", "Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
+            "Bechaini": [ "Bass Clarinet in Bb" ]
 		},
 		"Bassoon": {
             "The Optimist": [ "Bassoon" ],
             "Rising": [ "Bassoon" ],
             "Listening": [ "Bassoon" ],
-            "Wee": [ "Bassoon" ]
+            "Wee": [ "Bassoon" ],
+            "Bechaini": [ "Bassoon for Bass Clarinet" ]
 		},
 		"Voice/Percussion": {
             "The Optimist": [ "Voice" ],
             "Rising": [ "Voice" ],
             "Listening": [ "Voice" ],
+            "Bechaini": [ "Voice" ]
 		},
 		"Drums": {
             "The Optimist": [ "Voice" ],
             "Rising": [ "Bass" ],
             "Listening": [ "Voice" ],
             "Dreams": [ "Violin II" ],
-            "Wee": [ "Flute" ]
+            "Wee": [ "Flute" ],
+            "Bechaini": [ "Voice" ]
 		},
 		"Violin I": {
             "The Optimist": [ "Violin I" ],
             "Rising": [ "Violin I" ],
             "Listening": [ "Violin I" ],
             "Dreams": [ "Violin I" ],
-            "Wee": [ "Violin I" ]
+            "Wee": [ "Violin I" ],
+            "Bechaini": [ "Voilin I" ]
 		},
 		"Violin II": {
             "The Optimist": [ "Violin II" ],
             "Rising": [ "Violin II" ],
             "Listening": [ "Violin II" ],
             "Dreams": [ "Violin II" ],
-            "Wee": [ "Violin II" ]
+            "Wee": [ "Violin II" ],
+            "Bechaini": [ "Violin II" ]
 		},
 		"Viola": {
             "The Optimist": [ "Viola" ],
             "Rising": [ "Viola" ],
             "Listening": [ "Viola" ],
             "Dreams": [ "Viola" ],
-            "Wee": [ "Viola" ]
+            "Wee": [ "Viola" ],
+            "Bechaini": [ "Viola" ]
 		},
 		"'Cello": {
             "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
             "Listening": [ "'Cello" ],
             "Dreams": [ "'Cello" ],
-            "Wee": [ "'Cello" ]
+            "Wee": [ "'Cello" ],
+            "Bechaini": [ "'Cello" ]
 		},
 		"Bass": {
             "The Optimist": [ "Bass" ],
             "Rising": [ "Bass" ],
             "Listening": [ "Bass" ],
             "Dreams": [ "Bass" ],
-            "Wee": [ "Bass" ]
+            "Wee": [ "Bass" ],
+            "Bechaini": [ "Bass" ]
 		}
 	},
 
@@ -132,6 +144,7 @@ var autumnRepertoire = {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Clarinet in Bb": { fileSuffix: "Clarinet-in-Bb" },
 				"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
@@ -169,6 +182,7 @@ var autumnRepertoire = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Bass Clarinet in Bb for Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -207,6 +221,7 @@ var autumnRepertoire = {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Clarinet in Bb": { fileSuffix: "Clarinet-in-Bb" },
 				"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -243,6 +258,7 @@ var autumnRepertoire = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Bass Clarinet in Bb for Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -298,7 +314,47 @@ var autumnRepertoire = {
 					url: 'https://soundcloud.com/david-elaine-alt/dreams'
 				}
 			}
+		},
+
+		"Bechaini": {
+			metadata: { 
+				title: "Bechaini",
+				composer: "Devendra Sharma",
+				arranger: "Elaine Paul",
+				genre: "Hindustani",
+				bpm: '56',
+				key: "B minor"
+			},
+			fileLocation: "collaborations/devendra-sharma",
+			filePrefix: "bechaini/bechaini-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Voice": { fileSuffix: "Voice" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				/*
+				original: {
+					description: 'voice and piano',
+					url: ''
+				},
+				midi: {
+					description: 'MIDI',
+					url: ''
+				}
+				*/
+			}
 		}
+
 
 	} 
 };
