@@ -608,12 +608,16 @@ var januaryRepertoire = {
 			},
 			recordings: {
 				original: {
-					description: 'Mutual Admiration Org (no strings)',
-					url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
+					description: 'MIT Festival Jazz Band (original version)',
+					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-big-band/s-IcsAH'
+				},
+				original: {
+					description: "The Lydian People's Front (quartet version)",
+					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
 				},
 				synthesized: {
 					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-midi/s-M74Tf'
+					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
 				}
 			}
 		}
