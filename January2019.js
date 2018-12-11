@@ -8,7 +8,7 @@ var januaryRepertoire = {
 
 	description: 'Songs with saxophone, string quartet and rhythm section', 
 
-	selector: '#manifest-janurary-2019',
+	selector: '#manifest-january-2019',
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
