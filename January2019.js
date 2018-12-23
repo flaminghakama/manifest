@@ -75,7 +75,7 @@ var januaryRepertoire = {
             "Beautiful Moons Ago": [ "Voice" ], 
             "The Optimist": [ "Voice" ],
             "Bechaini": [ "Voice" ],
-            "As It Was alt.musica": [ "Bass" ]
+            "As It Was alt.musica": [ "Clave" ]
 		},
 		"Violin I": {
 			"Smooch alt.musica": [ "Violin I" ], 
@@ -596,7 +596,7 @@ var januaryRepertoire = {
 			filePrefix: "as-it-was/strings/as-it-was-",
 			parts: {
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				"Voice": { fileSuffix: "Voice" },
+				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
