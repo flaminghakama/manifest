@@ -30,7 +30,7 @@ var januaryRepertoire = {
 
 	bookOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11' ],
 	books: {
-		'03': "Bass Clarinet",
+		'03': "Saxophones & Clarinets",
 		'05': "Voice",
 		'06': "Drums",
 		'07': "Violin I",
@@ -41,18 +41,18 @@ var januaryRepertoire = {
 	},
 
 	partsInBooks: {
-		"Bass Clarinet": {
+		"Saxophones & Clarinets": {
 			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
-			"Self-Immolation alt.musica": [ "Solo Clarinet in A" ], 
+			"Self-Immolation alt.musica": [ "Solo Soprano Saxophone in Bb", "Solo Clarinet in A" ], 
 			"We Declare alt.musica": [ "Bass Clarinet in Bb" ], 
-            "Windows": [ "Bass Clarinet in Bb", "Clarinet in A" ],
+            "Windows": [ "Solo Alto Saxophone in Eb", "Solo Clarinet in A" ],
             "Don't Wait for Me": [ "Solo Clarinet in A" ],
-            "Stomping Ground": [ "Solo Clarinet in A" ],
+            "Stomping Ground": [ "Solo Tenor Saxophone in Bb", "Solo Clarinet in A" ],
             "Take Five": [ "Bass Clarinet in Bb", "Clarinet in A" ],
             "Beautiful Moons Ago": [ "Clarinet in A" ], 
             "The Optimist": [ "Clarinet in A" ],
             "Bechaini": [ "Bass Clarinet in Bb" ],
-            "As It Was alt.musica": [ "Bass Clarinet in Bb" ]
+            "As It Was alt.musica": [ "Solo Clarinet in A", "Solo Tenor Saxophone in Bb", "Bass Clarinet in Bb" ]
 		},
 		"Voice/Percussion": {
 			"Smooch alt.musica": [ "Voice" ], 
@@ -242,6 +242,7 @@ var januaryRepertoire = {
 			filePrefix: "self-immolation/self-immolation-",
 			parts: {
 				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Soprano Saxophone in Bb": { fileSuffix: "Solo-Soprano-Saxophone-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Condensed Score": { fileSuffix: "Condensed-Score" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -330,8 +331,8 @@ var januaryRepertoire = {
 			fileLocation: "alt.musica",
 			filePrefix: "windows/windows-",
 			parts: {
-				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
-				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Alto Saxophone in Eb": { fileSuffix: "Solo-Alto-Saxophone-in-Eb" },
 				"Claps": { fileSuffix: "Claps" },
 				"Clave": { fileSuffix: "Clave" },
 				"Drums": { fileSuffix: "Drums" },
@@ -413,6 +414,7 @@ var januaryRepertoire = {
 			filePrefix: "stomping-ground/writtenout/stomping-ground-",
 			parts: {
 				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Tenor Saxophone in Bb": { fileSuffix: "Solo-Tenor-Saxophone-in-Bb" },
 				"Drums": { fileSuffix: "Condensed-Score" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
@@ -595,6 +597,8 @@ var januaryRepertoire = {
 			fileLocation: "alt.musica",
 			filePrefix: "as-it-was/strings/as-it-was-",
 			parts: {
+				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Tenor Saxophone in Bb": { fileSuffix: "Solo-Tenor-Saxophone-in-Bb" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
