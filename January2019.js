@@ -495,7 +495,7 @@ var januaryRepertoire = {
 			recordings: {
 				original: {
 					description: 'Nat King Cole trio (in D)',
-					url: 'https://www.youtube.com/watch?v=XxNoSxpukhQ'
+					url: 'https://www.youtube.com/watch?v=Wxqh4S8Nf7k'
 				},
 				performance: {
 					description: 'Mutual Admiration Org performance (in D)',
@@ -596,7 +596,7 @@ var januaryRepertoire = {
 			filePrefix: "as-it-was/strings/as-it-was-",
 			parts: {
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				"Drums": { fileSuffix: "Clave" },
+				"Clave": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
