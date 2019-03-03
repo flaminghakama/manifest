@@ -6,8 +6,31 @@ function Manifest(manifest) {
 
 	var __Manifest = function(that, manifest) {
 		that.manifest = manifest ; 
-		console.log('Creating manifest ', that.manifest) ;  
 	}(this, manifest) ; 
+
+	this.addSongsAndPartsInBooks = function(newManifest) {
+
+		for (var i=0 ; i < Object.keys(newManifest.songs).length ; i++) { 
+			var song = Object.keys(newManifest.songs)[i]; 
+			if ( this.manifest.songs && this.manifest.songs.hasOwnProperty(song) ) {
+				console.log("Skipping song " + song + " since is was already present");
+			} else { 
+				this.manifest.songs[song] = newManifest.songs[song];
+			}
+		}
+
+		for (i=0 ; i < Object.keys(newManifest.partsInBooks).length ; i++) { 
+			var book = Object.keys(newManifest.partsInBooks)[i]; 
+			if ( this.manifest.partsInBooks.hasOwnProperty(book) ) {
+				for (var j=0 ; j < Object.keys(newManifest.partsInBooks[book]).length ; j++) { 
+					var song = Object.keys(newManifest.partsInBooks[book])[j]; 
+	 				this.manifest.partsInBooks[book][song] = newManifest.partsInBooks[book][song];
+	 			}
+			} else { 
+				this.manifest.partsInBooks[book] = newManifest.partsInBooks[book];	
+			}
+		}
+	} ;
 
 	this.getBaseUrl = function(song) { 
 
@@ -193,11 +216,11 @@ function Manifest(manifest) {
 			manifest = this.manifest,  
 			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
  
- 		console.log('partsLists is', partsLists,' for chair', chair) ;
+ 		//console.log('partsLists is', partsLists,' for chair', chair) ;
 
 		manifest.programOrder.forEach( function(songNumber) {
 
-			console.log('songNumber is', songNumber) ; 
+			//console.log('songNumber is', songNumber) ; 
 			songId = manifest.program[songNumber] ;
 			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
@@ -314,7 +337,7 @@ function Manifest(manifest) {
 						container.innerHTML = content ;
 						return ; 
 					} 
-					console.log('Could not find elmement with id ' + entity.manifest.selector + 'so addding child.') ;
+					console.log('Could not find elmement with id ' + entity.manifest.selector + ', so addding child.') ;
 					document.getElementsByTagName('BODY')[0].innerHTML = content ;
 				}, 
 

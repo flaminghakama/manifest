@@ -49,23 +49,9 @@ var openStudiosRepertoire = {
 	} 
 };
 
-Object.keys(originalSongs.songs).forEach(function(song,index) {
-	openStudiosRepertoire.songs[song] = originalSongs.songs[song];
-});
-Object.keys(arrangedSongs.songs).forEach(function(song,index) {
-	openStudiosRepertoire.songs[song] = arrangedSongs.songs[song];
-});
-
-Object.keys(originalSongs.partsInBooks).forEach(function(book,index) {
-	openStudiosRepertoire.partsInBooks[book] = originalSongs.songs[book];
-});
-Object.keys(arrangedSongs.partsInBooks).forEach(function(book,index) {
-	Object.keys(arrangedSongs.partsInBooks[book]).forEach(function(song,index) { 
-		openStudiosRepertoire.partsInBooks[book][song] = arrangedSongs.partsInBooks[book][song];
-	});
-});
-
 var manifest = new Manifest(openStudiosRepertoire);
+manifest.addSongsAndPartsInBooks(originalSongs);
+manifest.addSongsAndPartsInBooks(arrangedSongs);
 var content = manifest.displayManifest() ;
 manifest.placeManifestOnReady(content) ; 
 
