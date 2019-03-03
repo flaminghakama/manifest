@@ -32,6 +32,19 @@ function Manifest(manifest) {
 		}
 	} ;
 
+	this.addBooks = function(newManifest) {
+		if ( newManifest.books ) { 
+			this.books = newManifest.books;
+		} else { 
+			console.log('No books present to add in manifest', newManifest) ; 
+		}
+		if ( newManifest.bookOrder ) { 
+			this.bookOrder = newManifest.bookOrder;
+		} else { 
+			console.log('No book order present to add in manifest', newManifest) ; 
+		}
+	} ;
+
 	this.getBaseUrl = function(song) { 
 
 		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {

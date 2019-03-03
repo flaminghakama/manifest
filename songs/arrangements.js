@@ -146,6 +146,10 @@ var arrangedSongs = {
 					description: 'Nat King Cole trio (in D)',
 					url: 'https://www.youtube.com/watch?v=XxNoSxpukhQ'
 				},
+				saxophone: {
+					description: 'alt.musica saxophone edition from Parallel Play (in D)',
+					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-2'
+				},
 				performance: {
 					description: 'Mutual Admiration Org performance (in D)',
 					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/cinco-2/Beautiful Moons Ago.mp3'
@@ -155,7 +159,7 @@ var arrangedSongs = {
 					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/tracking/Beautiful%20Moons%20Ago.mp3'
 				},
 				midi: {
-					description: 'Synth version of alt.musica arrangement',
+					description: 'Synth version of alt.musica arrangement (in C)',
 					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-midi/s-X9P5j'
 				}
 			}
@@ -266,6 +270,10 @@ var arrangedSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			}, 
 			recordings: {
+				performance: {
+					description: 'alt.musica saxophone edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/smooch-1'
+				}, 
 				accompaniment: {
 					description: 'Winds, string quartet and drums',
 					url: 'https://soundcloud.com/david-elaine-alt/smooch-rough-last-takes/s-JlFyT'

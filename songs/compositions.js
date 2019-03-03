@@ -150,6 +150,10 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				saxophone: {
+					description: 'alt.musica saxophone edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/as-it-was'
+				},
 				original: {
 					description: 'MIT Festival Jazz Band (original version)',
 					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-big-band/s-IcsAH'
@@ -237,9 +241,13 @@ var originalSongs = {
 				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
 			},
 			recordings: {
-				performance: {
+				debut: {
 					description: 'original alt.musica version',
 					url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
+				},
+				clarinet: {
+					description: 'alt.musica clarinet edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-3'
 				},
 				track: {
 					description: 'String quartet',
@@ -323,6 +331,10 @@ var originalSongs = {
 					description: 'Mutual Admiration Org (no strings)',
 					url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
 				},
+				string: {
+					description: 'performance from Parallel Play (no winds)',
+					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-1'
+				},
 				synthesized: {
 					description: 'MIDI',
 					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-midi/s-M74Tf'
@@ -395,6 +407,10 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				performance: {
+					description: 'alt.musica saxophone edition from Parallel Play', 
+					url: 'https://soundcloud.com/david-elaine-alt/self-immolation-1'
+				},				
 				track: {
 					description: 'Strings and Rhythm', 
 					url: 'https://soundcloud.com/david-elaine-alt/self-immolation-strings-and-rhythm/s-bvwlr'
@@ -403,7 +419,7 @@ var originalSongs = {
 					description: 'String quartet arrangement of Brahms Op. 79, No. 2',
 					url: 'https://soundcloud.com/david-elaine-alt/string-quartet-arrangement-of-brahms-op-79-no2'
 				},
-				performance: {
+				quintet: {
 					description: 'Jazz Combustion Uprising title track from CD',
 					url: 'https://soundcloud.com/jazzcombustion/self-immolation'
 				}, 
@@ -449,6 +465,10 @@ var originalSongs = {
 			},
 			recordings: {
 				performance: {
+					description: 'alt.musica saxophone edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-2'
+				},
+				debut: {
 					description: 'original alt.musica premiere',
 					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground'
 				},
@@ -488,6 +508,10 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				performance: {
+					description: 'alt.musica saxophone edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/we-declare-1'
+				},
 				accompaniment: {
 					description: 'Winds, string quartet and rhythm',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-rough-with-winds/s-sO6ec'
@@ -500,7 +524,7 @@ var originalSongs = {
 					description: 'Original trio video version (different arrangment)',
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
 				},
-				performance: {
+				sextet: {
 					description: 'Jazz Combustion sextet version (different arrangement)',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
 				}
@@ -537,11 +561,15 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+				performance: {
+					description: 'alt.musica saxophone edition from Parallel Play',
+					url: 'https://soundcloud.com/david-elaine-alt/windows-3'
+				},
 				track: {
 					description: 'Winds, string quartet and rhythm',
 					url: 'https://soundcloud.com/david-elaine-alt/windows-rough-last-takes/s-VpGsx'
 				},
-				performance: {
+				debut: {
 					description: 'alt.musica premiere 2016',
 					url: 'https://soundcloud.com/david-elaine-alt/windows-1'
 				},
