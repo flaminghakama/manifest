@@ -138,6 +138,8 @@ var originalSongs = {
 			fileLocation: "alt.musica",
 			filePrefix: "as-it-was/strings/as-it-was-",
 			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
