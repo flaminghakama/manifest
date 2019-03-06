@@ -7,8 +7,9 @@ var arrangedSongs = {
 	partsInBooks: {
 		"Flute, Alto Flute & Piccolo": {
             "Beautiful Moons Ago": [ "Flute" ], 
-            "It Only Happens Once": [ "Flute" ],
             "Have You Met Miss Jones": [ "Flute" ],
+            "It Only Happens Once": [ "Flute" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Flute" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
             "Sweet Georgia Bright": [ "Piccolo", "Flute" ], 
@@ -20,6 +21,7 @@ var arrangedSongs = {
             "Beautiful Moons Ago": [ "English Horn in F" ], 
             "Have You Met Miss Jones": [ "English Horn in F" ],
             "It Only Happens Once": [ "English Horn in F", "English Horn in F for Clarinet" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "English Horn in F" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
             "Sweet Georgia Bright": [ "English Horn in F" ], 
@@ -31,6 +33,7 @@ var arrangedSongs = {
             "Beautiful Moons Ago": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Have You Met Miss Jones": [ "Bass Clarinet in Bb" ],
             "It Only Happens Once": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Bass Clarinet in Bb" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
             "Sweet Georgia Bright": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
@@ -41,6 +44,7 @@ var arrangedSongs = {
 		"Voice/Percussion": {
             "Beautiful Moons Ago": [ "Voice" ], 
             "It Only Happens Once": [ "Voice" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Voice" ], 
 			"You Don't Know What Love Is alt.musica": [ "Voice" ]
    		},
@@ -49,6 +53,7 @@ var arrangedSongs = {
             "Have You Met Miss Jones": [ "Violin I" ],
             "It Only Happens Once": [ "Voice" ],
 			"Smooch alt.musica": [ "Drums" ], 
+            "Nakamarra": [ "Voice" ],
 			"Softly, As In A Morning Sunrise alt.musica": [ "Drums" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Take Five": [ "Violin I" ],
@@ -60,6 +65,7 @@ var arrangedSongs = {
             "Have You Met Miss Jones": [ "Violin I" ],
             "It Only Happens Once": [ "Violin I" ],
 			"Smooch alt.musica": [ "Violin I" ], 
+            "Nakamarra": [ "Voice" ],
 			"Softly, As In A Morning Sunrise alt.musica": [ "Violin I" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Take Five": [ "Violin I" ],
@@ -71,6 +77,7 @@ var arrangedSongs = {
             "Have You Met Miss Jones": [ "Violin II" ],
             "It Only Happens Once": [ "Violin II" ],
 			"Smooch alt.musica": [ "Violin II" ], 
+            "Nakamarra": [ "Voice" ],
 			"Softly, As In A Morning Sunrise alt.musica": [ "Violin II" ],
             "Take Five": [ "Violin II" ],
             "Wee": [ "Violin II" ],
@@ -81,6 +88,7 @@ var arrangedSongs = {
             "Beautiful Moons Ago": [ "Viola" ], 
             "Have You Met Miss Jones": [ "Viola" ],
             "It Only Happens Once": [ "Viola" ],
+            "Nakamarra": [ "Voice" ],
 			"Softly, As In A Morning Sunrise alt.musica": [ "Viola" ],
 			"Smooch alt.musica": [ "Viola" ], 
             "Sweet Georgia Bright": [ "Viola" ], 
@@ -92,6 +100,7 @@ var arrangedSongs = {
             "Beautiful Moons Ago": [ "'Cello" ], 
             "Have You Met Miss Jones": [ "'Cello" ],
             "It Only Happens Once": [ "'Cello" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "'Cello" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "'Cello" ],
             "Sweet Georgia Bright": [ "'Cello" ], 
@@ -103,6 +112,7 @@ var arrangedSongs = {
             "Beautiful Moons Ago": [ "Voice", "Bass" ], 
             "Have You Met Miss Jones": [ "Bass" ],
             "It Only Happens Once": [ "Voice", "Bass" ],
+            "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Bass" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass" ],
             "Sweet Georgia Bright": [ "Bass" ], 
@@ -238,6 +248,30 @@ var arrangedSongs = {
 				tracking: {
 					description: 'Mutual Admiration Org tracking with soloists (in D)',
 					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/tracking/It%20Only%20Happens%20Once.mp3'
+				}
+			}
+		},
+
+		"Nakamarra": {
+			metadata: { 
+				title: "Nakamarra",
+				composer: "Haitus Kaiyote",
+				arranger: "Elaine Paul", 
+				genre: "R&B",
+				bpm: '90',
+				key: "Eb"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "nakamarra/lead-sheets/nakamarra",
+			parts: {
+				"Voice": { fileSuffix: "" }
+			},
+			scores: {
+			},
+			recordings: {
+				original: {
+					description: 'Haitus Kaiyote - Nakamarra',
+					url: 'https://www.youtube.com/watch?v=Ozr4KsZBTvQ'
 				}
 			}
 		},

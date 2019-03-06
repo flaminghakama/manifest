@@ -12,12 +12,11 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '14', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13' ],
+	programOrder: [ '01', '02', '03', '04', '13', '06', '05', '07', '08', '09', '10', '11', '12' ],
 
 	program: {
 		'01': "Beautiful Moons Ago",
         '02': "It Only Happens Once",
-		'14': "Smooch alt.musica",
 		'03': "You Don't Know What Love Is alt.musica",
 		'04': "The Optimist", 
 		'05': "We Declare alt.musica",
@@ -25,10 +24,10 @@ var openStudiosRepertoire = {
 		'07': "As It Was alt.musica",
 		'08': "Self-Immolation alt.musica",
 		'09': "Don't Wait for Me",
-		'10': "Windows",
-		'11': "Stomping Ground",
-		'12': "Take Five",
-        '13': "Wee"
+		'10': "Stomping Ground",
+		'11': "Take Five",
+        '12': "Wee", 
+        '13': "Nakamarra"
 	},
 
 	bookOrder: [ ],
