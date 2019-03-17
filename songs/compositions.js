@@ -33,7 +33,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Bass Clarinet in Bb" ], 
 			"Bechaini": [ "Bass Clarinet in Bb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
-            "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
+            "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
@@ -270,8 +270,10 @@ var originalSongs = {
 			filePrefix: "listening/strings/listening-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
-				"Bass Clarinet in Bb for Clarinet": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bass Clarinet in Bb for Bassoon": { fileSuffix: "Bass-Clarinet-in-Bb-for-Bassoon" },
 				"Bassoon": { fileSuffix: "Bassoon" },
 				"Voice": { fileSuffix: "Voice" },
 				"Violin I": { fileSuffix: "Violin-I" },
@@ -282,6 +284,7 @@ var originalSongs = {
 			},
 			scores: {
 				"Transposed": { fileSuffix: "Score-Transposed" }
+				"Transposed - Alternate Winds": { fileSuffix: "Score-Transposed-Alternate" }
 			},
 			recordings: {
 				woodwinds: {
@@ -290,7 +293,7 @@ var originalSongs = {
 				},
 				synthesized: {
 					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/listening-midi/s-tjbNk'
+					url: 'https://soundcloud.com/david-elaine-alt/listening-midi-1/s-Jfgqm'
 				},
 				original: {
 					description: 'MIT TRME Jazz Collective (original key)',
