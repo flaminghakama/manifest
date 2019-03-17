@@ -283,7 +283,7 @@ var originalSongs = {
 				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
-				"Transposed": { fileSuffix: "Score-Transposed" }
+				"Transposed": { fileSuffix: "Score-Transposed" },
 				"Transposed - Alternate Winds": { fileSuffix: "Score-Transposed-Alternate" }
 			},
 			recordings: {
