@@ -395,7 +395,7 @@ var originalSongs = {
 				key: "G minor"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "self-immolation/self-immolation-",
+			filePrefix: "self-immolation/strings/self-immolation-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
