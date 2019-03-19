@@ -12,10 +12,12 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04', '13', '06', '05', '07', '08', '09', '10', '11', '12' ],
+	programOrder: [ '01', '14', '15', '02', '03', '04', '13', '06', '05', '07', '08', '09', '10', '11', '12' ],
 
 	program: {
-		'01': "Beautiful Moons Ago",
+		'01': "Beautiful Moons Ago (Down M2)",
+		'14': "Beautiful Moons Ago",
+		'15': "Beautiful Moons Ago (Up M2)",
         '02': "It Only Happens Once",
 		'03': "You Don't Know What Love Is alt.musica",
 		'04': "The Optimist", 

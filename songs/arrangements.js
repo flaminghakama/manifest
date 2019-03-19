@@ -6,7 +6,9 @@ var arrangedSongs = {
 
 	partsInBooks: {
 		"Flute, Alto Flute & Piccolo": {
+            "Beautiful Moons Ago (Down M2)": [ "Flute" ], 
             "Beautiful Moons Ago": [ "Flute" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Flute" ], 
             "Have You Met Miss Jones": [ "Flute" ],
             "It Only Happens Once": [ "Flute" ],
             "Nakamarra": [ "Voice" ],
@@ -18,7 +20,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Flute" ]
         },
 		"English Horn": {
+            "Beautiful Moons Ago (Down M2)": [ "English Horn in F" ], 
             "Beautiful Moons Ago": [ "English Horn in F" ], 
+            "Beautiful Moons Ago (Up M2)": [ "English Horn in F" ], 
             "Have You Met Miss Jones": [ "English Horn in F" ],
             "It Only Happens Once": [ "English Horn in F", "English Horn in F for Clarinet" ],
             "Nakamarra": [ "Voice" ],
@@ -30,7 +34,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
 		},
 		"Bass Clarinet": {
+            "Beautiful Moons Ago (Down M2)": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Beautiful Moons Ago": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Have You Met Miss Jones": [ "Bass Clarinet in Bb" ],
             "It Only Happens Once": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "Nakamarra": [ "Voice" ],
@@ -42,14 +48,18 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb" ]
         },
 		"Voice/Percussion": {
+            "Beautiful Moons Ago (Down M2)": [ "Voice" ], 
             "Beautiful Moons Ago": [ "Voice" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Voice" ], 
             "It Only Happens Once": [ "Voice" ],
             "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Voice" ], 
 			"You Don't Know What Love Is alt.musica": [ "Voice" ]
    		},
 		"Drums": {
+            "Beautiful Moons Ago (Down M2)": [ "Voice" ], 
             "Beautiful Moons Ago": [ "Voice" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Voice" ], 
             "Have You Met Miss Jones": [ "Violin I" ],
             "It Only Happens Once": [ "Voice" ],
 			"Smooch alt.musica": [ "Drums" ], 
@@ -61,7 +71,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Drums" ]
 		},
 		"Violin I": {
+            "Beautiful Moons Ago (Down M2)": [ "Violin I" ], 
             "Beautiful Moons Ago": [ "Violin I" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Violin I" ], 
             "Have You Met Miss Jones": [ "Violin I" ],
             "It Only Happens Once": [ "Violin I" ],
 			"Smooch alt.musica": [ "Violin I" ], 
@@ -73,7 +85,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Violin I" ]
 		},
 		"Violin II": {
+            "Beautiful Moons Ago (Down M2)": [ "Violin II" ], 
             "Beautiful Moons Ago": [ "Violin II" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Violin II" ], 
             "Have You Met Miss Jones": [ "Violin II" ],
             "It Only Happens Once": [ "Violin II" ],
 			"Smooch alt.musica": [ "Violin II" ], 
@@ -85,7 +99,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Violin II" ]
 		},
 		"Viola": {
+            "Beautiful Moons Ago (Down M2)": [ "Viola" ], 
             "Beautiful Moons Ago": [ "Viola" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Viola" ], 
             "Have You Met Miss Jones": [ "Viola" ],
             "It Only Happens Once": [ "Viola" ],
             "Nakamarra": [ "Voice" ],
@@ -97,7 +113,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Viola" ] 
 		},
 		"'Cello": {
+            "Beautiful Moons Ago (Down M2)": [ "'Cello" ], 
             "Beautiful Moons Ago": [ "'Cello" ], 
+            "Beautiful Moons Ago (Up M2)": [ "'Cello" ], 
             "Have You Met Miss Jones": [ "'Cello" ],
             "It Only Happens Once": [ "'Cello" ],
             "Nakamarra": [ "Voice" ],
@@ -109,7 +127,9 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "'Cello" ]
 		},
 		"Bass": {
+            "Beautiful Moons Ago (Down M2)": [ "Voice", "Bass" ], 
             "Beautiful Moons Ago": [ "Voice", "Bass" ], 
+            "Beautiful Moons Ago (Up M2)": [ "Voice", "Bass" ], 
             "Have You Met Miss Jones": [ "Bass" ],
             "It Only Happens Once": [ "Voice", "Bass" ],
             "Nakamarra": [ "Voice" ],
@@ -124,9 +144,9 @@ var arrangedSongs = {
 
 	songs: {
 
-		"Beautiful Moons Ago": {
+		"Beautiful Moons Ago (Down M2)": {
 			metadata: { 
-				title: "Beautiful Moons Ago",
+				title: "Beautiful Moons Ago (Down M2)",
 				composer: "O. Moore",
 				arranger: "D. Elaine Alt", 
 				genre: "Swing",
@@ -135,6 +155,108 @@ var arrangedSongs = {
 			},
 			fileLocation: "alt.musica",
 			filePrefix: "beautiful-moons-ago/strings/beautiful-moons-ago-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bassoon": { fileSuffix: "Bassoon" },
+				"Voice": { fileSuffix: "Voice" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				original: {
+					description: 'Nat King Cole trio (in D)',
+					url: 'https://www.youtube.com/watch?v=XxNoSxpukhQ'
+				},
+				saxophone: {
+					description: 'alt.musica saxophone edition from Parallel Play (in D)',
+					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-2'
+				},
+				performance: {
+					description: 'Mutual Admiration Org performance (in D)',
+					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/cinco-2/Beautiful Moons Ago.mp3'
+				},
+				tracking: {
+					description: 'Mutual Admiration Org tracking with soloists (in D)',
+					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/tracking/Beautiful%20Moons%20Ago.mp3'
+				},
+				midi: {
+					description: 'Synth version of alt.musica arrangement (in C)',
+					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-midi/s-X9P5j'
+				}
+			}
+		},
+
+		"Beautiful Moons Ago": {
+			metadata: { 
+				title: "Beautiful Moons Ago",
+				composer: "O. Moore",
+				arranger: "D. Elaine Alt", 
+				genre: "Swing",
+				bpm: '112',
+				key: "D"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "beautiful-moons-ago/original-key/beautiful-moons-ago-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Bassoon": { fileSuffix: "Bassoon" },
+				"Voice": { fileSuffix: "Voice" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				original: {
+					description: 'Nat King Cole trio (in D)',
+					url: 'https://www.youtube.com/watch?v=XxNoSxpukhQ'
+				},
+				saxophone: {
+					description: 'alt.musica saxophone edition from Parallel Play (in D)',
+					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-2'
+				},
+				performance: {
+					description: 'Mutual Admiration Org performance (in D)',
+					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/cinco-2/Beautiful Moons Ago.mp3'
+				},
+				tracking: {
+					description: 'Mutual Admiration Org tracking with soloists (in D)',
+					url: 'http://ali-cia.net/mutualadmiration/media/mp3/mao/tracking/Beautiful%20Moons%20Ago.mp3'
+				},
+				midi: {
+					description: 'Synth version of alt.musica arrangement (in C)',
+					url: 'https://soundcloud.com/david-elaine-alt/beautiful-moons-ago-midi/s-X9P5j'
+				}
+			}
+		},
+
+		"Beautiful Moons Ago (Up M2)": {
+			metadata: { 
+				title: "Beautiful Moons Ago (Up M2)",
+				composer: "O. Moore",
+				arranger: "D. Elaine Alt", 
+				genre: "Swing",
+				bpm: '112',
+				key: "E"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "beautiful-moons-ago/up-M2/beautiful-moons-ago-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
