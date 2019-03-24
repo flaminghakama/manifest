@@ -6,7 +6,7 @@ var pianoTrioSongs = {
 
 	partsInBooks: {
 		"Concert Lead Sheets": {
-			"Anne's Eyes": [ "Concert Lead Sheet", "Arrangement" ], 
+			"Anne's Eyes": [ "Arrangement" ], 
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
@@ -34,6 +34,7 @@ var pianoTrioSongs = {
 		"Bass": {
 			"Anne's Eyes": [ "Bass" ], 
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
+			"Hot Swing": [ "Violin" ], 
 			"Kickin' The Can": [ "Bass" ], 
 			"Swampy": [ "Bass" ], 
 			"Thick As A Nickle": [ "Bass" ], 
@@ -63,11 +64,15 @@ var pianoTrioSongs = {
 			scores: {
 			},
 			recordings: {
+				trio: {
+					description: 'Trio',
+					url: 'https://soundcloud.com/david-elaine-alt/annes-eyes-sticks'
+				},
 				quartet: {
 					description: 'Quartet',
-					url: 'https://soundcloud.com/david-elaine-alt/annes-eyes-sticks'
+					url: 'https://soundcloud.com/david-elaine-alt/lester-eyes'
 				}
-			}
+			}	
 		},
 
 		"Aphrodite's Girl Friday": {
@@ -108,6 +113,7 @@ var pianoTrioSongs = {
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
 				"Clarinet in Bb": { fileSuffix: "Bb-Clarinet" },
+				"Violin": { fileSuffix: "Violin" },
 			},
 			scores: {
 				"Score": { fileSuffix: "Score" }
