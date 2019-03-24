@@ -182,7 +182,7 @@ var pianoTrioSongs = {
 			recordings: {
 				synth: {
 					description: 'Synth',
-					url: ''
+					url: 'https://soundcloud.com/david-elaine-alt/linsanity-midi/s-x9zZv'
 				}
 			}
 		},
