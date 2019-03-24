@@ -8,7 +8,7 @@ var pianoTrioSongs = {
 		"Concert Lead Sheets": {
 			"Anne's Eyes": [ "Arrangement" ], 
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
-			"Hot Swing": [ "Lead Sheet" ], 
+			"Hot Swing": [ "Concert Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
 			"Linsanity": [ "Concert Lead Sheet" ], 
 			"Swampy": [ "Concert Lead Sheet" ], 
@@ -20,6 +20,7 @@ var pianoTrioSongs = {
 			"Aphrodite's Girl Friday": [ "Bb Lead Sheet" ], 
 			"Hot Swing": [ "Clarinet in Bb" ], 
 			"Kickin' The Can": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ], 
+			"Linsanity": [ "Bb Lead Sheet" ], 
 			"Swampy": [ "Bb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Bb Melody", "Bb Harmony" ], 
 			"Wag That Tail": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ]
@@ -28,6 +29,7 @@ var pianoTrioSongs = {
 			"Anne's Eyes": [ "Bb Lead Sheet", "Arrangement" ], 
 			"Aphrodite's Girl Friday": [ "Eb Lead Sheet" ], 
 			"Kickin' The Can": [ "Eb Melody", "Eb Harmony" ], 
+			"Linsanity": [ "Eb Lead Sheet" ], 
 			"Swampy": [ "Eb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Eb Melody", "Eb Harmony" ], 
 			"Wag That Tail": [ "Eb Lead Sheet", "Eb Melody", "Eb Harmony" ]
@@ -37,6 +39,7 @@ var pianoTrioSongs = {
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Violin" ], 
 			"Kickin' The Can": [ "Bass" ], 
+			"Linsanity": [ "Concert Lead Sheet" ], 
 			"Swampy": [ "Bass" ], 
 			"Thick As A Nickle": [ "Bass" ], 
 			"Wag That Tail": [ "Bass" ]
@@ -170,7 +173,9 @@ var pianoTrioSongs = {
 			fileLocation: "jazz-combustion",
 			filePrefix: "linsanity/linsanity-",
 			parts: {
-				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" }
+				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
+				"Bb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Bb" },
+				"Eb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Eb" }
 			},
 			scores: {
 			},
