@@ -10,6 +10,7 @@ var pianoTrioSongs = {
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
+			"Linsanity": [ "Concert Lead Sheet" ], 
 			"Swampy": [ "Concert Lead Sheet" ], 
 			"Thick As A Nickle": [ "Concert Lead Sheet", "Rhythm" ], 
 			"Wag That Tail": [ "Concert Lead Sheet" ]
@@ -154,6 +155,29 @@ var pianoTrioSongs = {
 				trio: {
 					description: 'Piano Trio with Scat Vocals',
 					url: 'https://soundcloud.com/david-elaine-alt/kickin-the-can-so-woke-brushes'
+				}
+			}
+		},
+
+		"Linsanity": {
+			metadata: { 
+				title: "Linsanity",
+				composer: "Elaine Paul",
+				genre: "Bebop",
+				bpm: '180',
+				key: "A Major"
+			},
+			fileLocation: "jazz-combustion",
+			filePrefix: "linsanity/linsanity-",
+			parts: {
+				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" }
+			},
+			scores: {
+			},
+			recordings: {
+				synth: {
+					description: 'Synth',
+					url: ''
 				}
 			}
 		},

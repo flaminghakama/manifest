@@ -12,16 +12,17 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04', '05', '06', '07' ],
+	programOrder: [ '01', '07', '04', '06', '08', '03', '02', '05' ],
 
 	program: {
 		'01': "Anne's Eyes", 
 		'02': "Aphrodite's Girl Friday",
 		'03': "Hot Swing", 
 		'04': "Kickin' The Can", 
-		'05': "Swampy", 
-		'06': "Thick As A Nickle", 
-		'07': "Wag That Tail"
+		'05': "Linsanity",
+		'06': "Swampy", 
+		'07': "Thick As A Nickle", 
+		'08': "Wag That Tail"
 	},
 
 	bookOrder: [ ],
