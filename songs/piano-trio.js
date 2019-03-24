@@ -7,6 +7,8 @@ var pianoTrioSongs = {
 	partsInBooks: {
 		"Concert Lead Sheets": {
 			"Anne's Eyes": [ "Concert Lead Sheet", "Arrangement" ], 
+			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
+			"Hot Swing": [ "Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
 			"Swampy": [ "Concert Lead Sheet" ], 
 			"Thick As A Nickle": [ "Concert Lead Sheet", "Rhythm" ], 
@@ -14,6 +16,8 @@ var pianoTrioSongs = {
 		}, 
 		"Bb Instruments": {
 			"Anne's Eyes": [ "Bb Lead Sheet" ], 
+			"Aphrodite's Girl Friday": [ "Bb Lead Sheet" ], 
+			"Hot Swing": [ "Clarinet in Bb" ], 
 			"Kickin' The Can": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ], 
 			"Swampy": [ "Bb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Bb Melody", "Bb Harmony" ], 
@@ -21,6 +25,7 @@ var pianoTrioSongs = {
 		}, 
 		"Eb Instruments": {
 			"Anne's Eyes": [ "Bb Lead Sheet", "Arrangement" ], 
+			"Aphrodite's Girl Friday": [ "Eb Lead Sheet" ], 
 			"Kickin' The Can": [ "Eb Melody", "Eb Harmony" ], 
 			"Swampy": [ "Eb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Eb Melody", "Eb Harmony" ], 
@@ -28,6 +33,7 @@ var pianoTrioSongs = {
 		}, 
 		"Bass": {
 			"Anne's Eyes": [ "Bass" ], 
+			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
 			"Kickin' The Can": [ "Bass" ], 
 			"Swampy": [ "Bass" ], 
 			"Thick As A Nickle": [ "Bass" ], 
@@ -64,11 +70,60 @@ var pianoTrioSongs = {
 			}
 		},
 
+		"Aphrodite's Girl Friday": {
+			metadata: { 
+				title: "Aphrodite's Girl Friday",
+				composer: "Elaine Paul",
+				genre: "Ballad",
+				bpm: '108',
+				key: "Db Major"
+			},
+			fileLocation: "piano-trio",
+			filePrefix: "aphrodites-girl-friday/aphrodites-girl-friday-",
+			parts: {
+				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
+				"Bb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Bb" },
+				"Eb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Eb" }
+			},
+			scores: {
+			},
+			recordings: {
+				midi: {
+					description: 'Synth',
+					url: 'https://soundcloud.com/david-elaine-alt/aphrodites-girl-friday-midi/s-E1nx5'
+				}
+			}
+		},
+
+		"Hot Swing": {
+			metadata: { 
+				title: "Hot Swing",
+				composer: "Elaine Paul",
+				genre: "Swing",
+				bpm: '230',
+				key: "D minor"
+			},
+			fileLocation: "violin-clarinet",
+			filePrefix: "hot-swing-",
+			parts: {
+				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
+				"Clarinet in Bb": { fileSuffix: "Bb-Clarinet" },
+			},
+			scores: {
+				"Score": { fileSuffix: "Score" }
+			},
+			recordings: {
+				trio: {
+					description: 'Piano Trio with Scat Vocals',
+					url: 'https://soundcloud.com/david-elaine-alt/kickin-the-can-so-woke-brushes'
+				}
+			}
+		},
+
 		"Kickin' The Can": {
 			metadata: { 
 				title: "Kickin' The Can",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
 				genre: "Jive Swing",
 				bpm: '210',
 				key: "E minor"
@@ -101,7 +156,6 @@ var pianoTrioSongs = {
 			metadata: { 
 				title: "Swampy",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
 				genre: "Ballad",
 				bpm: '76',
 				key: "Db Major"
@@ -130,7 +184,6 @@ var pianoTrioSongs = {
 			metadata: { 
 				title: "Thick As A Nickle",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
 				genre: "Bebop",
 				bpm: '184',
 				key: "Bb Major"
@@ -165,7 +218,6 @@ var pianoTrioSongs = {
 			metadata: { 
 				title: "Wag That Tail",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
 				genre: "Swing Blues",
 				bpm: '172',
 				key: "F Major"
