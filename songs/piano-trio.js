@@ -114,8 +114,8 @@ var pianoTrioSongs = {
 			},
 			recordings: {
 				trio: {
-					description: 'Piano Trio with Scat Vocals',
-					url: 'https://soundcloud.com/david-elaine-alt/kickin-the-can-so-woke-brushes'
+					description: 'Violin & Clarinet (Chart starts at 1:06)',
+					url: 'https://soundcloud.com/david-elaine-alt/hot-swing#t=1:06'
 				}
 			}
 		},
