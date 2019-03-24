@@ -175,7 +175,10 @@ var pianoTrioSongs = {
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
 				"Bb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Bb" },
-				"Eb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Eb" }
+				"Eb Lead Sheet": { fileSuffix: "Lead-Sheet-for-Eb" },
+				"Concert Harmony": { fileSuffix: "Harmony" },
+				"Bb Harmony": { fileSuffix: "Harmony-for-Bb" },
+				"Eb Harmony": { fileSuffix: "Harmony-for-Eb" }
 			},
 			scores: {
 			},
