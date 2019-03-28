@@ -181,7 +181,7 @@ var originalSongs = {
 				key: "B minor"
 			},
 			fileLocation: "collaborations/devendra-sharma",
-			filePrefix: "bechaini/bechaini-",
+			filePrefix: "bechaini/reading/bechaini-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -220,7 +220,7 @@ var originalSongs = {
 				key: "F"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "dont-wait-for-me/dont-wait-for-me-",
+			filePrefix: "dont-wait-for-me/strings/dont-wait-for-me-",
 			parts: {
 				"Alto Flute in G": { fileSuffix: "Alto-Flute-in-G" },
 				"Flute": { fileSuffix: "Flute" },
@@ -495,7 +495,7 @@ var originalSongs = {
 				key: "Db"
 			},
 			fileLocation: "alt.musica",
-			filePrefix: "we-declare/we-declare-",
+			filePrefix: "we-declare/strings/we-declare-",
 			parts: {
 				"Piccolo": { fileSuffix: "Piccolo" },
 				"Flute": { fileSuffix: "Flute" },
