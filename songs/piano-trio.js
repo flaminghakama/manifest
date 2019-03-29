@@ -7,7 +7,8 @@ var pianoTrioSongs = {
 	partsInBooks: {
 		"Concert Lead Sheets": {
 			"Anne's Eyes": [ "Arrangement" ], 
-			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
+			"Aphrodite's Girl Friday": [ "Concert Lead Sheet", "Concert Melody" ], 
+			"Big Seven": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Concert Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
 			"Linsanity": [ "Concert Lead Sheet" ], 
@@ -18,6 +19,7 @@ var pianoTrioSongs = {
 		"Bb Instruments": {
 			"Anne's Eyes": [ "Bb Lead Sheet" ], 
 			"Aphrodite's Girl Friday": [ "Bb Lead Sheet" ], 
+			"Big Seven": [ "Bb Melody" ], 
 			"Hot Swing": [ "Clarinet in Bb" ], 
 			"Kickin' The Can": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ], 
 			"Linsanity": [ "Bb Lead Sheet" ], 
@@ -28,6 +30,7 @@ var pianoTrioSongs = {
 		"Eb Instruments": {
 			"Anne's Eyes": [ "Bb Lead Sheet", "Arrangement" ], 
 			"Aphrodite's Girl Friday": [ "Eb Lead Sheet" ], 
+			"Big Seven": [ "Eb Melody" ], 
 			"Kickin' The Can": [ "Eb Melody", "Eb Harmony" ], 
 			"Linsanity": [ "Eb Lead Sheet" ], 
 			"Swampy": [ "Eb Lead Sheet" ], 
@@ -37,6 +40,7 @@ var pianoTrioSongs = {
 		"Bass": {
 			"Anne's Eyes": [ "Bass" ], 
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
+			"Big Seven": [ "Bass" ], 
 			"Hot Swing": [ "Violin" ], 
 			"Kickin' The Can": [ "Bass" ], 
 			"Linsanity": [ "Concert Lead Sheet" ], 
@@ -100,6 +104,33 @@ var pianoTrioSongs = {
 				midi: {
 					description: 'Synth',
 					url: 'https://soundcloud.com/david-elaine-alt/aphrodites-girl-friday-midi/s-E1nx5'
+				}
+			}
+		},
+
+		"Big Seven": {
+			metadata: { 
+				title: "Big Seven",
+				composer: "Elaine Paul",
+				genre: "Hip Hop/Funk",
+				bpm: '64',
+				key: "Db Major"
+			},
+			fileLocation: "piano-trio",
+			filePrefix: "big-seven/combo/big-seven-",
+			parts: {
+				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
+				"Concert Melody": { fileSuffix: "Melody" },
+				"Bb Melody": { fileSuffix: "Melody-for-Bb" },
+				"Eb Melody": { fileSuffix: "Melody-for-Eb" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+			},
+			recordings: {
+				midi: {
+					description: 'Synth',
+					url: 'https://soundcloud.com/david-elaine-alt/big-seven-synth/s-LUEjT'
 				}
 			}
 		},
