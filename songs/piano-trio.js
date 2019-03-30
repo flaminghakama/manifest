@@ -13,7 +13,7 @@ var pianoTrioSongs = {
 			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
 			"Linsanity": [ "Concert Lead Sheet" ], 
 			"Swampy": [ "Concert Lead Sheet" ], 
-			"Thick As A Nickle": [ "Concert Lead Sheet", "Rhythm" ], 
+			"Thick As A Nickle": [ "Concert Lead Sheet" ], 
 			"Wag That Tail": [ "Concert Lead Sheet" ]
 		}, 
 		"Bb Instruments": {
@@ -28,7 +28,7 @@ var pianoTrioSongs = {
 			"Wag That Tail": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ]
 		}, 
 		"Eb Instruments": {
-			"Anne's Eyes": [ "Bb Lead Sheet", "Arrangement" ], 
+			"Anne's Eyes": [ "Bb Lead Sheet" ], 
 			"Aphrodite's Girl Friday": [ "Eb Lead Sheet" ], 
 			"Big Seven": [ "Eb Melody" ], 
 			"Kickin' The Can": [ "Eb Melody", "Eb Harmony" ], 
@@ -116,7 +116,7 @@ var pianoTrioSongs = {
 				bpm: '64',
 				key: "Db Major"
 			},
-			fileLocation: "piano-trio",
+			fileLocation: "alt.musica",
 			filePrefix: "big-seven/combo/big-seven-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
@@ -177,7 +177,6 @@ var pianoTrioSongs = {
 				"Bb Lead Sheet": { fileSuffix: "Lead-in-Bb" },
 				"Bb Melody": { fileSuffix: "Melody-in-Bb" },
 				"Bb Harmony": { fileSuffix: "Harmony-in-Bb" },
-				"Eb Lead Sheet": { fileSuffix: "Lead-in-Eb" },
 				"Eb Melody": { fileSuffix: "Melody-in-Eb" },
 				"Eb Harmony": { fileSuffix: "Harmony-in-Eb" },
 				"Bass": { fileSuffix: "Bass" }
@@ -261,7 +260,6 @@ var pianoTrioSongs = {
 			filePrefix: "thick-as-a-nickle/thick-as-a-nickle-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead" },
-				"Rhythm": { fileSuffix: "Rhythm" },
 				"Bb Melody": { fileSuffix: "Melody-in-Bb" },
 				"Bb Harmony": { fileSuffix: "Harmony-in-Bb" },
 				"Eb Melody": { fileSuffix: "Melody-in-Eb" },
@@ -269,6 +267,7 @@ var pianoTrioSongs = {
 				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
+				"Condensed Score": { fileSuffix: "Rhythm" },
 				"Score": { fileSuffix: "Score" }
 			},
 			recordings: {
@@ -295,7 +294,6 @@ var pianoTrioSongs = {
 			filePrefix: "wag-that-tail/wag-that-tail-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead" },
-				"Rhythm": { fileSuffix: "Rhythm" },
 				"Bb Lead Sheet": { fileSuffix: "Lead-in-Bb" },
 				"Bb Melody": { fileSuffix: "Melody-in-Bb" },
 				"Bb Harmony": { fileSuffix: "Harmony-in-Bb" },
