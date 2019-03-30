@@ -22,7 +22,7 @@ var pianoTrioSongs = {
 			"Big Seven": [ "Bb Melody" ], 
 			"Hot Swing": [ "Clarinet in Bb" ], 
 			"Kickin' The Can": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ], 
-			"Linsanity": [ "Bb Lead Sheet" ], 
+			"Linsanity": [ "Bb Lead Sheet", "Bb Harmony" ], 
 			"Swampy": [ "Bb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Bb Melody", "Bb Harmony" ], 
 			"Wag That Tail": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ]
@@ -32,7 +32,7 @@ var pianoTrioSongs = {
 			"Aphrodite's Girl Friday": [ "Eb Lead Sheet" ], 
 			"Big Seven": [ "Eb Melody" ], 
 			"Kickin' The Can": [ "Eb Melody", "Eb Harmony" ], 
-			"Linsanity": [ "Eb Lead Sheet" ], 
+			"Linsanity": [ "Eb Lead Sheet", "Eb Harmony" ], 
 			"Swampy": [ "Eb Lead Sheet" ], 
 			"Thick As A Nickle": [ "Eb Melody", "Eb Harmony" ], 
 			"Wag That Tail": [ "Eb Lead Sheet", "Eb Melody", "Eb Harmony" ]
