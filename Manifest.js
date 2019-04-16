@@ -2,6 +2,14 @@
  *  Manifest - organize a program of songs for an ensemble
  */
  
+function getValues(obj){
+    var values = [];
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) { values[values.length] = obj[key]; }
+    } 
+    return values;
+}
+
 function Manifest(manifest) {
 
 	var __Manifest = function(that, manifest) {
@@ -10,31 +18,37 @@ function Manifest(manifest) {
 
 	this.addSongsAndPartsInBooks = function(newManifest) {
 
+		this.bookNames = getValues(this.books);
+
 		for (var i=0 ; i < Object.keys(newManifest.songs).length ; i++) { 
-			var song = Object.keys(newManifest.songs)[i]; 
-			if ( this.manifest.songs && this.manifest.songs.hasOwnProperty(song) ) {
-				console.log("Skipping song " + song + " since is was already present");
+			var songName = Object.keys(newManifest.songs)[i]; 
+			var song = newManifest.songs[songName];
+			if ( this.manifest.songs && this.manifest.songs.hasOwnProperty(songName) ) {
+				console.log("Skipping song " + songName + " since is was already present");
 			} else { 
-				this.manifest.songs[song] = newManifest.songs[song];
+				this.manifest.songs[songName] = song;
 			}
 		}
 
 		for (i=0 ; i < Object.keys(newManifest.partsInBooks).length ; i++) { 
 			var book = Object.keys(newManifest.partsInBooks)[i]; 
-			if ( this.manifest.partsInBooks.hasOwnProperty(book) ) {
-				for (var j=0 ; j < Object.keys(newManifest.partsInBooks[book]).length ; j++) { 
-					var song = Object.keys(newManifest.partsInBooks[book])[j]; 
-	 				this.manifest.partsInBooks[book][song] = newManifest.partsInBooks[book][song];
-	 			}
-			} else { 
-				this.manifest.partsInBooks[book] = newManifest.partsInBooks[book];	
+			if ( this.bookNames.indexOf(book) > -1 ) { 
+				if ( this.manifest.partsInBooks.hasOwnProperty(book) ) {
+					for (var j=0 ; j < Object.keys(newManifest.partsInBooks[book]).length ; j++) { 
+						var song = Object.keys(newManifest.partsInBooks[book])[j]; 
+		 				this.manifest.partsInBooks[book][song] = newManifest.partsInBooks[book][song];
+		 			}
+				} else { 
+					this.manifest.partsInBooks[book] = newManifest.partsInBooks[book];	
+				}
 			}
-		}
+		}				
 	} ;
 
 	this.addBooks = function(newManifest) {
 		if ( newManifest.books ) { 
 			this.books = newManifest.books;
+			this.bookNames = getValues(this.books);
 		} else { 
 			console.log('No books present to add in manifest', newManifest) ; 
 		}
@@ -357,6 +371,5 @@ function Manifest(manifest) {
 			false
 		);
 	}
-
 } ; 
 
