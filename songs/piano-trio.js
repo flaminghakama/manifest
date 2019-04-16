@@ -6,11 +6,11 @@ var pianoTrioSongs = {
 
 	partsInBooks: {
 		"Concert Lead Sheets": {
-			"Anne's Eyes": [ "Arrangement" ], 
+			"Anne's Eyes": [ "Concert Arrangement" ], 
 			"Aphrodite's Girl Friday": [ "Concert Lead Sheet", "Concert Melody" ], 
 			"Big Seven": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Concert Lead Sheet" ], 
-			"Kickin' The Can": [ "Concert Lead Sheet", "Rhythm" ], 
+			"Kickin' The Can": [ "Concert Lead Sheet" ], 
 			"Linsanity": [ "Concert Lead Sheet" ], 
 			"Swampy": [ "Concert Lead Sheet" ], 
 			"Thick As A Nickle": [ "Concert Lead Sheet" ], 
@@ -173,7 +173,6 @@ var pianoTrioSongs = {
 			filePrefix: "kickin-the-can/kickin-the-can-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead" },
-				"Rhythm": { fileSuffix: "Rhythm" },
 				"Bb Lead Sheet": { fileSuffix: "Lead-in-Bb" },
 				"Bb Melody": { fileSuffix: "Melody-in-Bb" },
 				"Bb Harmony": { fileSuffix: "Harmony-in-Bb" },
@@ -182,6 +181,7 @@ var pianoTrioSongs = {
 				"Bass": { fileSuffix: "Bass" }
 			},
 			scores: {
+				"Condensed Score": { fileSuffix: "Rhythm" },
 				"Score": { fileSuffix: "Score" }
 			},
 			recordings: {

@@ -30,19 +30,30 @@ function Manifest(manifest) {
 			}
 		}
 
+ 		this.partsInUse = this.partsInUse || {};
+ 		var songsInProgram = Object.values(this.manifest.program);
+
 		for (i=0 ; i < Object.keys(newManifest.partsInBooks).length ; i++) { 
-			var book = Object.keys(newManifest.partsInBooks)[i]; 
-			if ( this.bookNames.indexOf(book) > -1 ) { 
-				if ( this.manifest.partsInBooks.hasOwnProperty(book) ) {
-					for (var j=0 ; j < Object.keys(newManifest.partsInBooks[book]).length ; j++) { 
-						var song = Object.keys(newManifest.partsInBooks[book])[j]; 
-		 				this.manifest.partsInBooks[book][song] = newManifest.partsInBooks[book][song];
+			var bookName = Object.keys(newManifest.partsInBooks)[i]; 
+			if ( this.bookNames.indexOf(bookName) > -1 ) { 
+				var partsInBook = newManifest.partsInBooks[bookName];
+				for (var j=0 ; j < Object.keys(partsInBook).length ; j++) { 
+					var songName = Object.keys(partsInBook)[j];
+					if (songsInProgram.indexOf(songName) > -1) { 
+						this.partsInUse[songName] = this.partsInUse[songName] || []; 
+						var partsList = partsInBook[songName];
+						for (var k=0 ; k < partsList.length ; k++) {
+							var partName = partsList[k]; 
+							if (this.partsInUse[songName].indexOf(partName) == -1) {
+								this.partsInUse[songName].push(partName);
+							}
+						}
+						this.manifest.partsInBooks[bookName] = this.manifest.partsInBooks[bookName] || {};
+		 				this.manifest.partsInBooks[bookName][songName] = newManifest.partsInBooks[bookName][songName];
 		 			}
-				} else { 
-					this.manifest.partsInBooks[book] = newManifest.partsInBooks[book];	
-				}
+		 		}
 			}
-		}				
+		}		
 	} ;
 
 	this.addBooks = function(newManifest) {
@@ -70,7 +81,7 @@ function Manifest(manifest) {
 		return '' ;
 	} ;
 
-    this.displaySong = function(song) {
+    this.displaySong = function(songName, song) {
     	
 		var html = '' ; 
 
@@ -83,7 +94,7 @@ function Manifest(manifest) {
 		}
 
 		if ( song.hasOwnProperty('parts') ) {
-			html += this.displaySongParts(song) ; 
+			html += this.displaySongParts(songName, song) ; 
 		}
 
 		if ( song.hasOwnProperty('recordings') ) {
@@ -177,18 +188,19 @@ function Manifest(manifest) {
 		return html ; 
 	} ;
 
-	this.displaySongParts = function(song) { 
+	this.displaySongParts = function(songName, song) { 
 
-		var name,  
+		var partName,  
 			href, 
 			html = "<div class='song-parts'>\n    <h4>Parts</h4>\n    <ul>\n" ; 
 
-		for ( name in song.parts ) { 
-			part = song.parts[name] ; 
+		for ( var i=0;  i < this.partsInUse[songName].length ; i++ ) {
+			partName = this.partsInUse[songName][i] ; 
+			part = song.parts[partName] ; 
 			href = this.getBaseUrl(song) + 
 				song.fileLocation + '/pdf/' + 
 				song.filePrefix + part.fileSuffix + '.pdf' ;
-			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+			html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
 		} 
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
@@ -215,15 +227,15 @@ function Manifest(manifest) {
 
 	this.displayProgramSongs = function() { 
 
-		var programIndex, number, songIndex, song, baseUrl, 
+		var programIndex, number, songName, song, baseUrl, 
 			html = "<h2>Song Details</h2>\n<div class='program-songs'>\n" ; 
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
-			songIndex = this.manifest.program[number] ; 
-			song = this.manifest.songs[songIndex] ; 
-			html += this.displaySong(song) ; 
+			songName = this.manifest.program[number] ; 
+			song = this.manifest.songs[songName] ; 
+			html += this.displaySong(songName, song) ; 
 		}
 		html += "</div>\n" ; 
 

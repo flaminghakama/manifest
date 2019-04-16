@@ -52,8 +52,8 @@ var originalSongs = {
             "Windows": [ "Clave", "Claps" ],
 		},
 		"Drums": {
-			"As It Was alt.musica": [ "Clave" ], 
-			"Bechaini": [ "Clave" ], 
+			"As It Was alt.musica": [ "Drums" ], 
+			"Bechaini": [ "Voice" ], 
             "Don't Wait for Me": [ "Drums" ],
             "Listening": [ "Clave" ],
             "The Optimist": [ "Voice" ],
