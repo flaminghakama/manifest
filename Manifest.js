@@ -255,11 +255,8 @@ function Manifest(manifest) {
 			manifest = this.manifest,  
 			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
  
- 		//console.log('partsLists is', partsLists,' for chair', chair) ;
-
 		manifest.programOrder.forEach( function(songNumber) {
 
-			//console.log('songNumber is', songNumber) ; 
 			songId = manifest.program[songNumber] ;
 			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
