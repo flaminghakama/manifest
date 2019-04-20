@@ -16,27 +16,16 @@ function Manifest(manifest) {
 		that.manifest = manifest ; 
 	}(this, manifest) ; 
 
-	this.addSongsAndPartsInBooks = function(newManifest) {
-
-		this.bookNames = getValues(this.books);
-
-		for (var i=0 ; i < Object.keys(newManifest.songs).length ; i++) { 
-			var songName = Object.keys(newManifest.songs)[i]; 
-			var song = newManifest.songs[songName];
-			if ( this.manifest.songs && this.manifest.songs.hasOwnProperty(songName) ) {
-				console.log("Skipping song " + songName + " since is was already present");
-			} else { 
-				this.manifest.songs[songName] = song;
-			}
-		}
+	this.addPartsInBooks = function(newManifest) {
 
  		this.partsInUse = this.partsInUse || {};
  		var songsInProgram = Object.values(this.manifest.program);
+ 		var manifestToUse = newManifest ? newManifest : this.manifest;
 
-		for (i=0 ; i < Object.keys(newManifest.partsInBooks).length ; i++) { 
-			var bookName = Object.keys(newManifest.partsInBooks)[i]; 
+		for (i=0 ; i < Object.keys(manifestToUse.partsInBooks).length ; i++) { 
+			var bookName = Object.keys(manifestToUse.partsInBooks)[i]; 
 			if ( this.bookNames.indexOf(bookName) > -1 ) { 
-				var partsInBook = newManifest.partsInBooks[bookName];
+				var partsInBook = manifestToUse.partsInBooks[bookName];
 				for (var j=0 ; j < Object.keys(partsInBook).length ; j++) { 
 					var songName = Object.keys(partsInBook)[j];
 					if (songsInProgram.indexOf(songName) > -1) { 
@@ -49,24 +38,43 @@ function Manifest(manifest) {
 							}
 						}
 						this.manifest.partsInBooks[bookName] = this.manifest.partsInBooks[bookName] || {};
-		 				this.manifest.partsInBooks[bookName][songName] = newManifest.partsInBooks[bookName][songName];
+		 				this.manifest.partsInBooks[bookName][songName] = manifestToUse.partsInBooks[bookName][songName];
 		 			}
 		 		}
 			}
 		}		
 	} ;
 
+	this.addSongsAndPartsInBooks = function(newManifest) {
+
+		this.bookNames = getValues(this.books);
+		var manifestToUse = newManifest ? newManifest : this.manifest;
+		for (var i=0 ; i < Object.keys(manifestToUse.songs).length ; i++) { 
+			var songName = Object.keys(manifestToUse.songs)[i]; 
+			var song = manifestToUse.songs[songName];
+			if ( this.manifest.songs && this.manifest.songs.hasOwnProperty(songName) ) {
+				console.log("Skipping song " + songName + " since is was already present");
+			} else { 
+				this.manifest.songs[songName] = song;
+			}
+		}
+
+		this.addPartsInBooks(manifestToUse);
+	} ;
+
 	this.addBooks = function(newManifest) {
-		if ( newManifest.books ) { 
-			this.books = newManifest.books;
+
+		var manifestToUse = newManifest ? newManifest : this.manifest;
+		if ( manifestToUse.books ) { 
+			this.books = manifestToUse.books;
 			this.bookNames = getValues(this.books);
 		} else { 
-			console.log('No books present to add in manifest', newManifest) ; 
+			console.log('No books present to add in manifest', manifestToUse) ; 
 		}
-		if ( newManifest.bookOrder ) { 
-			this.bookOrder = newManifest.bookOrder;
+		if ( manifestToUse.bookOrder ) { 
+			this.bookOrder = manifestToUse.bookOrder;
 		} else { 
-			console.log('No book order present to add in manifest', newManifest) ; 
+			console.log('No book order present to add in manifest', manifestToUse) ; 
 		}
 	} ;
 
@@ -194,6 +202,14 @@ function Manifest(manifest) {
 			href, 
 			html = "<div class='song-parts'>\n    <h4>Parts</h4>\n    <ul>\n" ; 
 
+		if ( !this.bookNames ) { 
+			this.addBooks();
+			this.addSongsAndPartsInBooks();
+		}
+		if ( !this.partsInUse ) { 
+			this.addPartsInBooks();
+		}
+	
 		for ( var i=0;  i < this.partsInUse[songName].length ; i++ ) {
 			partName = this.partsInUse[songName][i] ; 
 			part = song.parts[partName] ; 

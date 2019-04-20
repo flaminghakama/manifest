@@ -197,16 +197,14 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				/*
-				original: {
-					description: 'voice and piano',
-					url: ''
+				reading: {
+					description: 'reading',
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini'
 				},
-				midi: {
-					description: 'MIDI',
-					url: ''
+				backing: {
+					description: 'backing track',
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini-backing-1'
 				}
-				*/
 			}
 		},
 
