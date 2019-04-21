@@ -31,7 +31,7 @@ var originalSongs = {
 		},
 		"Bass Clarinet": {
 			"As It Was alt.musica": [ "Bass Clarinet in Bb" ], 
-			"Bechaini": [ "Bass Clarinet in Bb" ], 
+			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
@@ -187,6 +187,9 @@ var originalSongs = {
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
+				"Voice for Bb": { fileSuffix: "Voice-for-Bb" },
+				"Voice for Eb": { fileSuffix: "Voice-for-Eb" },
+				"Voice for A": { fileSuffix: "Voice-for-A" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
