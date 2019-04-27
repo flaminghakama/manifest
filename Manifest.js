@@ -213,10 +213,14 @@ function Manifest(manifest) {
 		for ( var i=0;  i < this.partsInUse[songName].length ; i++ ) {
 			partName = this.partsInUse[songName][i] ; 
 			part = song.parts[partName] ; 
-			href = this.getBaseUrl(song) + 
-				song.fileLocation + '/pdf/' + 
-				song.filePrefix + part.fileSuffix + '.pdf' ;
-			html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
+			if (part) { 
+				href = this.getBaseUrl(song) + 
+					song.fileLocation + '/pdf/' + 
+					song.filePrefix + part.fileSuffix + '.pdf' ;
+				html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
+			} else {
+ 				console.log('Skipping missing part: ' + songName + ' - ' + partName);
+			}
 		} 
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
 
