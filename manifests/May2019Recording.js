@@ -4,9 +4,9 @@
 
 var mayRecordingRepertoire = {
 
-	title: 'alt.musica Repertoire for Parallel Play, 21 April 2019',
+	title: 'alt.musica Repertoire for recording, 19 May 2019',
 
-	description: 'Songs with winds, string quartet, voice and rhythm section', 
+	description: 'Backing tracks with winds, string quartet and rhythm section', 
 
 	selector: '#manifest-recording-may-2019',
 
