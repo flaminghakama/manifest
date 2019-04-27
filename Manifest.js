@@ -400,5 +400,42 @@ function Manifest(manifest) {
 			false
 		);
 	}
-} ; 
+
+	this.selectPartsInBooks = function(partsInBooks) { 
+
+ 		var songsInProgram = Object.values(this.manifest.program);
+
+		for ( i=0 ; i < Object.keys(partsInBooks).length ; i++ ) { 
+			var bookName = Object.keys(partsInBooks)[i]; 
+			if ( this.bookNames.indexOf(bookName) === -1 ) { 
+				console.log('Skipping book that is not in manifest: ', bookName);
+				continue; 
+			}
+			var book = partsInBooks[bookName];
+			for (j=0 ; j < Object.keys(book).length ; j++ ) { 
+				var songName = Object.keys(book)[j];
+				if ( songsInProgram.indexOf(songName) === -1 ) { 
+					console.log('Skipping song that is not in program: ', songName);
+					continue; 
+				} 
+				var newListOfParts = [];
+				var listOfParts = book[songName];
+				for ( var k=0 ; k < Object.keys(listOfParts).length ; k++ ) { 
+					var partName = listOfParts[k];
+					if ( this.manifest.songs.hasOwnProperty(songName) &&
+						 this.manifest.songs[songName].parts.hasOwnProperty(partName) ) {
+						newListOfParts.push(partName);
+					} else { 
+						console.log('Skipping part that is not in song: ', partName);
+					}
+	 			}
+	 			if ( newListOfParts.length ) {	
+	 				this.manifest.partsInBooks[bookName][songName] = newListOfParts;
+	 			} else { 
+	 				console.log('Could not find any valid parts for book ' + bookName + ', song ' + songName + ' among ', listOfParts);
+	 			}
+	 		}
+		}		
+	};
+}; 
 

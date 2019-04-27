@@ -23,18 +23,33 @@ var mayRecordingRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-
 	partsInBooks: {
 	},
-
 	songs: {
 	} 
+};
+
+var partSelection = {
+	"English Horn": {
+        "It Only Happens Once": [ "English Horn in F" ],
+	},
+	"Bass Clarinet": {
+        "It Only Happens Once": [ "Clarinet in A" ],
+        "Listening": [ "Bass Clarinet in Bb for Bassoon" ],
+		"Bechaini": [ "Bass Clarinet in Bb", "Voice" ], 
+        "Rising": [ "Bass Clarinet in Bb for Clarinet", "Bass Clarinet in Bb for Bassoon" ],
+	}
+	"Bass": {
+        "It Only Happens Once": [ "Bass" ]
+    }
 };
 
 var manifest = new Manifest(mayRecordingRepertoire);
 manifest.addBooks(altMusicaBooks);
 manifest.addSongsAndPartsInBooks(originalSongs);
 manifest.addSongsAndPartsInBooks(arrangedSongs);
+console.log('partSelection', partSelection);
+manifest.selectPartsInBooks(partSelection);
 var content = manifest.displayManifest() ;
 manifest.placeManifestOnReady(content) ; 
 
