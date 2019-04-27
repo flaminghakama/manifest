@@ -38,7 +38,7 @@ var partSelection = {
         "Listening": [ "Bass Clarinet in Bb for Bassoon" ],
 		"Bechaini": [ "Bass Clarinet in Bb", "Voice" ], 
         "Rising": [ "Bass Clarinet in Bb for Clarinet", "Bass Clarinet in Bb for Bassoon" ],
-	}
+	},
 	"Bass": {
         "It Only Happens Once": [ "Bass" ]
     }
