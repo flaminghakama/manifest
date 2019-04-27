@@ -12,7 +12,7 @@ var mayRecordingRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04' ],
+	programOrder: [ '01', '02', '04', '03' ],
 
 	program: {
         '01': "Listening",
