@@ -57,7 +57,7 @@ var autumnRepertoire = {
         },
 		"Bass Clarinet": {
             "The Optimist": [ "Clarinet in A", "Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
-            "Rising": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
+            "Rising": [ "Clarinet in A", "Bass Clarinet in Bb" ],
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb for Clarinet" ],
             "Dreams": [ "Clarinet in A" ],
             "Wee": [ "Clarinet in A", "Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
