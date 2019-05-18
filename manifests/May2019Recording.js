@@ -12,13 +12,14 @@ var mayRecordingRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '04', '03' ],
+	programOrder: [ '05', '01', '02', '04', '03' ],
 
 	program: {
         '01': "Listening",
 		'02': "Rising",
 		'03': "Bechaini",
-		'04': "It Only Happens Once"
+		'04': "It Only Happens Once",
+		'05': "Mossad"
 	},
 
 	bookOrder: [ ],

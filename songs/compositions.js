@@ -10,6 +10,7 @@ var originalSongs = {
 			"Bechaini": [ "Flute" ], 
             "Don't Wait for Me": [ "Alto Flute in G", "Flute" ],
             "Listening": [ "Flute", "Flute (Sharps)" ],
+            "Mossad": [ "Flute" ],
             "The Optimist": [ "Piccolo", "Flute" ],
             "Rising": [ "Flute" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
@@ -22,6 +23,7 @@ var originalSongs = {
 			"Bechaini": [ "English Horn in F" ], 
             "Don't Wait for Me": [ "English Horn in F" ],
             "Listening": [ "English Horn in F" ],
+            "Mossad": [ "English Horn in F" ],
             "The Optimist": [ "English Horn in F for Clarinet" ],
             "Rising": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
@@ -34,6 +36,7 @@ var originalSongs = {
 			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
+            "Mossad": [ "Bass Clarinet in Bb" ],
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
@@ -56,6 +59,7 @@ var originalSongs = {
 			"Bechaini": [ "Voice" ], 
             "Don't Wait for Me": [ "Drums" ],
             "Listening": [ "Clave" ],
+            "Mossad": [ "Clave" ],
             "The Optimist": [ "Voice" ],
             "Rising": [ "Drums" ],
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
@@ -68,6 +72,7 @@ var originalSongs = {
 			"Bechaini": [ "Violin I" ], 
             "Don't Wait for Me": [ "Violin I" ],
             "Listening": [ "Violin I", "Violin I (Sharps)" ],
+            "Mossad": [ "Violin I" ],
             "The Optimist": [ "Violin I" ],
             "Rising": [ "Violin I" ],
 			"Self-Immolation alt.musica": [ "Violin I" ], 
@@ -80,6 +85,7 @@ var originalSongs = {
 			"Bechaini": [ "Violin II" ], 
             "Don't Wait for Me": [ "Violin II" ],
             "Listening": [ "Violin II", "Violin II (Sharps)" ],
+            "Mossad": [ "Violin II" ],
             "The Optimist": [ "Violin II" ],
             "Rising": [ "Violin II" ],
 			"Self-Immolation alt.musica": [ "Violin II" ], 
@@ -92,6 +98,7 @@ var originalSongs = {
 			"Bechaini": [ "Viola" ], 
             "Don't Wait for Me": [ "Viola" ],
             "Listening": [ "Viola", "Viola (Sharps)" ],
+            "Mossad": [ "Viola" ],
             "The Optimist": [ "Viola" ],
             "Rising": [ "Viola" ],
 			"Self-Immolation alt.musica": [ "Viola" ], 
@@ -104,6 +111,7 @@ var originalSongs = {
 			"Bechaini": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
             "Listening": [ "'Cello", "'Cello (Sharps)" ],
+            "Mossad": [ "'Cello'" ],
             "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
 			"Self-Immolation alt.musica": [ "'Cello" ], 
@@ -116,6 +124,7 @@ var originalSongs = {
 			"Bechaini": [ "Bass" ], 
             "Don't Wait for Me": [ "Bass" ],
             "Listening": [ "Bass" ],
+            "Mossad": [ "Bass" ],
             "The Optimist": [ "Bass" ],
             "Rising": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
@@ -305,6 +314,43 @@ var originalSongs = {
 				original: {
 					description: 'MIT TRME Jazz Collective (original key)',
 					url: 'https://soundcloud.com/david-elaine-alt/listening'
+				}
+
+			}
+		},
+
+		"Mossad": {
+			metadata: { 
+				title: "Mossad",
+				composer: "Elaine Paul",
+				genre: "Hip Hop",
+				bpm: '176',
+				key: "C minor"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "mossad/strings/mossad-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Clave": { fileSuffix: "Clave" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" },
+			},
+			recordings: {
+				synthesized: {
+					description: 'MIDI',
+					url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
+				},
+				original: {
+					description: 'Alt Tal',
+					url: 'https://soundcloud.com/david-elaine-alt/mossad'
 				}
 
 			}
