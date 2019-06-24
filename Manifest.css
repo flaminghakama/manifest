@@ -65,3 +65,22 @@
 a.name { 
 	line-height: 0.2em;
 }
+
+.program .program-summary ul { 
+	/* display:none; */
+}
+.program .book-summary ul { 
+	/* display:none; */
+}  
+.program .program-songs div { display:none; }
+
+.program .parts-in-books h3, 
+.program .parts-in-books div { 
+	display:none 
+}
+.program .parts-in-books .selected, 
+.program .parts-in-books .selected h3 { 
+	display:block 
+}
+
+

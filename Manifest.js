@@ -63,7 +63,6 @@ function Manifest(manifest) {
 	} ;
 
 	this.addBooks = function(newManifest) {
-
 		var manifestToUse = newManifest ? newManifest : this.manifest;
 		if ( manifestToUse.books ) { 
 			this.books = manifestToUse.books;
@@ -273,8 +272,9 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
- 
+			html = "<div name='" + chair + "'>\n<h3>" + chair + "</h3>\n" +  
+				"<ul class='parts-in-book'>\n" ; 
+
 		manifest.programOrder.forEach( function(songNumber) {
 
 			songId = manifest.program[songNumber] ;
@@ -337,7 +337,7 @@ function Manifest(manifest) {
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
-				html += '        <li><a href="#CHAIR-' + key + '">' + key + "</a></li>\n";
+				html += "        <li onClick=\"manifest.showBook(" + this.containerVariableName + ",'" + key + "')\">" + key + "</li>\n";
 			}
 		}
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
@@ -377,6 +377,14 @@ function Manifest(manifest) {
 		return html ; 
 	}
 
+	this.getContainer = function() { 
+ 		var container = document.querySelector(this.manifest.selector);
+		if ( container ) { 
+			return container ;
+		} 
+	 	return document.getElementsByTagName('BODY')[0] ;
+	}, 
+
 	this.placeManifestOnReady = function(content) {
 
 		var entity = this ; 
@@ -385,17 +393,18 @@ function Manifest(manifest) {
 		
 			'DOMContentLoaded', 
 
-				function(){
-					var containers = document.querySelectorAll(entity.manifest.selector), 
-						container ; 
-					if ( containers.length > 0 ) { 
-						container = containers[0] ;
-						container.innerHTML = content ;
-						return ; 
-					} 
-					console.log('Could not find elmement with id ' + entity.manifest.selector + ', so addding child.') ;
-					document.getElementsByTagName('BODY')[0].innerHTML = content ;
-				}, 
+			function(){
+				var containers = document.querySelectorAll(entity.manifest.selector), 
+					container ; 
+				if ( containers.length > 0 ) { 
+					container = containers[0] ;
+					container.innerHTML = content ;
+					this.container = container;
+					return ; 
+				} 
+				console.log('Could not find elmement with id ' + entity.manifest.selector + ', so addding child.') ;
+				document.getElementsByTagName('BODY')[0].innerHTML = content ;
+			}, 
 
 			false
 		);
@@ -437,5 +446,21 @@ function Manifest(manifest) {
 	 		}
 		}		
 	};
+
+	this.setContainerVariableName = function(containerVariableName) { 
+		this.containerVariableName = containerVariableName;
+	} ; 
+
+	this.showBook = function(container, bookName) { 
+		var books = container.querySelectorAll('.program .parts-in-books div');		
+		[].forEach.call(books, function(book) {
+			var thisBookName = book.getAttribute('name');
+			if ( thisBookName == bookName ) { 
+				book.classList.add('selected');
+			} else { 
+				book.classList.remove('selected');
+			}
+		});
+	} ; 
 }; 
 
