@@ -261,6 +261,10 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
+	this.rationalizeName = function(name) { 
+		return name.replace(/[^0-9a-z]/gi, ''); 
+	} ; 
+
 	this.displayPartsInBook = function(chair, partsLists) { 
 
 		var songNumber, 
@@ -272,7 +276,7 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<div name='" + chair + "'>\n<h3>" + chair + "</h3>\n" +  
+			html = "<div name='" + this.rationalizeName(chair) + "'>\n<h3>" + chair + "</h3>\n" +  
 				"<ul class='parts-in-book'>\n" ; 
 
 		manifest.programOrder.forEach( function(songNumber) {
@@ -337,10 +341,17 @@ function Manifest(manifest) {
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
-				html += "        <li onClick=\"manifest.showBook(" + this.containerVariableName + ",'" + key + "')\">" + key + "</li>\n";
+				html += "        <li " + 
+					"name='" + this.rationalizeName(key) + "' " + 
+					"onClick='manifest.showBook(" + 
+						this.containerVariableName + ',"' + this.rationalizeName(key) + '");' +
+					"'>" + key + '</li>\n';
 			}
 		}
-		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
+		html += "    </ul>\n";
+		html += "    <div class='clear'></div>\n" ;
+		html += this.displayPartsInBooks() ; 
+		html += "    <div class='clear'></div>\n</div>\n" ;
 
 		return html ; 
 	} ; 
@@ -349,7 +360,7 @@ function Manifest(manifest) {
 
 		var key,
 			books = this.manifest.partsInBooks, 
-			html = "<h2>Instrumental Books</h2>\n<div class='parts-in-books'>\n" ; 
+			html = "<blockquote>\n    <div class='parts-in-books'>\n" ; 
 
 		for ( key in books ) {
 
@@ -359,7 +370,7 @@ function Manifest(manifest) {
 
 			}
 		}
-		html += "</div>\n" ; 
+		html += "    </blockquote>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
@@ -371,7 +382,6 @@ function Manifest(manifest) {
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
 		html += this.displayProgramSongs() ; 
-		html += this.displayPartsInBooks() ; 
 		html += "</div>\n" ; 
 
 		return html ; 
@@ -452,6 +462,17 @@ function Manifest(manifest) {
 	} ; 
 
 	this.showBook = function(container, bookName) { 
+
+		var bookTitles = container.querySelectorAll('.program .book-summary > ul > li');		
+		[].forEach.call(bookTitles, function(bookTitle) {
+			var thisBookTitleName = bookTitle.getAttribute('name');
+			if ( thisBookTitleName == bookName ) { 
+				bookTitle.classList.add('selected');
+			} else { 
+				bookTitle.classList.remove('selected');
+			}
+		});
+
 		var books = container.querySelectorAll('.program .parts-in-books div');		
 		[].forEach.call(books, function(book) {
 			var thisBookName = book.getAttribute('name');
