@@ -37,7 +37,8 @@ var openStudiosRepertoire = {
 };
 
 var manifest = new Manifest(openStudiosRepertoire);
-manifest.addBooks(altMusicaBooks);
+var container = manifest.setContainerVariableName('container');
+manifest.addBooks(jazzCombustionBooks);
 manifest.addSongsAndPartsInBooks(pianoTrioSongs);
 var content = manifest.displayManifest() ;
 manifest.placeManifestOnReady(content) ; 

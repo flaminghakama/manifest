@@ -222,6 +222,7 @@ function Manifest(manifest) {
 				html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
 			} else {
  				console.log('Skipping missing part: ' + songName + ' - ' + partName);
+ 				console.log('    where song.parts is', song.parts);
 			}
 		} 
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 

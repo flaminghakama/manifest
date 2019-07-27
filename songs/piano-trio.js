@@ -7,7 +7,7 @@ var pianoTrioSongs = {
 	partsInBooks: {
 		"Concert Lead Sheets": {
 			"Anne's Eyes": [ "Concert Arrangement" ], 
-			"Aphrodite's Girl Friday": [ "Concert Lead Sheet", "Concert Melody" ], 
+			"Aphrodite's Girl Friday": [ "Concert Lead Sheet" ], 
 			"Big Seven": [ "Concert Lead Sheet" ], 
 			"Hot Swing": [ "Concert Lead Sheet" ], 
 			"Kickin' The Can": [ "Concert Lead Sheet" ], 
@@ -64,7 +64,7 @@ var pianoTrioSongs = {
 			filePrefix: "annes-eyes/annes-eyes-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-song-form" },
-				"Concert Arrangment": { fileSuffix: "Lead" },
+				"Concert Arrangement": { fileSuffix: "Lead" },
 				"Bb Lead Sheet": { fileSuffix: "Lead-in-Bb" },
 				"Eb Lead Sheet": { fileSuffix: "Lead-in-Eb" },
 				"Bass": { fileSuffix: "Bass" }
