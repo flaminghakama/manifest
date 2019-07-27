@@ -8,13 +8,11 @@
 	padding-top: 1.4em;
 	border-top: dotted #222 2px;
 }
-.program-summary { }
 .book-summary { }
 .program-songs { }
 .song-metadata { 
-	margin-top: 1.8em;
-	padding-top: 0.8em;
-	border-top: dotted #666 2px;
+	margin-top: 0;
+	padding-top: 0;
 }
 .song-metadata ul li { 
 	list-style-type: none; 
@@ -22,7 +20,9 @@
 .song-scores { }
 .song-parts { }
 .song-recordings { }
-.parts-in-books { }
+.parts-in-books { 
+	margin-top: 1.8em;
+}
 .parts-in-book { 
 	margin-bottom: 1.2em;
 }
@@ -33,6 +33,7 @@
 .program-summary ul, .book-summary ul, .song-scores ul, .song-parts ul, .parts-in-book ul, .song-recordings ul { 
     list-style-type: none;
     line-height: 1.2em ;
+    max-width: 28em;
 }
 .book-summary h2 { 
     margin-top: 14px ; 
@@ -46,12 +47,13 @@
 .parts-in-books h3 { 
 	line-height: 0.0em ; 
 }
-.book-summary > ul > li, .song-scores li, .song-parts li {
+.book-summary .instrument-list li, .song-scores li, .song-parts li, .program-summary > ul > li {
 	white-space: nowrap;
 	float: left;
 	margin-right: 1.2em;
 }
-.book-summary > ul > li.selected {
+.book-summary .instrument-list li.selected,
+.program-summary li.selected {
 	font-weight: bold;
 }
 .song-recordings li, song-parts li {
@@ -63,19 +65,21 @@
 	margin-bottom: 4px ; 
 }
 .song-metadata h3 {
-	margin-top: 0.2em ; 
+	margin-top: 0 ; 
 }
 a.name { 
 	line-height: 0.2em;
 }
 
-.program .program-summary ul { 
-	/* display:none; */
+.program .song-details { display:none; }
+.program .song-details.selected { 
+	display:block; 
+	margin-left:2.5em;
+	margin-top:1.2em;
 }
-.program .book-summary ul { 
-	/* display:none; */
-}  
-.program .program-songs div { display:none; }
+.program .song-details div h4 { 
+	padding-left: 1.2em;
+}
 
 .program .parts-in-books h3, 
 .program .parts-in-books div { 

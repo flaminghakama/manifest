@@ -40,6 +40,7 @@ var aprilParallelPlayRepertoire = {
 };
 
 var manifest = new Manifest(aprilParallelPlayRepertoire);
+var container = manifest.setContainerVariableName('container');
 manifest.addBooks(altMusicaSaxophoneBooks);
 manifest.addSongsAndPartsInBooks(originalSongs);
 manifest.addSongsAndPartsInBooks(arrangedSongs);

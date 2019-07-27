@@ -90,7 +90,7 @@ function Manifest(manifest) {
 
     this.displaySong = function(songName, song) {
     	
-		var html = '' ; 
+		var html = "<div class='song-details' name='" + this.rationalizeName(song.metadata.title) + "'>\n";
 
 		if ( song.hasOwnProperty('metadata') ) {
 			html += this.displaySongMetadata(song) ; 
@@ -108,20 +108,23 @@ function Manifest(manifest) {
 			html += this.displaySongRecordings(song) ; 
 		}
 
+		html += 
+			"</div>\n";
+
 		return html ; 
 	} ; 
 
 	this.displaySongMetadata = function(song) { 
 
-		var html = "<a class='name' name='SONG-" + song.metadata.title + "'></a>\n" + 
+		var html = 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <ul>\n" + 
-			"    <li>Composed by " + song.metadata.composer ; 
+			"    <li><b>Composed by</b> " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
 			 song.metadata.arranger !== '' && 
 			 song.metadata.composer !== song.metadata.arranger ) {  
-			html += ', Arranged by ' + song.metadata.arranger ;
+			html += ", <b>arranged by</b> " + song.metadata.arranger ; 
 		}
 		
 		html += "</li>\n" ; 
@@ -131,10 +134,10 @@ function Manifest(manifest) {
 
 				if ( name === 'bpm' ) { 
 			 		value = song.metadata[name] ; 
-					html += "<li>" + value + ' ' + name + "</li>\n" ; 
+					html += "<li><b>Tempo</b>: " + value + ' ' + name + "</li>\n" ; 
 				} else if ( name === 'genre' ) {
 			 		value = song.metadata[name] ; 
-					html += "<li>" + value + "</li>\n" ; 
+					html += "<li><b>Style</b>: " + value + "</li>\n" ; 
 				} else {
 			 		value = song.metadata[name] ; 
 					html += "<li><b>" + name + "</b>: " + value + "</li>\n" ; 
@@ -237,17 +240,23 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += "       <li><a href='#SONG-" + song.metadata.title + "'>" + song.metadata.title + "</a></li>\n";
+			rationalizedSongName = this.rationalizeName(song.metadata.title);
+			html += "           <li name=\"" + rationalizedSongName + 
+				"\" onclick=\"manifest.showSong(" + 
+				this.containerVariableName + ",'" +
+				rationalizedSongName + "')\">" + song.metadata.title + "</li>\n";
 		}
-		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
-
+		html += "        </ul>" ; 
+		html += "        <div class='clear'></div>\n" ;
+		html += this.displayProgramSongs() ; 
+		html += "    <div class='clear'></div>\n</div>\n" ; 
 		return html ; 
 	} ; 
 
 	this.displayProgramSongs = function() { 
 
 		var programIndex, number, songName, song, baseUrl, 
-			html = "<h2>Song Details</h2>\n<div class='program-songs'>\n" ; 
+			html = "" ; 
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
@@ -256,7 +265,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songName] ; 
 			html += this.displaySong(songName, song) ; 
 		}
-		html += "</div>\n" ; 
+		html += "\n" ; 
 
 		return html ; 
 	} ; 
@@ -337,7 +346,7 @@ function Manifest(manifest) {
 			books = this.manifest.partsInBooks, 
 			html = "<h2>Instrumental books</h2>\n<div class='book-summary'>\n" ; 
 
-		html += "    <p>Links to the list of pdf files for each instrument</p>\n    <ul>\n" ;
+		html += "    <p>Links to the pdf files for the parts, by instrument</p>\n    <ul class='instrument-list'>\n" ;
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
@@ -381,19 +390,10 @@ function Manifest(manifest) {
 		html += "<p>" + this.manifest.description + "</p>\n" ; 
 		html += this.displayProgramSummary() ; 
 		html += this.displayBookSummary() ; 
-		html += this.displayProgramSongs() ; 
 		html += "</div>\n" ; 
 
 		return html ; 
 	}
-
-	this.getContainer = function() { 
- 		var container = document.querySelector(this.manifest.selector);
-		if ( container ) { 
-			return container ;
-		} 
-	 	return document.getElementsByTagName('BODY')[0] ;
-	}, 
 
 	this.placeManifestOnReady = function(content) {
 
@@ -483,5 +483,29 @@ function Manifest(manifest) {
 			}
 		});
 	} ; 
+
+	this.showSong = function(container, songName) { 
+		var songs = container.querySelectorAll('.program .program-summary > ul > li');		
+		[].forEach.call(songs, function(song) {
+			var thisSongName = song.getAttribute('name');
+			if ( thisSongName == songName ) { 
+				song.classList.add('selected');
+			} else { 
+				song.classList.remove('selected');
+			}
+		});
+
+		var songDetails = container.querySelectorAll('.program .song-details');		
+		[].forEach.call(songDetails, function(song) {
+			var thisSongName = song.getAttribute('name');
+			if ( thisSongName == songName ) { 
+				song.classList.add('selected');
+			} else { 
+				song.classList.remove('selected');
+			}
+		});
+
+	} ; 
+
 }; 
 

@@ -14,7 +14,7 @@ var arrangedSongs = {
             "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Flute" ], 
 			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
-            "Sweet Georgia Bright": [ "Piccolo", "Flute" ], 
+            "Sweet Georgia Bright": [ "Piccolo" ], 
             "Take Five": [ "Flute" ],
             "Wee": [ "Flute" ],
 			"You Don't Know What Love Is alt.musica": [ "Flute" ]
