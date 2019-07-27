@@ -2,7 +2,7 @@
  *  alt.musica repertoire, May 2019 
  */
 
-var mayRecordingRepertoire = {
+var cnmRepertoire = {
 
 	title: 'alt.musica Repertoire for concert at the Center for New Music, 17 Auguste 2019',
 
@@ -41,7 +41,8 @@ var partSelection = {
 	}
 };
 
-var manifest = new Manifest(mayRecordingRepertoire);
+var manifest = new Manifest(cnmRepertoire);
+var container = manifest.setContainerVariableName('container');
 manifest.addBooks(altMusicaBooks);
 manifest.addSongsAndPartsInBooks(originalSongs);
 manifest.addSongsAndPartsInBooks(arrangedSongs);

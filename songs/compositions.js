@@ -111,7 +111,7 @@ var originalSongs = {
 			"Bechaini": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
             "Listening": [ "'Cello" ],
-            "Mossad": [ "'Cello'" ],
+            "Mossad": [ "'Cello" ],
             "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
 			"Self-Immolation alt.musica": [ "'Cello" ], 
