@@ -42,10 +42,14 @@ var openStudiosRepertoire = {
 	} 
 };
 
+var partSelection = {};
+
 var manifest = new Manifest(openStudiosRepertoire);
+var container = manifest.setContainerVariableName('container');
 manifest.addBooks(altMusicaBooks);
 manifest.addSongsAndPartsInBooks(originalSongs);
 manifest.addSongsAndPartsInBooks(arrangedSongs);
+manifest.selectPartsInBooks(partSelection);
 var content = manifest.displayManifest() ;
 manifest.placeManifestOnReady(content) ; 
 
