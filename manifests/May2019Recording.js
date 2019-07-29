@@ -46,11 +46,4 @@ var partSelection = {
 };
 
 var manifest = new Manifest(mayRecordingRepertoire);
-var container = manifest.setContainerVariableName('container');
-manifest.addBooks(altMusicaBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-manifest.selectPartsInBooks(partSelection);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
-
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ], partSelection ); 

@@ -38,15 +38,12 @@ var partSelection = {
         "Listening": [ "Bass Clarinet in Bb for Bassoon" ],
 		"Bechaini": [ "Bass Clarinet in Bb", "Voice" ], 
         "Rising": [ "Bass Clarinet in Bb for Bassoon" ],
+        "We Declare alt.musica": [ "Bass Clarinet in Bb" ],
+        "Don't Wait for Me": [ "Bass Clarinet in Bb" ], 
+        "Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
+        "The Optimist": [ "Bass Clarinet in Bb for Bassoon" ]
 	}
 };
 
 var manifest = new Manifest(cnmRepertoire);
-var container = manifest.setContainerVariableName('container');
-manifest.addBooks(altMusicaBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-manifest.selectPartsInBooks(partSelection);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
-
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ], partSelection ); 

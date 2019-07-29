@@ -55,11 +55,4 @@ var aprilRepertoire = {
 };
 
 var manifest = new Manifest(aprilRepertoire);
-var container = manifest.setContainerVariableName('container');
-manifest.addBooks(altMusicaBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
-
-
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ] ); 

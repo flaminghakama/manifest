@@ -49,11 +49,17 @@ var januaryRepertoire = {
 	} 
 };
 
-var manifest = new Manifest(januaryRepertoire);
-var container = manifest.setContainerVariableName('container');
-manifest.addBooks(altMusicaBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
+var partSelection = {
+	"Bass Clarinet": {
+        "We Declare alt.musica": [ "Bass Clarinet in Bb" ],
+        "Don't Wait for Me": [ "Bass Clarinet in Bb" ], 
+        "Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ],
+        "Windows": [ "Bass Clarinet in Bb" ],
+		"Stomping Ground": [ "Bass Clarinet in Bb" ],
+        "Smooch alt.musica": [ "Bass Clarinet in Bb" ],
+		"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb" ]
+	}
+};
 
+var manifest = new Manifest(januaryRepertoire);
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ], partSelection ); 

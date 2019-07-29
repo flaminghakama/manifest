@@ -77,16 +77,16 @@ function Manifest(manifest) {
 		}
 	} ;
 
-	this.getBaseUrl = function(song) { 
+	this.constructDom = function() { 
 
-		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
-			return song.baseUrl ; 
-		} 
-		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
-			return this.manifest.baseUrl ;
-		}
-		return '' ;
-	} ;
+		var html = "<h1>" + this.manifest.title + "</h1>\n<div class='program'>\n" ;
+		html += "<p>" + this.manifest.description + "</p>\n" ; 
+		html += this.displayProgramSummary() ; 
+		html += this.displayBookSummary() ; 
+		html += "</div>\n" ; 
+
+		return html ; 
+	}
 
     this.displaySong = function(songName, song) {
     	
@@ -271,10 +271,6 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
-	this.rationalizeName = function(name) { 
-		return name.replace(/[^0-9a-z]/gi, ''); 
-	} ; 
-
 	this.displayPartsInBook = function(chair, partsLists) { 
 
 		var songNumber, 
@@ -385,16 +381,16 @@ function Manifest(manifest) {
 		return html ; 
 	} ; 
 
-	this.displayManifest = function() { 
+	this.getBaseUrl = function(song) { 
 
-		var html = "<h1>" + this.manifest.title + "</h1>\n<div class='program'>\n" ;
-		html += "<p>" + this.manifest.description + "</p>\n" ; 
-		html += this.displayProgramSummary() ; 
-		html += this.displayBookSummary() ; 
-		html += "</div>\n" ; 
-
-		return html ; 
-	}
+		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
+			return song.baseUrl ; 
+		} 
+		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
+			return this.manifest.baseUrl ;
+		}
+		return '' ;
+	} ;
 
 	this.placeManifestOnReady = function(content) {
 
@@ -419,7 +415,31 @@ function Manifest(manifest) {
 
 			false
 		);
-	}
+	} ;
+
+	this.populate = function( books, songLists, partSelection, containerName ) { 
+
+		containerName = containerName || 'container' ;
+		this.setContainerVariableName(containerName); 
+		
+		this.addBooks(books) ;
+
+		var thisManifest = this;
+		songLists.forEach( function(songList){
+			thisManifest.addSongsAndPartsInBooks(songList);
+		});
+
+		if ( partSelection ) {
+			this.selectPartsInBooks(partSelection);
+		}
+
+		var content = this.constructDom() ;
+		this.placeManifestOnReady(content) ; 
+	} ; 
+
+	this.rationalizeName = function(name) { 
+		return name.replace(/[^0-9a-z]/gi, ''); 
+	} ; 
 
 	this.selectPartsInBooks = function(partsInBooks) { 
 
@@ -447,6 +467,7 @@ function Manifest(manifest) {
 						newListOfParts.push(partName);
 					} else { 
 						console.log('Skipping part that is not in song: ', partName);
+						console.log('    where song parts are', this.manifest.songs[songName].parts);
 					}
 	 			}
 	 			if ( newListOfParts.length ) {	
