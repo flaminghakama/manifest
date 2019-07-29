@@ -9,6 +9,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Flute" ], 
 			"Bechaini": [ "Flute" ], 
             "Don't Wait for Me": [ "Alto Flute in G", "Flute" ],
+			"Dreams": [ "Flute" ], 
             "Listening": [ "Flute" ],
             "Mossad": [ "Flute" ],
             "The Optimist": [ "Piccolo", "Flute" ],
@@ -35,6 +36,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
 			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
+			"Dreams": [ "Clarinet in A" ], 
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "Mossad": [ "Bass Clarinet in Bb" ],
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon", "Voice" ],
@@ -71,6 +73,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Violin I" ], 
 			"Bechaini": [ "Violin I" ], 
             "Don't Wait for Me": [ "Violin I" ],
+			"Dreams": [ "Violin I" ], 
             "Listening": [ "Violin I" ],
             "Mossad": [ "Violin I" ],
             "The Optimist": [ "Violin I" ],
@@ -84,6 +87,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Violin II" ], 
 			"Bechaini": [ "Violin II" ], 
             "Don't Wait for Me": [ "Violin II" ],
+			"Dreams": [ "Violin II" ], 
             "Listening": [ "Violin II" ],
             "Mossad": [ "Violin II" ],
             "The Optimist": [ "Violin II" ],
@@ -97,6 +101,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Viola" ], 
 			"Bechaini": [ "Viola" ], 
             "Don't Wait for Me": [ "Viola" ],
+			"Dreams": [ "Viola" ], 
             "Listening": [ "Viola" ],
             "Mossad": [ "Viola" ],
             "The Optimist": [ "Viola" ],
@@ -110,6 +115,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "'Cello" ], 
 			"Bechaini": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
+			"Dreams": [ "'Cello" ], 
             "Listening": [ "'Cello" ],
             "Mossad": [ "'Cello" ],
             "The Optimist": [ "'Cello" ],
@@ -269,6 +275,35 @@ var originalSongs = {
 				}
 			}
 		},
+
+        "Dreams": {
+            metadata: { 
+                title: "Dreams",
+                composer: "Elaine Paul",
+                genre: "Classical",
+                bpm: '144',
+                key: "D"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "dreams/strings/dreams-",
+            parts: {
+                "Flute": { fileSuffix: "Flute" },
+                "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+                "Violin I": { fileSuffix: "Violin-I" },
+                "Violin II": { fileSuffix: "Violin-II" },
+                "Viola": { fileSuffix: "Viola" },
+                "'Cello": { fileSuffix: "Cello" }
+            },
+            scores: {
+                "Transposed": { fileSuffix: "Score-Transposed" }
+            },
+            recordings: {
+                original: {
+                    description: 'ACMAP Sextet',
+                    url: 'https://soundcloud.com/david-elaine-alt/dreams'
+                }
+            }
+        },
 
 		"Listening": {
 			metadata: { 

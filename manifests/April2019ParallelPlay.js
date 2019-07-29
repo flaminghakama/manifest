@@ -31,12 +31,8 @@ var aprilParallelPlayRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-
-	partsInBooks: {
-	},
-
-	songs: {
-	} 
+ 	partsInBooks: {}, 
+ 	songs: {}
 };
 
 var partSelection = {

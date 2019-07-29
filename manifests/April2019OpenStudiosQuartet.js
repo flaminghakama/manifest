@@ -28,12 +28,8 @@ var openStudiosRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-
-	partsInBooks: {
-	},
-
-	songs: {
-	} 
+	partsInBooks: {}, 
+	songs: {}
 };
 
 var manifest = new Manifest(openStudiosRepertoire);

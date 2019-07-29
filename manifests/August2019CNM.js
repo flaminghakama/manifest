@@ -27,10 +27,8 @@ var cnmRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-	partsInBooks: {
-	},
-	songs: {
-	} 
+	partsInBooks: { }, 
+	songs: { }
 };
 
 var partSelection = {

@@ -24,10 +24,8 @@ var mayRecordingRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-	partsInBooks: {
-	},
-	songs: {
-	} 
+	partsInBooks: { }, 
+	songs: { }
 };
 
 var partSelection = {

@@ -46,12 +46,8 @@ var aprilRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-
-	partsInBooks: {
-	},
-
-	songs: {
-	} 
+	partsInBooks: { },
+	songs: { }
 };
 
 var manifest = new Manifest(aprilRepertoire);
