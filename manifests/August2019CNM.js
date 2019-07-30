@@ -2,7 +2,7 @@
  *  alt.musica repertoire, May 2019 
  */
 
-var mayRecordingRepertoire = {
+var cnmRepertoire = {
 
 	title: 'alt.musica Repertoire for concert at the Center for New Music, 17 Auguste 2019',
 
@@ -27,10 +27,8 @@ var mayRecordingRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
-	partsInBooks: {
-	},
-	songs: {
-	} 
+	partsInBooks: { }, 
+	songs: { }
 };
 
 var partSelection = {
@@ -38,14 +36,12 @@ var partSelection = {
         "Listening": [ "Bass Clarinet in Bb for Bassoon" ],
 		"Bechaini": [ "Bass Clarinet in Bb", "Voice" ], 
         "Rising": [ "Bass Clarinet in Bb for Bassoon" ],
+        "We Declare alt.musica": [ "Bass Clarinet in Bb" ],
+        "Don't Wait for Me": [ "Bass Clarinet in Bb" ], 
+        "Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
+        "The Optimist": [ "Bass Clarinet in Bb for Bassoon" ]
 	}
 };
 
-var manifest = new Manifest(mayRecordingRepertoire);
-manifest.addBooks(altMusicaBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-manifest.selectPartsInBooks(partSelection);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
-
+var manifest = new Manifest(cnmRepertoire);
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ], partSelection ); 

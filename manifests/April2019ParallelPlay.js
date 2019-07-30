@@ -31,20 +31,27 @@ var aprilParallelPlayRepertoire = {
 
 	bookOrder: [ ],
 	books: { },
+ 	partsInBooks: {}, 
+ 	songs: {}
+};
 
-	partsInBooks: {
+var partSelection = {
+	"Bass Clarinet": {
+        "Beautiful Moons Ago (Up M2)": [ "Voice for A" ], 
+        "It Only Happens Once": [ "Voice for A" ], 
+        "Don't Wait for Me": [ "Solo Clarinet in A" ],
+		"We Declare alt.musica": [ "Voice for Bb" ], 
+		"Self-Immolation alt.musica": [ "Solo Soprano Saxophone in Bb" ], 
+		"Windows": [ "Solo Clarinet in A" ], 
+		"Stomping Ground": [ "Solo Tenor Saxophone in Bb" ], 
+		"As It Was alt.musica": [ "Solo Tenor Saxophone in Bb" ], 
+		"Bechaini": [ "Voice for A" ],
+		"You Don't Know What Love Is alt.musica": [ "Voice for Bb" ]
 	},
-
-	songs: {
-	} 
+	"Drums": {
+		"Self-Immolation alt.musica": [ "Drums" ], 
+	}
 };
 
 var manifest = new Manifest(aprilParallelPlayRepertoire);
-manifest.addBooks(altMusicaSaxophoneBooks);
-manifest.addSongsAndPartsInBooks(originalSongs);
-manifest.addSongsAndPartsInBooks(arrangedSongs);
-var content = manifest.displayManifest() ;
-manifest.placeManifestOnReady(content) ; 
-
-
-
+manifest.populate( altMusicaSaxophoneBooks, [ originalSongs, arrangedSongs ], partSelection ); 

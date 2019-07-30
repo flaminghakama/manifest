@@ -9,6 +9,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Flute" ], 
 			"Bechaini": [ "Flute" ], 
             "Don't Wait for Me": [ "Alto Flute in G", "Flute" ],
+			"Dreams": [ "Flute" ], 
             "Listening": [ "Flute" ],
             "Mossad": [ "Flute" ],
             "The Optimist": [ "Piccolo", "Flute" ],
@@ -32,17 +33,18 @@ var originalSongs = {
             "Windows": [ "English Horn in F" ],
 		},
 		"Bass Clarinet": {
-			"As It Was alt.musica": [ "Bass Clarinet in Bb" ], 
+			"As It Was alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
 			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
+			"Dreams": [ "Clarinet in A" ], 
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "Mossad": [ "Bass Clarinet in Bb" ],
-            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon" ],
+            "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon", "Voice" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
-			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
-            "Stomping Ground": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
-			"We Declare alt.musica": [ "Bass Clarinet in Bb" ], 
-            "Windows": [ "Bass Clarinet in Bb", "Clarinet in A" ],
+			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Soprano Saxophone in Bb" ], 
+            "Stomping Ground": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
+			"We Declare alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
+            "Windows": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Alto Saxophone in Eb" ]
 		},
 		"Voice/Percussion": {
 			"Bechaini": [ "Voice" ], 
@@ -71,6 +73,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Violin I" ], 
 			"Bechaini": [ "Violin I" ], 
             "Don't Wait for Me": [ "Violin I" ],
+			"Dreams": [ "Violin I" ], 
             "Listening": [ "Violin I" ],
             "Mossad": [ "Violin I" ],
             "The Optimist": [ "Violin I" ],
@@ -84,6 +87,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Violin II" ], 
 			"Bechaini": [ "Violin II" ], 
             "Don't Wait for Me": [ "Violin II" ],
+			"Dreams": [ "Violin II" ], 
             "Listening": [ "Violin II" ],
             "Mossad": [ "Violin II" ],
             "The Optimist": [ "Violin II" ],
@@ -97,6 +101,7 @@ var originalSongs = {
 			"As It Was alt.musica": [ "Viola" ], 
 			"Bechaini": [ "Viola" ], 
             "Don't Wait for Me": [ "Viola" ],
+			"Dreams": [ "Viola" ], 
             "Listening": [ "Viola" ],
             "Mossad": [ "Viola" ],
             "The Optimist": [ "Viola" ],
@@ -110,8 +115,9 @@ var originalSongs = {
 			"As It Was alt.musica": [ "'Cello" ], 
 			"Bechaini": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
+			"Dreams": [ "'Cello" ], 
             "Listening": [ "'Cello" ],
-            "Mossad": [ "'Cello'" ],
+            "Mossad": [ "'Cello" ],
             "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
 			"Self-Immolation alt.musica": [ "'Cello" ], 
@@ -148,8 +154,10 @@ var originalSongs = {
 			filePrefix: "as-it-was/strings/as-it-was-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
-				"English Horn": { fileSuffix: "English-Horn-in-F" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Tenor Saxophone in Bb": { fileSuffix: "Solo-Tenor-Saxophone-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
@@ -267,6 +275,35 @@ var originalSongs = {
 				}
 			}
 		},
+
+        "Dreams": {
+            metadata: { 
+                title: "Dreams",
+                composer: "Elaine Paul",
+                genre: "Classical",
+                bpm: '144',
+                key: "D"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "dreams/strings/dreams-",
+            parts: {
+                "Flute": { fileSuffix: "Flute" },
+                "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+                "Violin I": { fileSuffix: "Violin-I" },
+                "Violin II": { fileSuffix: "Violin-II" },
+                "Viola": { fileSuffix: "Viola" },
+                "'Cello": { fileSuffix: "Cello" }
+            },
+            scores: {
+                "Transposed": { fileSuffix: "Score-Transposed" }
+            },
+            recordings: {
+                original: {
+                    description: 'ACMAP Sextet',
+                    url: 'https://soundcloud.com/david-elaine-alt/dreams'
+                }
+            }
+        },
 
 		"Listening": {
 			metadata: { 
@@ -449,6 +486,8 @@ var originalSongs = {
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
+				"Solo Soprano Saxophone in Bb": { fileSuffix: "Solo-Soprano-Saxophone-in-Bb" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Condensed Score": { fileSuffix: "Condensed-Score" },
@@ -503,6 +542,7 @@ var originalSongs = {
 				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Solo Tenor Saxophone in Bb": { fileSuffix: "Solo-Tenor-Saxophone-in-Bb" },
 				"Claps": { fileSuffix: "Claps" },
 				"Clave": { fileSuffix: "Clave" },
 				"Drums": { fileSuffix: "Condensed-Score" },
@@ -551,6 +591,9 @@ var originalSongs = {
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Voice": { fileSuffix: "Voice" },
+				"Voice for A": { fileSuffix: "Voice-for-A" },
+				"Voice for Bb": { fileSuffix: "Voice-for-Bb" },
+				"Voice for Eb": { fileSuffix: "Voice-for-Eb" },
 				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
@@ -601,7 +644,9 @@ var originalSongs = {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Clarinet in A": { fileSuffix: "Clarinet-in-A" },
+				"Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Solo Alto Saxophone in Eb": { fileSuffix: "Solo-Alto-Saxophone-in-Eb" },
 				"Claps": { fileSuffix: "Claps" },
 				"Clave": { fileSuffix: "Clave" },
 				"Drums": { fileSuffix: "Drums" },

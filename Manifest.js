@@ -63,7 +63,6 @@ function Manifest(manifest) {
 	} ;
 
 	this.addBooks = function(newManifest) {
-
 		var manifestToUse = newManifest ? newManifest : this.manifest;
 		if ( manifestToUse.books ) { 
 			this.books = manifestToUse.books;
@@ -78,20 +77,20 @@ function Manifest(manifest) {
 		}
 	} ;
 
-	this.getBaseUrl = function(song) { 
+	this.constructDom = function() { 
 
-		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
-			return song.baseUrl ; 
-		} 
-		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
-			return this.manifest.baseUrl ;
-		}
-		return '' ;
-	} ;
+		var html = "<h1>" + this.manifest.title + "</h1>\n<div class='program'>\n" ;
+		html += "<p>" + this.manifest.description + "</p>\n" ; 
+		html += this.displayProgramSummary() ; 
+		html += this.displayBookSummary() ; 
+		html += "</div>\n" ; 
+
+		return html ; 
+	}
 
     this.displaySong = function(songName, song) {
     	
-		var html = '' ; 
+		var html = "<div class='song-details' name='" + this.rationalizeName(song.metadata.title) + "'>\n";
 
 		if ( song.hasOwnProperty('metadata') ) {
 			html += this.displaySongMetadata(song) ; 
@@ -109,20 +108,23 @@ function Manifest(manifest) {
 			html += this.displaySongRecordings(song) ; 
 		}
 
+		html += 
+			"</div>\n";
+
 		return html ; 
 	} ; 
 
 	this.displaySongMetadata = function(song) { 
 
-		var html = "<a class='name' name='SONG-" + song.metadata.title + "'></a>\n" + 
+		var html = 
 			"<div class='song-metadata'>\n<h3>" + song.metadata.title + "</h3>\n" +
 			"    <ul>\n" + 
-			"    <li>Composed by " + song.metadata.composer ; 
+			"    <li><b>Composed by</b> " + song.metadata.composer ; 
 
 		if ( song.metadata.hasOwnProperty('arranger') && 
 			 song.metadata.arranger !== '' && 
 			 song.metadata.composer !== song.metadata.arranger ) {  
-			html += ', Arranged by ' + song.metadata.arranger ;
+			html += ", <b>arranged by</b> " + song.metadata.arranger ; 
 		}
 		
 		html += "</li>\n" ; 
@@ -132,10 +134,10 @@ function Manifest(manifest) {
 
 				if ( name === 'bpm' ) { 
 			 		value = song.metadata[name] ; 
-					html += "<li>" + value + ' ' + name + "</li>\n" ; 
+					html += "<li><b>Tempo</b>: " + value + ' ' + name + "</li>\n" ; 
 				} else if ( name === 'genre' ) {
 			 		value = song.metadata[name] ; 
-					html += "<li>" + value + "</li>\n" ; 
+					html += "<li><b>Style</b>: " + value + "</li>\n" ; 
 				} else {
 			 		value = song.metadata[name] ; 
 					html += "<li><b>" + name + "</b>: " + value + "</li>\n" ; 
@@ -220,6 +222,7 @@ function Manifest(manifest) {
 				html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
 			} else {
  				console.log('Skipping missing part: ' + songName + ' - ' + partName);
+ 				console.log('    where song.parts is', song.parts);
 			}
 		} 
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
@@ -238,17 +241,23 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songIndex = this.manifest.program[number] ; 
 			song = this.manifest.songs[songIndex] ; 
-			html += "       <li><a href='#SONG-" + song.metadata.title + "'>" + song.metadata.title + "</a></li>\n";
+			rationalizedSongName = this.rationalizeName(song.metadata.title);
+			html += "           <li name=\"" + rationalizedSongName + 
+				"\" onclick=\"manifest.showSong(" + 
+				this.containerVariableName + ",'" +
+				rationalizedSongName + "')\">" + song.metadata.title + "</li>\n";
 		}
-		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
-
+		html += "        </ul>" ; 
+		html += "        <div class='clear'></div>\n" ;
+		html += this.displayProgramSongs() ; 
+		html += "    <div class='clear'></div>\n</div>\n" ; 
 		return html ; 
 	} ; 
 
 	this.displayProgramSongs = function() { 
 
 		var programIndex, number, songName, song, baseUrl, 
-			html = "<h2>Song Details</h2>\n<div class='program-songs'>\n" ; 
+			html = "" ; 
 
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
@@ -257,7 +266,7 @@ function Manifest(manifest) {
 			song = this.manifest.songs[songName] ; 
 			html += this.displaySong(songName, song) ; 
 		}
-		html += "</div>\n" ; 
+		html += "\n" ; 
 
 		return html ; 
 	} ; 
@@ -273,8 +282,9 @@ function Manifest(manifest) {
 			href, 
 			that = this,
 			manifest = this.manifest,  
-			html = "<a class='name' name='CHAIR-" + chair + "'></a>\n<h3>" + chair + "</h3>\n<div class='parts-in-book'>\n    <ul>\n" ; 
- 
+			html = "<div name='" + this.rationalizeName(chair) + "'>\n<h3>" + chair + "</h3>\n" +  
+				"<ul class='parts-in-book'>\n" ; 
+
 		manifest.programOrder.forEach( function(songNumber) {
 
 			songId = manifest.program[songNumber] ;
@@ -333,14 +343,21 @@ function Manifest(manifest) {
 			books = this.manifest.partsInBooks, 
 			html = "<h2>Instrumental books</h2>\n<div class='book-summary'>\n" ; 
 
-		html += "    <p>Links to the list of pdf files for each instrument</p>\n    <ul>\n" ;
+		html += "    <p>Links to the pdf files for the parts, by instrument</p>\n    <ul class='instrument-list'>\n" ;
 
 		for ( key in books ) {
 			if ( books.hasOwnProperty(key) ) {
-				html += '        <li><a href="#CHAIR-' + key + '">' + key + "</a></li>\n";
+				html += "        <li " + 
+					"name='" + this.rationalizeName(key) + "' " + 
+					"onClick='manifest.showBook(" + 
+						this.containerVariableName + ',"' + this.rationalizeName(key) + '");' +
+					"'>" + key + '</li>\n';
 			}
 		}
-		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
+		html += "    </ul>\n";
+		html += "    <div class='clear'></div>\n" ;
+		html += this.displayPartsInBooks() ; 
+		html += "    <div class='clear'></div>\n</div>\n" ;
 
 		return html ; 
 	} ; 
@@ -349,7 +366,7 @@ function Manifest(manifest) {
 
 		var key,
 			books = this.manifest.partsInBooks, 
-			html = "<h2>Instrumental Books</h2>\n<div class='parts-in-books'>\n" ; 
+			html = "<blockquote>\n    <div class='parts-in-books'>\n" ; 
 
 		for ( key in books ) {
 
@@ -359,23 +376,21 @@ function Manifest(manifest) {
 
 			}
 		}
-		html += "</div>\n" ; 
+		html += "    </blockquote>\n</div>\n" ; 
 
 		return html ; 
 	} ; 
 
-	this.displayManifest = function() { 
+	this.getBaseUrl = function(song) { 
 
-		var html = "<h1>" + this.manifest.title + "</h1>\n<div class='program'>\n" ;
-		html += "<p>" + this.manifest.description + "</p>\n" ; 
-		html += this.displayProgramSummary() ; 
-		html += this.displayBookSummary() ; 
-		html += this.displayProgramSongs() ; 
-		html += this.displayPartsInBooks() ; 
-		html += "</div>\n" ; 
-
-		return html ; 
-	}
+		if ( song.hasOwnProperty('baseUrl') && song.baseUrl !== '' ) {
+			return song.baseUrl ; 
+		} 
+		if ( this.manifest.hasOwnProperty('baseUrl') && this.manifest.baseUrl !== '' ) {
+			return this.manifest.baseUrl ;
+		}
+		return '' ;
+	} ;
 
 	this.placeManifestOnReady = function(content) {
 
@@ -385,21 +400,46 @@ function Manifest(manifest) {
 		
 			'DOMContentLoaded', 
 
-				function(){
-					var containers = document.querySelectorAll(entity.manifest.selector), 
-						container ; 
-					if ( containers.length > 0 ) { 
-						container = containers[0] ;
-						container.innerHTML = content ;
-						return ; 
-					} 
-					console.log('Could not find elmement with id ' + entity.manifest.selector + ', so addding child.') ;
-					document.getElementsByTagName('BODY')[0].innerHTML = content ;
-				}, 
+			function(){
+				var containers = document.querySelectorAll(entity.manifest.selector), 
+					container ; 
+				if ( containers.length > 0 ) { 
+					container = containers[0] ;
+					container.innerHTML = content ;
+					this.container = container;
+					return ; 
+				} 
+				console.log('Could not find elmement with id ' + entity.manifest.selector + ', so addding child.') ;
+				document.getElementsByTagName('BODY')[0].innerHTML = content ;
+			}, 
 
 			false
 		);
-	}
+	} ;
+
+	this.populate = function( books, songLists, partSelection, containerName ) { 
+
+		containerName = containerName || 'container' ;
+		this.setContainerVariableName(containerName); 
+		
+		this.addBooks(books) ;
+
+		var thisManifest = this;
+		songLists.forEach( function(songList){
+			thisManifest.addSongsAndPartsInBooks(songList);
+		});
+
+		if ( partSelection ) {
+			this.selectPartsInBooks(partSelection);
+		}
+
+		var content = this.constructDom() ;
+		this.placeManifestOnReady(content) ; 
+	} ; 
+
+	this.rationalizeName = function(name) { 
+		return name.replace(/[^0-9a-z]/gi, ''); 
+	} ; 
 
 	this.selectPartsInBooks = function(partsInBooks) { 
 
@@ -427,6 +467,7 @@ function Manifest(manifest) {
 						newListOfParts.push(partName);
 					} else { 
 						console.log('Skipping part that is not in song: ', partName);
+						console.log('    where song parts are', this.manifest.songs[songName].parts);
 					}
 	 			}
 	 			if ( newListOfParts.length ) {	
@@ -437,5 +478,56 @@ function Manifest(manifest) {
 	 		}
 		}		
 	};
+
+	this.setContainerVariableName = function(containerVariableName) { 
+		this.containerVariableName = containerVariableName;
+	} ; 
+
+	this.showBook = function(container, bookName) { 
+
+		var bookTitles = container.querySelectorAll('.program .book-summary > ul > li');		
+		[].forEach.call(bookTitles, function(bookTitle) {
+			var thisBookTitleName = bookTitle.getAttribute('name');
+			if ( thisBookTitleName == bookName ) { 
+				bookTitle.classList.add('selected');
+			} else { 
+				bookTitle.classList.remove('selected');
+			}
+		});
+
+		var books = container.querySelectorAll('.program .parts-in-books div');		
+		[].forEach.call(books, function(book) {
+			var thisBookName = book.getAttribute('name');
+			if ( thisBookName == bookName ) { 
+				book.classList.add('selected');
+			} else { 
+				book.classList.remove('selected');
+			}
+		});
+	} ; 
+
+	this.showSong = function(container, songName) { 
+		var songs = container.querySelectorAll('.program .program-summary > ul > li');		
+		[].forEach.call(songs, function(song) {
+			var thisSongName = song.getAttribute('name');
+			if ( thisSongName == songName ) { 
+				song.classList.add('selected');
+			} else { 
+				song.classList.remove('selected');
+			}
+		});
+
+		var songDetails = container.querySelectorAll('.program .song-details');		
+		[].forEach.call(songDetails, function(song) {
+			var thisSongName = song.getAttribute('name');
+			if ( thisSongName == songName ) { 
+				song.classList.add('selected');
+			} else { 
+				song.classList.remove('selected');
+			}
+		});
+
+	} ; 
+
 }; 
 
