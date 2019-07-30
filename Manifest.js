@@ -366,7 +366,7 @@ function Manifest(manifest) {
 
 		var key,
 			books = this.manifest.partsInBooks, 
-			html = "<blockquote>\n    <div class='parts-in-books'>\n" ; 
+			html = "<div class='parts-in-books'>\n" ; 
 
 		for ( key in books ) {
 
@@ -376,7 +376,7 @@ function Manifest(manifest) {
 
 			}
 		}
-		html += "    </blockquote>\n</div>\n" ; 
+		html += "</div>\n" ; 
 
 		return html ; 
 	} ; 
