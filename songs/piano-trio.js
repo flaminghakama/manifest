@@ -77,8 +77,12 @@ var pianoTrioSongs = {
 					url: 'https://soundcloud.com/david-elaine-alt/annes-eyes-sticks'
 				},
 				quartet: {
-					description: 'Quartet',
+					description: 'Studio Quartet',
 					url: 'https://soundcloud.com/david-elaine-alt/lester-eyes'
+				},
+				openstudios: {
+					description: 'Live Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/annes-eyes'
 				}
 			}	
 		},
@@ -104,6 +108,10 @@ var pianoTrioSongs = {
 				midi: {
 					description: 'Synth',
 					url: 'https://soundcloud.com/david-elaine-alt/aphrodites-girl-friday-midi/s-E1nx5'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/aphrodites-girl-friday'
 				}
 			}
 		},
@@ -131,6 +139,10 @@ var pianoTrioSongs = {
 				midi: {
 					description: 'Synth',
 					url: 'https://soundcloud.com/david-elaine-alt/big-seven-synth/s-LUEjT'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/big-seven'
 				}
 			}
 		},
@@ -157,6 +169,10 @@ var pianoTrioSongs = {
 				trio: {
 					description: 'Violin & Clarinet (Chart starts at 1:06)',
 					url: 'https://soundcloud.com/david-elaine-alt/hot-swing#t=1:06'
+				},
+				quartet: {
+					description: 'Jazz quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/hot-swing-1'
 				}
 			}
 		},
@@ -188,6 +204,10 @@ var pianoTrioSongs = {
 				trio: {
 					description: 'Piano Trio with Scat Vocals',
 					url: 'https://soundcloud.com/david-elaine-alt/kickin-the-can-so-woke-brushes'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/kickin-the-can'
 				}
 			}
 		},
@@ -216,6 +236,10 @@ var pianoTrioSongs = {
 				synth: {
 					description: 'Synth',
 					url: 'https://soundcloud.com/david-elaine-alt/linsanity-midi/s-x9zZv'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/linsanity'
 				}
 			}
 		},
@@ -244,6 +268,10 @@ var pianoTrioSongs = {
 				trio: {
 					description: 'Piano Trio',
 					url: 'https://soundcloud.com/david-elaine-alt/swampy'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/swampy-1'
 				}
 			}
 		},
@@ -278,6 +306,10 @@ var pianoTrioSongs = {
 				arrangment: {
 					description: 'Piano Trio (arrangement)',
 					url: 'https://soundcloud.com/david-elaine-alt/thick-as-a-nickle-sticks'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/thick-as-a-nickle-1'
 				}
 			}
 		},
@@ -309,6 +341,10 @@ var pianoTrioSongs = {
 				trio: {
 					description: 'Piano Trio',
 					url: 'https://soundcloud.com/david-elaine-alt/wag-that-tail'
+				},
+				quartet: {
+					description: 'Quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/wag-that-tail-1'
 				}
 			}
 		}
