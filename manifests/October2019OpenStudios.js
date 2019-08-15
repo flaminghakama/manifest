@@ -12,24 +12,20 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '14', '15', '02', '03', '04', '13', '06', '05', '07', '08', '09', '10', '11', '12' ],
+	programOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11' ],
 
 	program: {
-		'01': "Beautiful Moons Ago (Down M2)",
-		'14': "Beautiful Moons Ago",
-		'15': "Beautiful Moons Ago (Up M2)",
+		'01': "Listening", 
         '02': "It Only Happens Once",
-		'03': "You Don't Know What Love Is alt.musica",
-		'04': "The Optimist", 
-		'05': "We Declare alt.musica",
-		'06': "Bechaini",
-		'07': "As It Was alt.musica",
-		'08': "Self-Immolation alt.musica",
-		'09': "Don't Wait for Me",
-		'10': "Stomping Ground",
-		'11': "Take Five",
-        '12': "Wee", 
-        '13': "Nakamarra"
+        '03': "Rising",
+		'04': "We Declare alt.musica",
+		'05': "Bechaini",
+		'06': "As It Was alt.musica",
+		'07': "Self-Immolation alt.musica",
+		'08': "Don't Wait for Me",
+		'09': "Mossad",
+		'10': "Taken All My Life",
+		'11': "The Optimist"
 	},
 
 	bookOrder: [ ],

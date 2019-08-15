@@ -16,6 +16,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Alto Flute in G" ],
             "Sweet Georgia Bright": [ "Piccolo" ], 
             "Take Five": [ "Flute" ],
+            "Taken All My Life": [ "Flute" ],
             "Wee": [ "Flute" ],
 			"You Don't Know What Love Is alt.musica": [ "Flute" ]
         },
@@ -30,6 +31,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "English Horn in F" ],
             "Sweet Georgia Bright": [ "English Horn in F" ], 
             "Take Five": [ "English Horn in F" ],
+            "Taken All My Life": [ "English Horn in F" ],
             "Wee": [ "English Horn in F for Clarinet" ],
 			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
 		},
@@ -44,6 +46,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass Clarinet in Bb" ],
             "Sweet Georgia Bright": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Take Five": [ "Bass Clarinet in Bb", "Clarinet in A", "Alto Saxophone in Eb" ],
+            "Taken All My Life": [ "Bass Clarinet in Bb" ],
             "Wee": [ "Bass Clarinet in Bb for Bassoon", "Clarinet in A", "Clarinet in Bb" ],
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ]
         },
@@ -54,6 +57,7 @@ var arrangedSongs = {
             "It Only Happens Once": [ "Voice" ],
             "Nakamarra": [ "Voice" ],
 			"Smooch alt.musica": [ "Voice" ], 
+            "Taken All My Life": [ "Voice" ],
 			"You Don't Know What Love Is alt.musica": [ "Voice" ]
    		},
 		"Drums": {
@@ -67,6 +71,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Drums" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Take Five": [ "Violin I" ],
+            "Taken All My Life": [ "Voice" ],
             "Wee": [ "Violin I" ],
 			"You Don't Know What Love Is alt.musica": [ "Drums" ]
 		},
@@ -81,6 +86,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Violin I" ],
             "Sweet Georgia Bright": [ "Violin I" ], 
             "Take Five": [ "Violin I" ],
+            "Taken All My Life": [ "Violin I" ],
             "Wee": [ "Violin I" ],
 			"You Don't Know What Love Is alt.musica": [ "Violin I" ]
 		},
@@ -94,6 +100,7 @@ var arrangedSongs = {
             "Nakamarra": [ "Voice" ],
 			"Softly, As In A Morning Sunrise alt.musica": [ "Violin II" ],
             "Take Five": [ "Violin II" ],
+            "Taken All My Life": [ "Violin II" ],
             "Wee": [ "Violin II" ],
             "Sweet Georgia Bright": [ "Violin II" ], 
 			"You Don't Know What Love Is alt.musica": [ "Violin II" ]
@@ -109,6 +116,7 @@ var arrangedSongs = {
 			"Smooch alt.musica": [ "Viola" ], 
             "Sweet Georgia Bright": [ "Viola" ], 
             "Take Five": [ "Viola" ],
+            "Taken All My Life": [ "Viola" ],
             "Wee": [ "Viola" ],
 			"You Don't Know What Love Is alt.musica": [ "Viola" ] 
 		},
@@ -123,6 +131,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "'Cello" ],
             "Sweet Georgia Bright": [ "'Cello" ], 
             "Take Five": [ "'Cello" ],
+            "Taken All My Life": [ "'Cello" ],
             "Wee": [ "'Cello" ],
 			"You Don't Know What Love Is alt.musica": [ "'Cello" ]
 		},
@@ -137,6 +146,7 @@ var arrangedSongs = {
 			"Softly, As In A Morning Sunrise alt.musica": [ "Bass" ],
             "Sweet Georgia Bright": [ "Bass" ], 
             "Take Five": [ "Bass" ],
+            "Taken All My Life": [ "Voice" ],
             "Wee": [ "Bass" ],
 			"You Don't Know What Love Is alt.musica": [ "Bass" ] 
 		}
@@ -566,6 +576,54 @@ var arrangedSongs = {
 				rehearsal: {
 					description: 'First rehearsal',
 					url: 'https://soundcloud.com/david-elaine-alt/take-five-rehearsal/s-i7LWj'
+				}
+			}
+		}, 
+
+		"Taken All My Life": {
+			metadata: { 
+				title: "Taken All My Life",
+				composer: "P. McMath",
+				arranger: "D. Elaine Alt", 
+				genre: "Ballad",
+				bpm: '54',
+				key: "B"
+			},
+			fileLocation: "collaborations/paula-mcmath",
+			filePrefix: "taken-all-my-life-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Voice": { fileSuffix: "Voice" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				original: {
+					description: 'Original recording',
+					url: 'https://www.youtube.com/watch?v=vFGmYHaF3Nk'
+				},
+				accompaniment: {
+					description: 'String Quartet - Accompaniment',
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-accompaniment'
+				},
+				instrumental: {
+					description: 'String Quartet - Feature',
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-feature'
+				},
+				dramedy: {
+					description: 'String Quartet - Dramedy',
+					url: 'https://soundcloud.com/david-elaine-alt/he-who-hesitates-quartet-pizzicato'
+				},
+				mashup: {
+					description: 'String Quartet - mashup',
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-lsd'
 				}
 			}
 		}, 
