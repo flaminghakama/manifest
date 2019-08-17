@@ -156,7 +156,7 @@ var pianoTrioSongs = {
 				key: "D minor"
 			},
 			fileLocation: "violin-clarinet",
-			filePrefix: "hot-swing-",
+			filePrefix: "hot-swing/hot-swing-",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
 				"Clarinet in Bb": { fileSuffix: "Bb-Clarinet" },
