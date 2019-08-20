@@ -653,8 +653,8 @@ var arrangedSongs = {
 			},
 			scores: {
 				"Accompaniment - Transposed": { fileSuffix: "Score-Accompaniment" },
-				"Dramedy": { fileSuffix: "Score-Quartet-Dramedy" },
-				"Orchestration": { fileSuffix: "Score-Quartet-Orchestration" },
+				"Dramedy": { fileSuffix: "Score-Dramedy" },
+				"Orchestration": { fileSuffix: "Score-Orchestration" },
 				"Quartet Feature - Transposed": { fileSuffix: "Score-Quartet-Feature" },
 				"Complete - Transposed": { fileSuffix: "Score-Transposed" }
 			},
