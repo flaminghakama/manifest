@@ -14,7 +14,7 @@ var openStudiosRepertoire = {
 
 	programOrder: [ 
 		'02', '03', '04', '05', '06', 
-		'01', '10', '07', '08', '11', '09'  
+		'10', '07', '08', '01', '09'  
 	],
 
 	program: {
@@ -27,8 +27,7 @@ var openStudiosRepertoire = {
 		'07': "Aphrodite's Girl Friday",
 		'08': "Hot Swing", 
 		'09': "Kickin' The Can", 
-		'10': "Thick As A Nickle", 
-		'11': "Wag That Tail"
+		'10': "Wag That Tail"
 	},
 
 	bookOrder: [ ],
