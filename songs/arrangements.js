@@ -652,10 +652,10 @@ var arrangedSongs = {
 				"'Cello": { fileSuffix: "Cello" }
 			},
 			scores: {
-				"Accompaniment - Transposed": { fileSuffix: "Score-Quartet-Accompaniment" },
+				"Accompaniment - Transposed": { fileSuffix: "Score-Accompaniment" },
 				"Dramedy": { fileSuffix: "Score-Quartet-Dramedy" },
 				"Orchestration": { fileSuffix: "Score-Quartet-Orchestration" },
-				"Quartet Feature - Transposed": { fileSuffix: "Score-Quartet-Quartet-Feature" },
+				"Quartet Feature - Transposed": { fileSuffix: "Score-Quartet-Feature" },
 				"Complete - Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
