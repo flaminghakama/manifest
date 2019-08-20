@@ -7,7 +7,6 @@ var originalSongs = {
 	partsInBooks: {
 		"Flute, Alto Flute & Piccolo": {
 			"As It Was alt.musica": [ "Flute" ], 
-			"Bechaini": [ "Flute" ], 
             "Don't Wait for Me": [ "Alto Flute in G", "Flute" ],
 			"Dreams": [ "Flute" ], 
             "Listening": [ "Flute" ],
@@ -21,7 +20,6 @@ var originalSongs = {
         },
 		"English Horn": {
 			"As It Was alt.musica": [ "English Horn in F" ], 
-			"Bechaini": [ "English Horn in F" ], 
             "Don't Wait for Me": [ "English Horn in F" ],
             "Listening": [ "English Horn in F" ],
             "Mossad": [ "English Horn in F" ],
@@ -34,7 +32,6 @@ var originalSongs = {
 		},
 		"Bass Clarinet": {
 			"As It Was alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
-			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
 			"Dreams": [ "Clarinet in A" ], 
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
@@ -47,7 +44,6 @@ var originalSongs = {
             "Windows": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Alto Saxophone in Eb" ]
 		},
 		"Voice/Percussion": {
-			"Bechaini": [ "Voice" ], 
             "Listening": [ "Voice" ],
             "Don't Wait for Me": [ "Clave" ],
             "The Optimist": [ "Voice" ],
@@ -58,7 +54,6 @@ var originalSongs = {
 		},
 		"Drums": {
 			"As It Was alt.musica": [ "Drums" ], 
-			"Bechaini": [ "Voice" ], 
             "Don't Wait for Me": [ "Drums" ],
             "Listening": [ "Clave" ],
             "Mossad": [ "Clave" ],
@@ -71,7 +66,6 @@ var originalSongs = {
 		},
 		"Violin I": {
 			"As It Was alt.musica": [ "Violin I" ], 
-			"Bechaini": [ "Violin I" ], 
             "Don't Wait for Me": [ "Violin I" ],
 			"Dreams": [ "Violin I" ], 
             "Listening": [ "Violin I" ],
@@ -85,7 +79,6 @@ var originalSongs = {
 		},
 		"Violin II": {
 			"As It Was alt.musica": [ "Violin II" ], 
-			"Bechaini": [ "Violin II" ], 
             "Don't Wait for Me": [ "Violin II" ],
 			"Dreams": [ "Violin II" ], 
             "Listening": [ "Violin II" ],
@@ -99,7 +92,6 @@ var originalSongs = {
 		},
 		"Viola": {
 			"As It Was alt.musica": [ "Viola" ], 
-			"Bechaini": [ "Viola" ], 
             "Don't Wait for Me": [ "Viola" ],
 			"Dreams": [ "Viola" ], 
             "Listening": [ "Viola" ],
@@ -113,7 +105,6 @@ var originalSongs = {
 		},
 		"'Cello": {
 			"As It Was alt.musica": [ "'Cello" ], 
-			"Bechaini": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
 			"Dreams": [ "'Cello" ], 
             "Listening": [ "'Cello" ],
@@ -127,7 +118,6 @@ var originalSongs = {
 		},
 		"Bass": {
 			"As It Was alt.musica": [ "Bass" ], 
-			"Bechaini": [ "Bass" ], 
             "Don't Wait for Me": [ "Bass" ],
             "Listening": [ "Bass" ],
             "Mossad": [ "Bass" ],
@@ -187,47 +177,7 @@ var originalSongs = {
 				}
 			}
 		},
-
-		"Bechaini": {
-			metadata: { 
-				title: "Bechaini",
-				composer: "Devendra Sharma",
-				arranger: "Elaine Paul",
-				genre: "Hindustani",
-				bpm: '56',
-				key: "B minor"
-			},
-			fileLocation: "collaborations/devendra-sharma",
-			filePrefix: "bechaini/reading/bechaini-",
-			parts: {
-				"Flute": { fileSuffix: "Flute" },
-				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
-				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				"Voice": { fileSuffix: "Voice" },
-				"Voice for Bb": { fileSuffix: "Voice-for-Bb" },
-				"Voice for Eb": { fileSuffix: "Voice-for-Eb" },
-				"Voice for A": { fileSuffix: "Voice-for-A" },
-				"Violin I": { fileSuffix: "Violin-I" },
-				"Violin II": { fileSuffix: "Violin-II" },
-				"Viola": { fileSuffix: "Viola" },
-				"'Cello": { fileSuffix: "Cello" },
-				"Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
-				"Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
-				reading: {
-					description: 'reading',
-					url: 'https://soundcloud.com/david-elaine-alt/bechaini'
-				},
-				backing: {
-					description: 'backing track',
-					url: 'https://soundcloud.com/david-elaine-alt/bechaini-backing-1'
-				}
-			}
-		},
-
+		
 		"Don't Wait for Me": {
 			metadata: { 
 				title: "Don't Wait for Me",

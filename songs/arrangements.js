@@ -6,6 +6,7 @@ var arrangedSongs = {
 
 	partsInBooks: {
 		"Flute, Alto Flute & Piccolo": {
+			"Bechaini": [ "Flute" ], 
             "Beautiful Moons Ago (Down M2)": [ "Flute" ], 
             "Beautiful Moons Ago": [ "Flute" ], 
             "Beautiful Moons Ago (Up M2)": [ "Flute" ], 
@@ -21,6 +22,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Flute" ]
         },
 		"English Horn": {
+			"Bechaini": [ "English Horn in F" ], 
             "Beautiful Moons Ago (Down M2)": [ "English Horn in F" ], 
             "Beautiful Moons Ago": [ "English Horn in F" ], 
             "Beautiful Moons Ago (Up M2)": [ "English Horn in F" ], 
@@ -36,6 +38,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "English Horn in F" ], 
 		},
 		"Bass Clarinet": {
+			"Bechaini": [ "Bass Clarinet in Bb", "Voice", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Beautiful Moons Ago (Down M2)": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Beautiful Moons Ago": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
             "Beautiful Moons Ago (Up M2)": [ "Bass Clarinet in Bb", "Clarinet in A" ], 
@@ -51,6 +54,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ]
         },
 		"Voice/Percussion": {
+			"Bechaini": [ "Voice" ], 
             "Beautiful Moons Ago (Down M2)": [ "Voice" ], 
             "Beautiful Moons Ago": [ "Voice" ], 
             "Beautiful Moons Ago (Up M2)": [ "Voice" ], 
@@ -61,6 +65,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Voice" ]
    		},
 		"Drums": {
+			"Bechaini": [ "Voice" ], 
             "Beautiful Moons Ago (Down M2)": [ "Voice" ], 
             "Beautiful Moons Ago": [ "Voice" ], 
             "Beautiful Moons Ago (Up M2)": [ "Voice" ], 
@@ -76,6 +81,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Drums" ]
 		},
 		"Violin I": {
+			"Bechaini": [ "Violin I" ], 
             "Beautiful Moons Ago (Down M2)": [ "Violin I" ], 
             "Beautiful Moons Ago": [ "Violin I" ], 
             "Beautiful Moons Ago (Up M2)": [ "Violin I" ], 
@@ -91,6 +97,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Violin I" ]
 		},
 		"Violin II": {
+			"Bechaini": [ "Violin II" ], 
             "Beautiful Moons Ago (Down M2)": [ "Violin II" ], 
             "Beautiful Moons Ago": [ "Violin II" ], 
             "Beautiful Moons Ago (Up M2)": [ "Violin II" ], 
@@ -106,6 +113,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Violin II" ]
 		},
 		"Viola": {
+			"Bechaini": [ "Viola" ], 
             "Beautiful Moons Ago (Down M2)": [ "Viola" ], 
             "Beautiful Moons Ago": [ "Viola" ], 
             "Beautiful Moons Ago (Up M2)": [ "Viola" ], 
@@ -121,6 +129,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "Viola" ] 
 		},
 		"'Cello": {
+			"Bechaini": [ "'Cello" ], 
             "Beautiful Moons Ago (Down M2)": [ "'Cello" ], 
             "Beautiful Moons Ago": [ "'Cello" ], 
             "Beautiful Moons Ago (Up M2)": [ "'Cello" ], 
@@ -136,6 +145,7 @@ var arrangedSongs = {
 			"You Don't Know What Love Is alt.musica": [ "'Cello" ]
 		},
 		"Bass": {
+			"Bechaini": [ "Bass" ], 
             "Beautiful Moons Ago (Down M2)": [ "Voice", "Bass" ], 
             "Beautiful Moons Ago": [ "Voice", "Bass" ], 
             "Beautiful Moons Ago (Up M2)": [ "Voice", "Bass" ], 
@@ -153,6 +163,46 @@ var arrangedSongs = {
 	},
 
 	songs: {
+
+		"Bechaini": {
+			metadata: { 
+				title: "Bechaini",
+				composer: "Devendra Sharma",
+				arranger: "Elaine Paul",
+				genre: "Hindustani",
+				bpm: '56',
+				key: "B minor"
+			},
+			fileLocation: "collaborations/devendra-sharma",
+			filePrefix: "bechaini/reading/bechaini-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Voice": { fileSuffix: "Voice" },
+				"Voice for Bb": { fileSuffix: "Voice-for-Bb" },
+				"Voice for Eb": { fileSuffix: "Voice-for-Eb" },
+				"Voice for A": { fileSuffix: "Voice-for-A" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" }
+			},
+			recordings: {
+				reading: {
+					description: 'reading',
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini'
+				},
+				backing: {
+					description: 'backing track',
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini-backing-1'
+				}
+			}
+		},
 
 		"Beautiful Moons Ago (Down M2)": {
 			metadata: { 
@@ -602,7 +652,11 @@ var arrangedSongs = {
 				"'Cello": { fileSuffix: "Cello" }
 			},
 			scores: {
-				"Transposed": { fileSuffix: "Score-Transposed" }
+				"Accompaniment - Transposed": { fileSuffix: "Score-Quartet-Accompaniment" },
+				"Dramedy": { fileSuffix: "Score-Quartet-Dramedy" },
+				"Orchestration": { fileSuffix: "Score-Quartet-Orchestration" },
+				"Quartet Feature - Transposed": { fileSuffix: "Score-Quartet-Quartet-Feature" },
+				"Complete - Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
 				original: {
