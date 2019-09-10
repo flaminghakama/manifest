@@ -11,6 +11,7 @@ var originalSongs = {
 			"Dreams": [ "Flute" ], 
             "Listening": [ "Flute" ],
             "Mossad": [ "Flute" ],
+            "The Nymph": [ "Piccolo", "Flute" ],
             "The Optimist": [ "Piccolo", "Flute" ],
             "Rising": [ "Flute" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
@@ -23,6 +24,7 @@ var originalSongs = {
             "Don't Wait for Me": [ "English Horn in F" ],
             "Listening": [ "English Horn in F" ],
             "Mossad": [ "English Horn in F" ],
+            "The Nymph": [ "English Horn in F" ],
             "The Optimist": [ "English Horn in F for Clarinet" ],
             "Rising": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
@@ -36,6 +38,7 @@ var originalSongs = {
 			"Dreams": [ "Clarinet in A" ], 
             "Listening": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
             "Mossad": [ "Bass Clarinet in Bb" ],
+            "The Nymph": [ "Bass Clarinet in Bb" ],
             "The Optimist": [ "Clarinet in A", "Bass Clarinet in Bb for Bassoon", "Voice" ],
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Soprano Saxophone in Bb" ], 
@@ -57,6 +60,7 @@ var originalSongs = {
             "Don't Wait for Me": [ "Drums" ],
             "Listening": [ "Clave" ],
             "Mossad": [ "Clave" ],
+            "The Nymph": [ "Clave" ],
             "The Optimist": [ "Voice" ],
             "Rising": [ "Drums" ],
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
@@ -70,6 +74,7 @@ var originalSongs = {
 			"Dreams": [ "Violin I" ], 
             "Listening": [ "Violin I" ],
             "Mossad": [ "Violin I" ],
+            "The Nymph": [ "Violin I" ],
             "The Optimist": [ "Violin I" ],
             "Rising": [ "Violin I" ],
 			"Self-Immolation alt.musica": [ "Violin I" ], 
@@ -83,6 +88,7 @@ var originalSongs = {
 			"Dreams": [ "Violin II" ], 
             "Listening": [ "Violin II" ],
             "Mossad": [ "Violin II" ],
+            "The Nymph": [ "Violin II" ],
             "The Optimist": [ "Violin II" ],
             "Rising": [ "Violin II" ],
 			"Self-Immolation alt.musica": [ "Violin II" ], 
@@ -96,6 +102,7 @@ var originalSongs = {
 			"Dreams": [ "Viola" ], 
             "Listening": [ "Viola" ],
             "Mossad": [ "Viola" ],
+            "The Nymph": [ "Viola" ],
             "The Optimist": [ "Viola" ],
             "Rising": [ "Viola" ],
 			"Self-Immolation alt.musica": [ "Viola" ], 
@@ -109,6 +116,7 @@ var originalSongs = {
 			"Dreams": [ "'Cello" ], 
             "Listening": [ "'Cello" ],
             "Mossad": [ "'Cello" ],
+            "The Nymph": [ "'Cello" ],
             "The Optimist": [ "'Cello" ],
             "Rising": [ "'Cello" ],
 			"Self-Immolation alt.musica": [ "'Cello" ], 
@@ -121,6 +129,7 @@ var originalSongs = {
             "Don't Wait for Me": [ "Bass" ],
             "Listening": [ "Bass" ],
             "Mossad": [ "Bass" ],
+            "The Nymph": [ "Bass" ],
             "The Optimist": [ "Bass" ],
             "Rising": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
@@ -211,17 +220,13 @@ var originalSongs = {
 				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
 			},
 			recordings: {
-				debut: {
-					description: 'original alt.musica version',
-					url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
+				live: {
+					description: 'Alt Tal live at Cafe Van Kleef',
+					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
 				},
-				clarinet: {
-					description: 'alt.musica clarinet edition from Parallel Play',
-					url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-3'
-				},
-				track: {
-					description: 'String quartet',
-					url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-rough-string-quartet/s-IgnlT'
+				album: {
+					description: 'track 7 from the Open the Gates! album',
+					url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
 				}
 			}
 		},
@@ -313,6 +318,44 @@ var originalSongs = {
 			filePrefix: "mossad/strings/mossad-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Clave": { fileSuffix: "Clave" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Transposed": { fileSuffix: "Score-Transposed" },
+			},
+			recordings: {
+				synthesized: {
+					description: 'MIDI',
+					url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
+				},
+				original: {
+					description: 'Alt Tal',
+					url: 'https://soundcloud.com/david-elaine-alt/mossad'
+				}
+
+			}
+		},
+
+		"The Nymph": {
+			metadata: { 
+				title: "The Nymph",
+				composer: "Elaine Paul",
+				genre: "Hip Hop",
+				bpm: '160',
+				key: "C minor"
+			},
+			fileLocation: "alt.musica",
+			filePrefix: "nymph/strings/nymph-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"Piccolo": { fileSuffix: "Piccolo" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
 				"Clave": { fileSuffix: "Clave" },
