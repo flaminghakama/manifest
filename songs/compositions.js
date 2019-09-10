@@ -16,6 +16,7 @@ var originalSongs = {
             "Rising": [ "Flute" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
             "Stomping Ground": [ "Piccolo", "Flute" ],
+            //"Tension Cue": [ "Flute" ],
 			"We Declare alt.musica": [ "Piccolo", "Flute" ], 
             "Windows": [ "Flute" ],
         },
@@ -29,6 +30,7 @@ var originalSongs = {
             "Rising": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
             "Stomping Ground": [ "English Horn in F" ],
+            //"Tension Cue": [ "English Horn in F" ],
 			"We Declare alt.musica": [ "English Horn in F" ], 
             "Windows": [ "English Horn in F" ],
 		},
@@ -43,6 +45,7 @@ var originalSongs = {
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Soprano Saxophone in Bb" ], 
             "Stomping Ground": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
+            //"Tension Cue": [ "Bass Clarinet in Bb" ],
 			"We Declare alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Windows": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Alto Saxophone in Eb" ]
 		},
@@ -65,6 +68,7 @@ var originalSongs = {
             "Rising": [ "Drums" ],
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
             "Stomping Ground": [ "Drums" ],
+            //"Tension Cue": [ "Drums" ],
 			"We Declare alt.musica": [ "Drums" ], 
             "Windows": [ "Drums" ],
 		},
@@ -79,6 +83,7 @@ var originalSongs = {
             "Rising": [ "Violin I" ],
 			"Self-Immolation alt.musica": [ "Violin I" ], 
             "Stomping Ground": [ "Violin I" ],
+            "Tension Cue": [ "Violin I" ],
 			"We Declare alt.musica": [ "Violin I" ], 
             "Windows": [ "Violin I" ],
 		},
@@ -93,6 +98,7 @@ var originalSongs = {
             "Rising": [ "Violin II" ],
 			"Self-Immolation alt.musica": [ "Violin II" ], 
             "Stomping Ground": [ "Violin II" ],
+            "Tension Cue": [ "Violin II" ],
 			"We Declare alt.musica": [ "Violin II" ], 
             "Windows": [ "Violin II" ],
 		},
@@ -107,6 +113,7 @@ var originalSongs = {
             "Rising": [ "Viola" ],
 			"Self-Immolation alt.musica": [ "Viola" ], 
             "Stomping Ground": [ "Viola" ],
+            "Tension Cue": [ "Viola" ],
 			"We Declare alt.musica": [ "Viola" ], 
             "Windows": [ "Viola" ],
 		},
@@ -121,6 +128,7 @@ var originalSongs = {
             "Rising": [ "'Cello" ],
 			"Self-Immolation alt.musica": [ "'Cello" ], 
             "Stomping Ground": [ "'Cello" ],
+            "Tension Cue": [ "'Cello" ],
 			"We Declare alt.musica": [ "'Cello" ], 
             "Windows": [ "'Cello" ],
 		},
@@ -134,6 +142,7 @@ var originalSongs = {
             "Rising": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
             "Stomping Ground": [ "Bass" ],
+            //"Tension Cue": [ "Bass" ],
 			"We Declare alt.musica": [ "Bass" ], 
             "Windows": [ "Bass" ],
 		}
@@ -563,6 +572,39 @@ var originalSongs = {
 				track: {
 					description: 'String Quartet',
 					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-string-quartet-accompaniment'
+				}
+			}
+		}, 
+
+		"Tension Cue": {
+			metadata: { 
+				title: "Tension Cue",
+				composer: "D. Elaine Alt",
+				arranger: "D. Elaine Alt", 
+				genre: "Classical",
+				bpm: '142',
+				key: "Dm"
+			},
+			fileLocation: "strings",
+			filePrefix: "tension-cue-",
+			parts: {
+				"Flute": { fileSuffix: "Flute" },
+				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
+				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
+				"Drums": { fileSuffix: "Condensed-Score" },
+				"Violin I": { fileSuffix: "Violin-I" },
+				"Violin II": { fileSuffix: "Violin-II" },
+				"Viola": { fileSuffix: "Viola" },
+				"'Cello": { fileSuffix: "Cello" },
+				"Bass": { fileSuffix: "Bass" }
+			},
+			scores: {
+				"Concert": { fileSuffix: "Score-Concert" }
+			},
+			recordings: {
+				quartet: {
+					description: 'String quartet',
+					url: 'https://soundcloud.com/david-elaine-alt/tension-cue-last-takes'
 				}
 			}
 		}, 

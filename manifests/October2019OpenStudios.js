@@ -12,7 +12,7 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12' ],
+	programOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13' ],
 
 	program: {
 		'01': "Listening", 
@@ -27,6 +27,7 @@ var openStudiosRepertoire = {
 		'10': "Taken All My Life",
 		'11': "The Optimist",
 		'12': "The Nymph",
+		'13': "Tension Cue",
 	},
 
 	bookOrder: [ ],
