@@ -12,11 +12,10 @@ var openStudiosRepertoire = {
 
 	baseUrl: 'http://davidelainealt.com/scores/', 
 
-	programOrder: [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13' ],
+	programOrder: [ '01', '03', '04', '05', '06', '07', '08', '09', '10', '12', '13' ],
 
 	program: {
 		'01': "Listening", 
-        '02': "It Only Happens Once",
         '03': "Rising",
 		'04': "We Declare alt.musica",
 		'05': "Bechaini",
@@ -25,7 +24,6 @@ var openStudiosRepertoire = {
 		'08': "Don't Wait for Me",
 		'09': "Mossad",
 		'10': "Taken All My Life",
-		'11': "The Optimist",
 		'12': "The Nymph",
 		'13': "Tension Cue",
 	},

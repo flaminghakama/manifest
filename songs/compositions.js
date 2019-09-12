@@ -16,7 +16,7 @@ var originalSongs = {
             "Rising": [ "Flute" ],
 			"Self-Immolation alt.musica": [ "Flute" ], 
             "Stomping Ground": [ "Piccolo", "Flute" ],
-            //"Tension Cue": [ "Flute" ],
+            "Tension Cue": [ "Flute" ],
 			"We Declare alt.musica": [ "Piccolo", "Flute" ], 
             "Windows": [ "Flute" ],
         },
@@ -30,7 +30,7 @@ var originalSongs = {
             "Rising": [ "English Horn in F" ],
 			"Self-Immolation alt.musica": [ "English Horn in F" ], 
             "Stomping Ground": [ "English Horn in F" ],
-            //"Tension Cue": [ "English Horn in F" ],
+            "Tension Cue": [ "English Horn in F" ],
 			"We Declare alt.musica": [ "English Horn in F" ], 
             "Windows": [ "English Horn in F" ],
 		},
@@ -45,7 +45,7 @@ var originalSongs = {
             "Rising": [ "Clarinet in A", "Bass Clarinet in Bb", "Bass Clarinet in Bb for Bassoon" ],
 			"Self-Immolation alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Soprano Saxophone in Bb" ], 
             "Stomping Ground": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
-            //"Tension Cue": [ "Bass Clarinet in Bb" ],
+            "Tension Cue": [ "Bass Clarinet in Bb" ],
 			"We Declare alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Windows": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Alto Saxophone in Eb" ]
 		},
@@ -580,13 +580,12 @@ var originalSongs = {
 			metadata: { 
 				title: "Tension Cue",
 				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
 				genre: "Classical",
 				bpm: '142',
 				key: "Dm"
 			},
 			fileLocation: "strings",
-			filePrefix: "tension-cue-",
+			filePrefix: "tension-cue/tension-cue-",
 			parts: {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
