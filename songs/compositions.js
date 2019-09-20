@@ -378,13 +378,13 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" },
 			},
 			recordings: {
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
+				album: {
+					description: 'track 7 from Alt Tal Open the Gates!',
+					url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
 				},
-				original: {
-					description: 'Alt Tal',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad'
+				live: {
+					description: 'Alt Tal live at Cafe Van Kleefe',
+					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
 				}
 
 			}
