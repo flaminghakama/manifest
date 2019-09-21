@@ -665,19 +665,19 @@ var arrangedSongs = {
 				},
 				accompaniment: {
 					description: 'String Quartet - Accompaniment',
-					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-accompaniment'
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-accompaniment/s-O4fhg'
 				},
 				instrumental: {
 					description: 'String Quartet - Feature',
-					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-feature'
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-feature/s-Zsj7v'
 				},
 				dramedy: {
 					description: 'String Quartet - Dramedy',
-					url: 'https://soundcloud.com/david-elaine-alt/he-who-hesitates-quartet-pizzicato'
+					url: 'https://soundcloud.com/david-elaine-alt/he-who-hesitates-quartet-pizzicato/s-VBls4'
 				},
 				mashup: {
 					description: 'String Quartet - mashup',
-					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-lsd'
+					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-lsd/s-yREch'
 				}
 			}
 		}, 
