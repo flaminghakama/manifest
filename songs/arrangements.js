@@ -195,11 +195,11 @@ var arrangedSongs = {
 			recordings: {
 				reading: {
 					description: 'reading',
-					url: 'https://soundcloud.com/david-elaine-alt/bechaini'
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini/s-CXQIf'
 				},
 				backing: {
 					description: 'backing track',
-					url: 'https://soundcloud.com/david-elaine-alt/bechaini-backing-1'
+					url: 'https://soundcloud.com/david-elaine-alt/bechaini-backing-1/s-BAmPU'
 				}
 			}
 		},
