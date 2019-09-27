@@ -142,7 +142,7 @@ var originalSongs = {
             "Rising": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
             "Stomping Ground": [ "Bass" ],
-            //"Tension Cue": [ "Bass" ],
+            "Tension Cue": [ "Bass" ],
 			"We Declare alt.musica": [ "Bass" ], 
             "Windows": [ "Bass" ],
 		}
