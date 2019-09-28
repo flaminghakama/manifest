@@ -20,7 +20,7 @@ var pianoTrioSongs = {
 			"Anne's Eyes": [ "Bb Lead Sheet" ], 
 			"Aphrodite's Girl Friday": [ "Bb Lead Sheet" ], 
 			"Big Seven": [ "Bb Melody" ], 
-			"Hot Swing": [ "Clarinet in Bb" ], 
+			"Hot Swing": [ "Clarinet in Bb", "Trumpet in Bb" ], 
 			"Kickin' The Can": [ "Bb Lead Sheet", "Bb Melody", "Bb Harmony" ], 
 			"Linsanity": [ "Bb Lead Sheet", "Bb Harmony" ], 
 			"Swampy": [ "Bb Lead Sheet" ], 
@@ -160,6 +160,7 @@ var pianoTrioSongs = {
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "Lead-Sheet" },
 				"Clarinet in Bb": { fileSuffix: "Bb-Clarinet" },
+				"Trumpet in Bb": { fileSuffix: "Bb-Trumpet" },
 				"Violin": { fileSuffix: "Violin" },
 			},
 			scores: {

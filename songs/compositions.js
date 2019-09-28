@@ -68,7 +68,7 @@ var originalSongs = {
             "Rising": [ "Drums" ],
 			"Self-Immolation alt.musica": [ "Drums", "Condensed Score" ], 
             "Stomping Ground": [ "Drums" ],
-            //"Tension Cue": [ "Drums" ],
+            "Tension Cue": [ "Drums" ],
 			"We Declare alt.musica": [ "Drums" ], 
             "Windows": [ "Drums" ],
 		},
@@ -142,7 +142,7 @@ var originalSongs = {
             "Rising": [ "Bass" ],
 			"Self-Immolation alt.musica": [ "Bass" ], 
             "Stomping Ground": [ "Bass" ],
-            //"Tension Cue": [ "Bass" ],
+            "Tension Cue": [ "Bass" ],
 			"We Declare alt.musica": [ "Bass" ], 
             "Windows": [ "Bass" ],
 		}
@@ -378,13 +378,13 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" },
 			},
 			recordings: {
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
+				album: {
+					description: 'track 7 from Alt Tal Open the Gates!',
+					url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
 				},
-				original: {
-					description: 'Alt Tal',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad'
+				live: {
+					description: 'Alt Tal live at Cafe Van Kleefe',
+					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
 				}
 
 			}
@@ -590,7 +590,7 @@ var originalSongs = {
 				"Flute": { fileSuffix: "Flute" },
 				"English Horn in F": { fileSuffix: "English-Horn-in-F" },
 				"Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
-				"Drums": { fileSuffix: "Condensed-Score" },
+				"Drums": { fileSuffix: "Clave" },
 				"Violin I": { fileSuffix: "Violin-I" },
 				"Violin II": { fileSuffix: "Violin-II" },
 				"Viola": { fileSuffix: "Viola" },
