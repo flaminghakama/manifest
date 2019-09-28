@@ -6,16 +6,16 @@ var openTheGatesSongs = {
 
 	partsInBooks: {
 		"Concert Lead Sheets": {
-		    "Jasmine": [ "Concert Lead Sheet" ]
+		    "Jasmine": [ "Original Lead Sheet" ]
 		}, 
 		"Bb Instruments": {
-		    "Jasmine": [ "Concert Lead Sheet" ]
+		    "Jasmine": [ "Bb Lead Sheet" ]
 		}, 
 		"Eb Instruments": {
-		    "Jasmine": [ "Concert Lead Sheet" ]
+		    "Jasmine": [ "Eb Lead Sheet" ]
 		}, 
 		"Bass": {
-		    "Jasmine": [ "Concert Lead Sheet" ]
+		    "Jasmine": [ "Original Lead Sheet" ]
 		}
 	},
 
@@ -31,7 +31,10 @@ var openTheGatesSongs = {
 			fileLocation: "jazz-combustion",
 			filePrefix: "jasmine",
 			parts: {
-				"Concert Lead Sheet": { fileSuffix: "" }
+				"Original Lead Sheet": { fileSuffix: "" },
+				"Concert Lead Sheet": { fileSuffix: "/jasmine-Concert-Lead-Sheet" },
+				"Bb Lead Sheet": { fileSuffix: "/jasmine-Bb-Lead-Sheet" },
+				"Eb Lead Sheet": { fileSuffix: "/jasmine-Eb-Lead-Sheet" }
 			},
 			scores: {
 			},
