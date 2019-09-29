@@ -6,7 +6,7 @@ var openTheGatesSongs = {
 
 	partsInBooks: {
 		"Concert Lead Sheets": {
-		    "Jasmine": [ "Original Lead Sheet" ]
+		    "Jasmine": [ "Concert Lead Sheet", "Original Lead Sheet" ]
 		}, 
 		"Bb Instruments": {
 		    "Jasmine": [ "Bb Lead Sheet" ]
@@ -15,7 +15,7 @@ var openTheGatesSongs = {
 		    "Jasmine": [ "Eb Lead Sheet" ]
 		}, 
 		"Bass": {
-		    "Jasmine": [ "Original Lead Sheet" ]
+		    "Jasmine": [ "Concert Lead Sheet" ]
 		}
 	},
 
