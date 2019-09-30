@@ -8,7 +8,7 @@ var selfImmolationSongs = {
 		"Concert Lead Sheets": {
 		    "Oxtail Soup": [ "Concert Lead Sheet" ],
 		    "Bike Lanes": [ "Concert Lead Sheet" ],
-		    "44 Magnum": [ "Concert Lead Sheet" ],
+		    "44 Magnum": [ "Concert Lead Sheet", "Original Lead Sheet"],
 		    "Series of Adjustments": [ "Concert Lead Sheet" ],
 		    "A Classic Base": [ "Concert Lead Sheet" ]
 		}, 
@@ -102,11 +102,12 @@ var selfImmolationSongs = {
 				key: "A Major"
 			},
 			fileLocation: "jazz-combustion/self-immolation",
-			filePrefix: "44-magnum-",
+			filePrefix: "44-magnum/44-magnum",
 			parts: {
-				"Concert Lead Sheet": { fileSuffix: "C" },
-				"Bb Lead Sheet": { fileSuffix: "Bb" },
-				"Eb Lead Sheet": { fileSuffix: "Eb" }
+				"Original Lead Sheet": { fileSuffix: "" },
+				"Concert Lead Sheet": { fileSuffix: "-Lead-Sheet-C" },
+				"Bb Lead Sheet": { fileSuffix: "-Lead-Sheet-Bb" },
+				"Eb Lead Sheet": { fileSuffix: "-Lead-Sheet-Eb" }
 			},
 			scores: {
 			},
