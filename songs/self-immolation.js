@@ -45,12 +45,12 @@ var selfImmolationSongs = {
 				key: "Eb Major"
 			},
 			fileLocation: "jazz-combustion/self-immolation",
-			filePrefix: "oxtail-soup",
+			filePrefix: "oxtail-soup/oxtail-soup",
 			parts: {
 				"Concert Lead Sheet": { fileSuffix: "-Lead-Sheet-C" },
 				"Original Lead Sheet": { fileSuffix: "" },
 				"Concert Melody": { fileSuffix: "-Melody-Bb" },
-				"Bb Melody": { fileSuffix: "-Melod-y-Bb" },
+				"Bb Melody": { fileSuffix: "-Melody-Bb" },
 				"Bb Harmony": { fileSuffix: "-Harmony-Bb" },
 				"Eb Melody": { fileSuffix: "-Melody-Eb" },
 				"Eb Harmony": { fileSuffix: "-Harmony-Eb" },
@@ -128,7 +128,7 @@ var selfImmolationSongs = {
 				key: "Bb Major"
 			},
 			fileLocation: "jazz-combustion/self-immolation",
-			filePrefix: "series-of-adjustments",
+			filePrefix: "series-of-adjustments/series-of-adjustments",
 			parts: {
 				"Original Lead Sheet": { fileSuffix: "" },
 				"Concert Lead Sheet": { fileSuffix: "-Lead-Sheet-C" },
