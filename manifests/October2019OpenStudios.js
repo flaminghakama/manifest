@@ -18,7 +18,7 @@ var openStudiosRepertoire = {
 		'01': "Listening", 
         '03': "Rising",
 		'04': "We Declare alt.musica",
-		'05': "Bechaini",
+		'05': "It Only Happens Once",
 		'06': "As It Was alt.musica",
 		'07': "Self-Immolation alt.musica",
 		'08': "Don't Wait for Me",
@@ -34,6 +34,29 @@ var openStudiosRepertoire = {
 	songs: {}
 };
 
+var partSelection = {
+	"Flute, Alto Flute & Piccolo": {
+		"The Nymph": [ "Piccolo" ], 
+		"We Declare alt.musica": [ "Piccolo" ], 
+	},
+	"English Horn": {
+        "It Only Happens Once": [ "English Horn in F" ]
+	},
+	"Bass Clarinet": {
+        "It Only Happens Once": [ "Clarinet in A" ], 
+        "Don't Wait for Me": [ "Clarinet in A" ],
+		"Listening": [ "Bass Clarinet in Bb for Bassoon" ], 
+		"Rising": [ "Bass Clarinet in Bb for Bassoon" ], 
+		"Self-Immolation alt.musica": [ "Bass Clarinet in Bb" ], 
+		"As It Was alt.musica": [ "Bass Clarinet in Bb" ], 
+		"We Declare alt.musica": [ "Bass Clarinet in Bb" ]
+	},
+	"Drums": {
+		"Self-Immolation alt.musica": [ "Drums" ], 
+	}
+};
+
+
 var manifest = new Manifest(openStudiosRepertoire);
-manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ] ); 
+manifest.populate( altMusicaBooks, [ originalSongs, arrangedSongs ], partSelection ); 
 
