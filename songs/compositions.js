@@ -229,14 +229,18 @@ var originalSongs = {
 				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
 			},
 			recordings: {
-				live: {
-					description: 'Alt Tal live at Cafe Van Kleef',
-					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
-				},
-				album: {
-					description: 'track 7 from the Open the Gates! album',
-					url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
-				}
+		        performance: {
+		                description: 'original alt.musica version',
+		                url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
+		        },
+		        track: {
+		                description: 'String quartet',
+		                url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-rough-string-quartet/s-IgnlT'
+		        },
+		        video: {
+		                description: 'alt.musica saxophone edition from Parallel Play',
+		                url: 'https://youtu.be/1FLtciuy4a8'
+		       	}
 			}
 		},
 
