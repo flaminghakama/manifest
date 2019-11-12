@@ -4,7 +4,7 @@
 
 var originalSongs = {
 
-	partsInBooks: {
+    partsInBooks: {
         "Flute, Alto Flute & Piccolo": {
             "As It Was alt.musica": [ "Flute" ], 
             "Don't Wait for Me": [ "Alto Flute in G", "Flute" ],
@@ -20,7 +20,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Piccolo", "Flute" ], 
             "Windows": [ "Flute" ],
         },
-		"English Horn": {
+        "English Horn": {
             "As It Was alt.musica": [ "English Horn in F" ], 
             "Don't Wait for Me": [ "English Horn in F" ],
             "Listening": [ "English Horn in F" ],
@@ -34,7 +34,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "English Horn in F" ], 
             "Windows": [ "English Horn in F" ],
 		},
-		"Bass Clarinet": {
+        "Bass Clarinet": {
             "As It Was alt.musica": [ "Bass Clarinet in Bb", "Solo Clarinet in A", "Solo Tenor Saxophone in Bb" ],
             "Don't Wait for Me": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A" ],
             "Dreams": [ "Clarinet in A" ], 
@@ -49,7 +49,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Bass Clarinet in Bb", "Voice for A", "Voice for Bb", "Voice for Eb" ], 
             "Windows": [ "Bass Clarinet in Bb", "Clarinet in A", "Solo Clarinet in A", "Solo Alto Saxophone in Eb" ]
 		},
-		"Voice/Percussion": {
+        "Voice/Percussion": {
             "Listening": [ "Voice" ],
             "Don't Wait for Me": [ "Clave" ],
             "The Optimist": [ "Voice" ],
@@ -58,7 +58,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Voice" ], 
             "Windows": [ "Clave", "Claps" ],
 		},
-		"Drums": {
+        "Drums": {
             "As It Was alt.musica": [ "Drums" ], 
             "Don't Wait for Me": [ "Drums" ],
             "Listening": [ "Clave" ],
@@ -72,7 +72,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Drums" ], 
             "Windows": [ "Drums" ],
 		},
-		"Violin I": {
+        "Violin I": {
             "As It Was alt.musica": [ "Violin I" ], 
             "Don't Wait for Me": [ "Violin I" ],
             "Dreams": [ "Violin I" ], 
@@ -87,7 +87,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Violin I" ], 
             "Windows": [ "Violin I" ],
 		},
-		"Violin II": {
+        "Violin II": {
             "As It Was alt.musica": [ "Violin II" ], 
             "Don't Wait for Me": [ "Violin II" ],
             "Dreams": [ "Violin II" ], 
@@ -102,7 +102,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Violin II" ], 
             "Windows": [ "Violin II" ],
 		},
-		"Viola": {
+        "Viola": {
             "As It Was alt.musica": [ "Viola" ], 
             "Don't Wait for Me": [ "Viola" ],
             "Dreams": [ "Viola" ], 
@@ -117,7 +117,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "Viola" ], 
             "Windows": [ "Viola" ],
 		},
-		"'Cello": {
+        "'Cello": {
             "As It Was alt.musica": [ "'Cello" ], 
             "Don't Wait for Me": [ "'Cello" ],
             "Dreams": [ "'Cello" ], 
@@ -132,7 +132,7 @@ var originalSongs = {
             "We Declare alt.musica": [ "'Cello" ], 
             "Windows": [ "'Cello" ],
 		},
-		"Bass": {
+        "Bass": {
             "As It Was alt.musica": [ "Bass" ], 
             "Don't Wait for Me": [ "Bass" ],
             "Listening": [ "Bass" ],
@@ -149,18 +149,18 @@ var originalSongs = {
 	},
 
 	songs: {
-		"As It Was alt.musica": {
-			metadata: { 
-				title: "As It Was",
-				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Afro-Cuban",
-				bpm: '104',
-				key: "E minor"
+        "As It Was alt.musica": {
+            metadata: { 
+                title: "As It Was",
+                composer: "D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Afro-Cuban",
+                bpm: '104',
+                key: "E minor"
 			},
-			fileLocation: "alt.musica",
-			filePrefix: "as-it-was/strings/as-it-was-",
-			parts: {
+            fileLocation: "alt.musica",
+            filePrefix: "as-it-was/strings/as-it-was-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
