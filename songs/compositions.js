@@ -148,7 +148,7 @@ var originalSongs = {
 		}
 	},
 
-	songs: {
+    songs: {
         "As It Was alt.musica": {
             metadata: { 
                 title: "As It Was",
@@ -172,10 +172,10 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
+            },
 			recordings: {
 				saxophone: {
 					description: 'alt.musica saxophone edition from Parallel Play',
@@ -193,21 +193,21 @@ var originalSongs = {
 					description: 'MIDI',
 					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
 				}
-			}
-		},
+            }
+        },
 		
-		"Don't Wait for Me": {
-			metadata: { 
-				title: "Don't Wait for Me",
-				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Latin Jazz",
-				bpm: '148',
-				key: "F"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "dont-wait-for-me/strings/dont-wait-for-me-",
-			parts: {
+        "Don't Wait for Me": {
+            metadata: { 
+                title: "Don't Wait for Me",
+                composer: "D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Latin Jazz",
+                bpm: '148',
+                key: "F"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "dont-wait-for-me/strings/dont-wait-for-me-",
+            parts: {
                 "Alto Flute in G": { fileSuffix: "Alto-Flute-in-G" },
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -222,13 +222,13 @@ var originalSongs = {
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" },
                 "Bass Lead Sheet": { fileSuffix: "Bass-Lead-Sheet" }
-			},
-			scores: {
+            },
+            scores: {
                 "Concert": { fileSuffix: "Score-Concert" },
                 "Transposed": { fileSuffix: "Score-Transposed" },
                 "Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
-			},
-			recordings: {
+            },
+            recordings: {
                 performance: {
                         description: 'alt.musica Open Studios',
                         url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-4/s-sHCIl'
@@ -245,8 +245,8 @@ var originalSongs = {
 		                description: 'alt.musica saxophone edition from Parallel Play',
 		                url: 'https://youtu.be/1FLtciuy4a8'
 		       	}
-			}
-		},
+            }
+        },
 
         "Dreams": {
             metadata: { 
@@ -277,7 +277,7 @@ var originalSongs = {
             }
         },
 
-		"Listening": {
+        "Listening": {
 			metadata: { 
 				title: "Listening",
 				composer: "Elaine Paul",
