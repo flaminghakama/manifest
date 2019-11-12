@@ -176,23 +176,23 @@ var originalSongs = {
             scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" }
             },
-			recordings: {
-				saxophone: {
-					description: 'alt.musica saxophone edition from Parallel Play',
-					url: 'https://soundcloud.com/david-elaine-alt/as-it-was'
-				},
-				original: {
-					description: 'MIT Festival Jazz Band (original version)',
-					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-big-band/s-IcsAH'
-				},
-				quartet: {
-					description: "The Lydian People's Front (quartet version)",
-					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
-				},
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
-				}
+            recordings: {
+                saxophone: {
+                    description: 'alt.musica saxophone edition from Parallel Play',
+                    url: 'https://soundcloud.com/david-elaine-alt/as-it-was'
+                },
+                original: {
+                    description: 'MIT Festival Jazz Band (original version)',
+                    url: 'https://soundcloud.com/david-elaine-alt/as-it-was-big-band/s-IcsAH'
+                },
+                quartet: {
+                    description: "The Lydian People's Front (quartet version)",
+                    url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
+                },
+                synthesized: {
+                    description: 'MIDI',
+                    url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
+                }
             }
         },
 		
@@ -237,14 +237,14 @@ var originalSongs = {
                         description: 'original alt.musica winds version',
                         url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
                 },
-		        track: {
-		                description: 'String quartet',
-		                url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-rough-string-quartet/s-IgnlT'
-		        },
-		        video: {
-		                description: 'alt.musica saxophone edition from Parallel Play',
-		                url: 'https://youtu.be/1FLtciuy4a8'
-		       	}
+                track: {
+                    description: 'String quartet',
+                    url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-rough-string-quartet/s-IgnlT'
+                },
+                video: {
+                    description: 'alt.musica saxophone edition from Parallel Play',
+                    url: 'https://youtu.be/1FLtciuy4a8'
+                }
             }
         },
 
@@ -278,16 +278,16 @@ var originalSongs = {
         },
 
         "Listening": {
-			metadata: { 
-				title: "Listening",
-				composer: "Elaine Paul",
-				genre: "Ballad",
-				bpm: '53',
-				key: "Ab minor"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "listening/strings/listening-",
-			parts: {
+            metadata: { 
+                title: "Listening",
+                composer: "Elaine Paul",
+                genre: "Ballad",
+                bpm: '53',
+                key: "Ab minor"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "listening/strings/listening-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
@@ -301,12 +301,12 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" },
                 "Transposed - Alternate Winds": { fileSuffix: "Score-Transposed-Alternate" }
-			},
-			recordings: {
+            },
+            recordings: {
                 performance: {
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/listening-2/s-4C6Wm'
@@ -315,29 +315,28 @@ var originalSongs = {
                     description: 'Mutual Admiration Org (no strings)',
                     url: 'https://soundcloud.com/alicia-voice/listening'
                 },
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/listening-midi-1/s-Jfgqm'
-				},
-				original: {
-					description: 'MIT TRME Jazz Collective (original key)',
-					url: 'https://soundcloud.com/david-elaine-alt/listening'
-				}
-
+                synthesized: {
+                    description: 'MIDI',
+                    url: 'https://soundcloud.com/david-elaine-alt/listening-midi-1/s-Jfgqm'
+                },
+                original: {
+                    description: 'MIT TRME Jazz Collective (original key)',
+                    url: 'https://soundcloud.com/david-elaine-alt/listening'
+                }
 			}
 		},
 
-		"Mossad": {
-			metadata: { 
-				title: "Mossad",
-				composer: "Elaine Paul",
-				genre: "Hip Hop",
-				bpm: '176',
-				key: "C minor"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "mossad/strings/mossad-",
-			parts: {
+        "Mossad": {
+            metadata: { 
+                title: "Mossad",
+                composer: "Elaine Paul",
+                genre: "Hip Hop",
+                bpm: '176',
+                key: "C minor"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "mossad/strings/mossad-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
@@ -347,11 +346,11 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" },
-			},
-			recordings: {
+            },
+            recordings: {
                 performance: {
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/mossad-1/s-U940n'
@@ -360,25 +359,24 @@ var originalSongs = {
                     description: 'MIDI',
                     url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
                 },
-				original: {
-					description: 'Alt Tal',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad'
-				}
+                original: {
+                    description: 'Alt Tal',
+                    url: 'https://soundcloud.com/david-elaine-alt/mossad'
+                }
+            }
+        },
 
-			}
-		},
-
-		"The Nymph": {
-			metadata: { 
-				title: "The Nymph",
-				composer: "Elaine Paul",
-				genre: "Hip Hop",
-				bpm: '160',
-				key: "C minor"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "nymph/strings/nymph-",
-			parts: {
+        "The Nymph": {
+            metadata: { 
+                title: "The Nymph",
+                composer: "Elaine Paul",
+                genre: "Hip Hop",
+                bpm: '160',
+                key: "C minor"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "nymph/strings/nymph-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "Piccolo": { fileSuffix: "Piccolo" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -389,11 +387,11 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" },
-			},
-			recordings: {
+            },
+            recordings: {
                 performance: {
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/the-nymph/s-KxJSZ'
@@ -402,26 +400,25 @@ var originalSongs = {
                     description: 'track 7 from Alt Tal Open the Gates!',
                     url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
                 },
-				live: {
-					description: 'Alt Tal live at Cafe Van Kleefe',
-					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
-				}
+                live: {
+                    description: 'Alt Tal live at Cafe Van Kleefe',
+                    url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
+                }
+            }
+        },
 
-			}
-		},
-
-		"The Optimist": {
-			metadata: { 
-				title: "The Optimist",
-				composer: "Aeion Solar",
-				arranger: "D. Elaine Alt", 
-				genre: "Classical",
-				bpm: '116',
-				key: "B"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "optimist/strings/optimist-",
-			parts: {
+        "The Optimist": {
+            metadata: { 
+                title: "The Optimist",
+                composer: "Aeion Solar",
+                arranger: "D. Elaine Alt", 
+                genre: "Classical",
+                bpm: '116',
+                key: "B"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "optimist/strings/optimist-",
+            parts: {
                 "Piccolo": { fileSuffix: "Piccolo" },
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F for Clarinet": { fileSuffix: "English-Horn-in-F" },
@@ -434,37 +431,37 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
-				original: {
-					description: 'Mutual Admiration Org (no strings)',
-					url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
-				},
-				string: {
-					description: 'performance from Parallel Play (no winds)',
-					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-1'
-				},
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/the-optimist-midi/s-M74Tf'
-				}
-			}
-		},
+            },
+            recordings: {
+                original: {
+                    description: 'Mutual Admiration Org (no strings)',
+                    url: 'https://soundcloud.com/david-elaine-alt/the-optimist/s-Xmc0m'
+                },
+                string: {
+                    description: 'performance from Parallel Play (no winds)',
+                    url: 'https://soundcloud.com/david-elaine-alt/the-optimist-1'
+                },
+                synthesized: {
+                    description: 'MIDI',
+                    url: 'https://soundcloud.com/david-elaine-alt/the-optimist-midi/s-M74Tf'
+                }
+            }
+        },
 
-		"Rising": {
-			metadata: { 
-				title: "Rising",
-				composer: "Elaine Paul",
-				genre: "Jazz",
-				bpm: '72, 84, 118',
-				key: "Ab"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "rising/strings/rising-",
-			parts: {
+        "Rising": {
+            metadata: { 
+                title: "Rising",
+                composer: "Elaine Paul",
+                genre: "Jazz",
+                bpm: '72, 84, 118',
+                key: "Ab"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "rising/strings/rising-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
@@ -478,11 +475,11 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
+            },
+            recordings: {
                 performance: {
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/rising-2/s-hxseB'
@@ -491,25 +488,25 @@ var originalSongs = {
                     description: 'Jazz Combustion Uprising',
                     url: 'https://soundcloud.com/jazzcombustion/rising'
                 },
-    			synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/rising/s-mQjyo'
-				}
-			}
-		},
+                synthesized: {
+                    description: 'MIDI',
+                    url: 'https://soundcloud.com/david-elaine-alt/rising/s-mQjyo'
+                }
+            }
+        },
 		
-		"Self-Immolation alt.musica": {
-			metadata: {
-				title: "Self-Immolation",
-				composer: "Johannes Brahms & D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Classica/Funk",
-				bpm: '100',
-				key: "G minor"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "self-immolation/strings/self-immolation-",
-			parts: {
+        "Self-Immolation alt.musica": {
+            metadata: {
+                title: "Self-Immolation",
+                composer: "Johannes Brahms & D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Classica/Funk",
+                bpm: '100',
+                key: "G minor"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "self-immolation/strings/self-immolation-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Solo Clarinet in A": { fileSuffix: "Solo-Clarinet-in-A" },
@@ -522,46 +519,42 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
-				performance: {
-					description: 'alt.musica saxophone edition from Parallel Play', 
-					url: 'https://soundcloud.com/david-elaine-alt/self-immolation-1'
-				},				
-				track: {
-					description: 'Strings and Rhythm', 
-					url: 'https://soundcloud.com/david-elaine-alt/self-immolation-strings-and-rhythm/s-bvwlr'
-				},				
-				strings: {
-					description: 'String quartet arrangement of Brahms Op. 79, No. 2',
-					url: 'https://soundcloud.com/david-elaine-alt/string-quartet-arrangement-of-brahms-op-79-no2'
-				},
-				quintet: {
-					description: 'Jazz Combustion Uprising title track from CD',
-					url: 'https://soundcloud.com/jazzcombustion/self-immolation'
-				}, 
-				midi: {
-					description: '',
-					url: ''
-				}
-			}
-		},
+            },
+            recordings: {
+                performance: {
+                    description: 'alt.musica saxophone edition from Parallel Play', 
+                    url: 'https://soundcloud.com/david-elaine-alt/self-immolation-1'
+                },				
+                track: {
+                    description: 'Strings and Rhythm', 
+                    url: 'https://soundcloud.com/david-elaine-alt/self-immolation-strings-and-rhythm/s-bvwlr'
+                },				
+                strings: {
+                    description: 'String quartet arrangement of Brahms Op. 79, No. 2',
+                    url: 'https://soundcloud.com/david-elaine-alt/string-quartet-arrangement-of-brahms-op-79-no2'
+                },
+                quintet: {
+                    description: 'Jazz Combustion Uprising title track from CD',
+                    url: 'https://soundcloud.com/jazzcombustion/self-immolation'
+                }
+            }
+        },
 
-		"Stomping Ground": {
-			metadata: { 
-				title: "Stomping Ground",
-				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Latin Jazz/Swing",
-				bpm: '172',
-				key: "Dm"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "stomping-ground/writtenout/stomping-ground-",
-			parts: {
+        "Stomping Ground": {
+            metadata: { 
+                title: "Stomping Ground",
+                composer: "D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Latin Jazz/Swing",
+                bpm: '172',
+                key: "Dm"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "stomping-ground/writtenout/stomping-ground-",
+            parts: {
                 "Piccolo": { fileSuffix: "Piccolo" },
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -577,40 +570,40 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Concert": { fileSuffix: "Score-Concert" },
                 "Transposed": { fileSuffix: "Score-Transposed" },
                 "Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" },
                 "Winds": { fileSuffix: "Score-Transposed-Winds" }
-			},
-			recordings: {
-				performance: {
-					description: 'alt.musica saxophone edition from Parallel Play',
-					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-2'
-				},
-				debut: {
-					description: 'original alt.musica premiere',
-					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground'
-				},
-				track: {
-					description: 'String Quartet',
-					url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-string-quartet-accompaniment'
-				}
-			}
-		}, 
+            },
+            recordings: {
+                performance: {
+                    description: 'alt.musica saxophone edition from Parallel Play',
+                    url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-2'
+                },
+                debut: {
+                    description: 'original alt.musica premiere',
+                    url: 'https://soundcloud.com/david-elaine-alt/stomping-ground'
+                },
+                track: {
+                    description: 'String Quartet',
+                    url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-string-quartet-accompaniment'
+                }
+            }
+        }, 
 
-		"Tension Cue": {
-			metadata: { 
-				title: "Tension Cue",
-				composer: "D. Elaine Alt",
-				genre: "Classical",
-				bpm: '142',
-				key: "Dm"
-			},
-			fileLocation: "strings",
-			filePrefix: "tension-cue/tension-cue-",
-			parts: {
+        "Tension Cue": {
+            metadata: { 
+                title: "Tension Cue",
+                composer: "D. Elaine Alt",
+                genre: "Classical",
+                bpm: '142',
+                key: "Dm"
+            },
+            fileLocation: "strings",
+            filePrefix: "tension-cue/tension-cue-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
@@ -620,11 +613,11 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Concert": { fileSuffix: "Score-Concert" }
-			},
-			recordings: {
+            },
+            recordings: {
                 quartet: {
                     description: 'String quartet',
                     url: 'https://soundcloud.com/david-elaine-alt/tension-cue-last-takes'
@@ -633,21 +626,21 @@ var originalSongs = {
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/tension/s-tfUV0'
                 }
-			}
-		}, 
+            }
+        }, 
 
-		"We Declare alt.musica": {
-			metadata: { 
-				title: "We Declare",
-				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Martial Jazz/Afro-Cuban Ballad",
-				bpm: '92',
-				key: "Db"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "we-declare/strings/we-declare-",
-			parts: {
+        "We Declare alt.musica": {
+            metadata: { 
+                title: "We Declare",
+                composer: "D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Martial Jazz/Afro-Cuban Ballad",
+                bpm: '92',
+                key: "Db"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "we-declare/strings/we-declare-",
+            parts: {
                 "Piccolo": { fileSuffix: "Piccolo" },
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
@@ -662,51 +655,51 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Concert": { fileSuffix: "Score-Concert" },
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
+            },
+            recordings: {
                 openStudios: { 
                     description: 'alt.musica Open Studios',
                     url: 'https://soundcloud.com/david-elaine-alt/we-declare-2/s-2vsjr'
                 }, 
-				performance: {
-					description: 'alt.musica saxophone edition from Parallel Play',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-1'
-				},
-				accompaniment: {
-					description: 'Winds, string quartet and rhythm',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-rough-with-winds/s-sO6ec'
-				},
-				// strings: {
-				// 	description: 'String quartet and rhythm',
-				// 	url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
-				// },
-				video: {
-					description: 'Original trio video version (different arrangment)',
-					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
-				},
-				sextet: {
-					description: 'Jazz Combustion sextet version (different arrangement)',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
-				}
-			}
-		},
+                performance: {
+                    description: 'alt.musica saxophone edition from Parallel Play',
+                    url: 'https://soundcloud.com/david-elaine-alt/we-declare-1'
+                },
+                accompaniment: {
+                    description: 'Winds, string quartet and rhythm',
+                    url: 'https://soundcloud.com/david-elaine-alt/we-declare-rough-with-winds/s-sO6ec'
+                },
+                // strings: {
+                //     description: 'String quartet and rhythm',
+                // 	   url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
+                // },
+                video: {
+                    description: 'Original trio video version (different arrangment)',
+                    url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
+                },
+                sextet: {
+                    description: 'Jazz Combustion sextet version (different arrangement)',
+                    url: 'https://soundcloud.com/david-elaine-alt/we-declare-sextet-1'
+                }
+            }
+        },
 
-		"Windows": {
-			metadata: { 
-				title: "Windows",
-				composer: "D. Elaine Alt",
-				arranger: "D. Elaine Alt", 
-				genre: "Latin Jazz (2/3 Rhumba Clave)",
-				bpm: '104',
-				key: "Em"
-			},
-			fileLocation: "alt.musica",
-			filePrefix: "windows/windows-",
-			parts: {
+        "Windows": {
+            metadata: { 
+                title: "Windows",
+                composer: "D. Elaine Alt",
+                arranger: "D. Elaine Alt", 
+                genre: "Latin Jazz (2/3 Rhumba Clave)",
+                bpm: '104',
+                key: "Em"
+            },
+            fileLocation: "alt.musica",
+            filePrefix: "windows/windows-",
+            parts: {
                 "Flute": { fileSuffix: "Flute" },
                 "English Horn in F": { fileSuffix: "English-Horn-in-F" },
                 "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
@@ -721,30 +714,30 @@ var originalSongs = {
                 "Viola": { fileSuffix: "Viola" },
                 "'Cello": { fileSuffix: "Cello" },
                 "Bass": { fileSuffix: "Bass" }
-			},
-			scores: {
+            },
+            scores: {
                 "Concert": { fileSuffix: "Score-Concert" },
                 "Transposed": { fileSuffix: "Score-Transposed" }
-			},
-			recordings: {
-				performance: {
-					description: 'alt.musica saxophone edition from Parallel Play',
-					url: 'https://soundcloud.com/david-elaine-alt/windows-3'
-				},
-				track: {
-					description: 'Winds, string quartet and rhythm',
-					url: 'https://soundcloud.com/david-elaine-alt/windows-rough-last-takes/s-VpGsx'
-				},
-				debut: {
-					description: 'alt.musica premiere 2016',
-					url: 'https://soundcloud.com/david-elaine-alt/windows-1'
-				},
-				strings: {
-					description: 'String quartet and rhythm',
-					url: 'https://soundcloud.com/david-elaine-alt/windows-string-quartet-with-rhythm'
-				}
-			}
-		}
+            },
+            recordings: {
+                performance: {
+                    description: 'alt.musica saxophone edition from Parallel Play',
+                    url: 'https://soundcloud.com/david-elaine-alt/windows-3'
+                },
+                track: {
+                    description: 'Winds, string quartet and rhythm',
+                    url: 'https://soundcloud.com/david-elaine-alt/windows-rough-last-takes/s-VpGsx'
+                },
+                debut: {
+                    description: 'alt.musica premiere 2016',
+                    url: 'https://soundcloud.com/david-elaine-alt/windows-1'
+                },
+                strings: {
+                    description: 'String quartet and rhythm',
+                    url: 'https://soundcloud.com/david-elaine-alt/windows-string-quartet-with-rhythm'
+                }
+            }
+        }
 	}
 };
 
