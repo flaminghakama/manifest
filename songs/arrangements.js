@@ -663,10 +663,14 @@ var arrangedSongs = {
 					description: 'Original recording',
 					url: 'https://www.youtube.com/watch?v=vFGmYHaF3Nk'
 				},
-				accompaniment: {
-					description: 'String Quartet - Accompaniment',
-					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-accompaniment/s-O4fhg'
-				},
+                performance: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life/s-A6kNX'
+                },
+                accompaniment: {
+                    description: 'String Quartet - Accompaniment',
+                    url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-accompaniment/s-O4fhg'
+                },
 				instrumental: {
 					description: 'String Quartet - Feature',
 					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-quartet-feature/s-Zsj7v'
@@ -675,10 +679,10 @@ var arrangedSongs = {
 					description: 'String Quartet - Dramedy',
 					url: 'https://soundcloud.com/david-elaine-alt/he-who-hesitates-quartet-pizzicato/s-VBls4'
 				},
-				mashup: {
-					description: 'String Quartet - mashup',
-					url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-lsd/s-yREch'
-				}
+				// mashup: {
+				// 	description: 'String Quartet - mashup',
+				// 	url: 'https://soundcloud.com/david-elaine-alt/taken-all-my-life-lsd/s-yREch'
+				// }
 			}
 		}, 
 

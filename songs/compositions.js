@@ -229,10 +229,14 @@ var originalSongs = {
 				"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" }
 			},
 			recordings: {
-		        performance: {
-		                description: 'original alt.musica version',
-		                url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
-		        },
+                performance: {
+                        description: 'alt.musica Open Studios',
+                        url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-4/s-sHCIl'
+                },
+                winds: {
+                        description: 'original alt.musica winds version',
+                        url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me/s-eLNAe'
+                },
 		        track: {
 		                description: 'String quartet',
 		                url: 'https://soundcloud.com/david-elaine-alt/dont-wait-for-me-rough-string-quartet/s-IgnlT'
@@ -303,10 +307,14 @@ var originalSongs = {
 				"Transposed - Alternate Winds": { fileSuffix: "Score-Transposed-Alternate" }
 			},
 			recordings: {
-				woodwinds: {
-					description: 'Mutual Admiration Org (no strings)',
-					url: 'https://soundcloud.com/alicia-voice/listening'
-				},
+                performance: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/listening-2/s-4C6Wm'
+                },
+                woodwinds: {
+                    description: 'Mutual Admiration Org (no strings)',
+                    url: 'https://soundcloud.com/alicia-voice/listening'
+                },
 				synthesized: {
 					description: 'MIDI',
 					url: 'https://soundcloud.com/david-elaine-alt/listening-midi-1/s-Jfgqm'
@@ -344,10 +352,14 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" },
 			},
 			recordings: {
-				synthesized: {
-					description: 'MIDI',
-					url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
-				},
+                performance: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/mossad-1/s-U940n'
+                },
+                synthesized: {
+                    description: 'MIDI',
+                    url: 'https://soundcloud.com/david-elaine-alt/mossad-midi/s-kh7aJ'
+                },
 				original: {
 					description: 'Alt Tal',
 					url: 'https://soundcloud.com/david-elaine-alt/mossad'
@@ -382,10 +394,14 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" },
 			},
 			recordings: {
-				album: {
-					description: 'track 7 from Alt Tal Open the Gates!',
-					url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
-				},
+                performance: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/the-nymph/s-KxJSZ'
+                },
+                album: {
+                    description: 'track 7 from Alt Tal Open the Gates!',
+                    url: 'https://www.youtube.com/watch?v=Xw6jQuovv-c'
+                },
 				live: {
 					description: 'Alt Tal live at Cafe Van Kleefe',
 					url: 'https://www.youtube.com/watch?v=Vm7GPhF7ims'
@@ -467,11 +483,15 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
-				original: {
-					description: 'Jazz Combustion Uprising',
-					url: 'https://soundcloud.com/jazzcombustion/rising'
-				},
-				synthesized: {
+                performance: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/rising-2/s-hxseB'
+                }, 
+                original: {
+                    description: 'Jazz Combustion Uprising',
+                    url: 'https://soundcloud.com/jazzcombustion/rising'
+                },
+    			synthesized: {
 					description: 'MIDI',
 					url: 'https://soundcloud.com/david-elaine-alt/rising/s-mQjyo'
 				}
@@ -529,7 +549,7 @@ var originalSongs = {
 				}
 			}
 		},
-		
+
 		"Stomping Ground": {
 			metadata: { 
 				title: "Stomping Ground",
@@ -605,10 +625,14 @@ var originalSongs = {
 				"Concert": { fileSuffix: "Score-Concert" }
 			},
 			recordings: {
-				quartet: {
-					description: 'String quartet',
-					url: 'https://soundcloud.com/david-elaine-alt/tension-cue-last-takes'
-				}
+                quartet: {
+                    description: 'String quartet',
+                    url: 'https://soundcloud.com/david-elaine-alt/tension-cue-last-takes'
+                }, 
+                ensemble: {
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/tension/s-tfUV0'
+                }
 			}
 		}, 
 
@@ -644,6 +668,10 @@ var originalSongs = {
 				"Transposed": { fileSuffix: "Score-Transposed" }
 			},
 			recordings: {
+                openStudios: { 
+                    description: 'alt.musica Open Studios',
+                    url: 'https://soundcloud.com/david-elaine-alt/we-declare-2/s-2vsjr'
+                }, 
 				performance: {
 					description: 'alt.musica saxophone edition from Parallel Play',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-1'
@@ -652,10 +680,10 @@ var originalSongs = {
 					description: 'Winds, string quartet and rhythm',
 					url: 'https://soundcloud.com/david-elaine-alt/we-declare-rough-with-winds/s-sO6ec'
 				},
-				strings: {
-					description: 'String quartet and rhythm',
-					url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
-				},
+				// strings: {
+				// 	description: 'String quartet and rhythm',
+				// 	url: 'https://soundcloud.com/david-elaine-alt/we-declare-jazz-strings'
+				// },
 				video: {
 					description: 'Original trio video version (different arrangment)',
 					url: 'https://www.youtube.com/watch?v=NpJo_b0gYDo'
