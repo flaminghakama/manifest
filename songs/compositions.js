@@ -145,8 +145,8 @@ var originalSongs = {
             "Tension Cue": [ "Bass" ],
             "We Declare alt.musica": [ "Bass" ], 
             "Windows": [ "Bass" ],
-		}
-	},
+        }
+    },
 
     songs: {
         "As It Was alt.musica": {
@@ -323,8 +323,8 @@ var originalSongs = {
                     description: 'MIT TRME Jazz Collective (original key)',
                     url: 'https://soundcloud.com/david-elaine-alt/listening'
                 }
-			}
-		},
+            }
+        },
 
         "Mossad": {
             metadata: { 
@@ -738,6 +738,6 @@ var originalSongs = {
                 }
             }
         }
-	}
+    }
 };
 
