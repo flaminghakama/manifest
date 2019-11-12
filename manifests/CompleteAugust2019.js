@@ -34,7 +34,7 @@ var completeRepertoire = {
         '13': "Beautiful Moons Ago (Down M2)",
         '14': "Beautiful Moons Ago",
         '15': "Beautiful Moons Ago (Up M2)",
-        '16': "Have You Met Miss Jones",
+        '16': "Señorita Jones",
         '17': "It Only Happens Once",
         '18': "Nakamarra",
         '19': "Smooch alt.musica",

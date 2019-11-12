@@ -23,7 +23,7 @@ var springRepertoire = {
 		'06': "Windows",
 		'07': "Don't Wait for Me",
 		'08': "Stomping Ground",
-		'09': "Have You Met Miss Jones",
+		'09': "Señorita Jones",
 		'10': "Take Five",
 		'11': "Sweet Georgia Bright",
 	},
