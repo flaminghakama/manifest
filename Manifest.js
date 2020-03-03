@@ -89,7 +89,11 @@ function Manifest(manifest) {
 	}
 
     this.displaySong = function(songName, song) {
-    	
+
+		if ( !song ) { 
+			console.log("skipping song " + song + " since it did not exist.");
+			return;
+		}    	
 		var html = "<div class='song-details' name='" + this.rationalizeName(song.metadata.title) + "'>\n";
 
 		if ( song.hasOwnProperty('metadata') ) {
@@ -187,10 +191,14 @@ function Manifest(manifest) {
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
-			href = this.getBaseUrl(song) + 
-				song.fileLocation + '/pdf/' + 
-				song.filePrefix + score.fileSuffix + '.pdf' ;
-			html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+	 		if ( !score ) { 
+	 			console.log("Skipping song " + name + " since it did not have scores");
+	 		} else {
+				href = this.getBaseUrl(song) + 
+					song.fileLocation + '/pdf/' + 
+					song.filePrefix + score.fileSuffix + '.pdf' ;
+				html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
+			}
 		}
 
 		html += "    </ul>\n    <div class='clear'></div>\n</div>\n" ; 
@@ -239,13 +247,17 @@ function Manifest(manifest) {
 		for ( programIndex = 0 ; programIndex < this.manifest.programOrder.length ; programIndex++ ) {
 
 			number = this.manifest.programOrder[programIndex] ;
-			songIndex = this.manifest.program[number] ; 
-			song = this.manifest.songs[songIndex] ; 
-			rationalizedSongName = this.rationalizeName(song.metadata.title);
-			html += "           <li name=\"" + rationalizedSongName + 
-				"\" onclick=\"manifest.showSong(" + 
-				this.containerVariableName + ",'" +
-				rationalizedSongName + "')\">" + song.metadata.title + "</li>\n";
+			if ( !this.manifest.program[number] ) { 
+				console.log("Skipping program number " + number + " since there is not song defined for that number");
+			} else { 
+				songIndex = this.manifest.program[number] ; 
+				song = this.manifest.songs[songIndex] ; 
+				rationalizedSongName = this.rationalizeName(song.metadata.title);
+				html += "           <li name=\"" + rationalizedSongName + 
+					"\" onclick=\"manifest.showSong(" + 
+					this.containerVariableName + ",'" +
+					rationalizedSongName + "')\">" + song.metadata.title + "</li>\n";
+			}
 		}
 		html += "        </ul>" ; 
 		html += "        <div class='clear'></div>\n" ;
@@ -264,7 +276,11 @@ function Manifest(manifest) {
 			number = this.manifest.programOrder[programIndex] ;
 			songName = this.manifest.program[number] ; 
 			song = this.manifest.songs[songName] ; 
-			html += this.displaySong(songName, song) ; 
+			if ( !song ) { 
+				console.log('Skipping song number ' + number + ' since it did not exist');
+			} else {
+				html += this.displaySong(songName, song) ;
+			} 
 		}
 		html += "\n" ; 
 
@@ -290,6 +306,10 @@ function Manifest(manifest) {
 			songId = manifest.program[songNumber] ;
 			song = manifest.songs[songId] ; 
 			partsList = partsLists[songId] ; 
+			if ( !song ) { 
+				console.log("Skipping song number " + songNumber + " since it did not exist");
+				return;
+			}
 			songUrl = that.getBaseUrl(song) + 
 				song.fileLocation + '/pdf/' + 
 				song.filePrefix ; 
