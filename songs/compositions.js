@@ -60,7 +60,7 @@ var originalSongs = {
 		},
         "Drums": {
             "As It Was alt.musica": [ "Drums" ], 
-            "Don't Wait for Me": [ "Drums" ],
+            "Don't Wait for Me": [ "Drums", "Clave Lead Sheet" ],
             "Listening": [ "Clave" ],
             "Mossad": [ "Clave" ],
             "The Nymph": [ "Bass" ],
@@ -216,6 +216,7 @@ var originalSongs = {
                 "Clarinet in A": { fileSuffix: "Clarinet-in-A" },
                 "Bass Clarinet in Bb": { fileSuffix: "Bass-Clarinet-in-Bb" },
                 "Clave": { fileSuffix: "Clave" },
+                "Clave Lead Sheet": { fileSuffix: "Clave-Lead-Sheet" },
                 "Drums": { fileSuffix: "Rhythm" },
                 "Violin I": { fileSuffix: "Violin-I" },
                 "Violin II": { fileSuffix: "Violin-II" },
