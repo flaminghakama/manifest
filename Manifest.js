@@ -188,6 +188,7 @@ function Manifest(manifest) {
 			score, 
 			href, 
 			html = "<div class='song-scores'>\n    <h4>Scores</h4>\n    <ul>\n" ; 
+		var pdfSubdir = ( song.pdfSubdir !== undefined ) ? song.pdfSubdir : 'pdf/';
 
 		for ( name in song.scores ) { 
 	 		score = song.scores[name] ; 
@@ -195,7 +196,7 @@ function Manifest(manifest) {
 	 			console.log("Skipping song " + name + " since it did not have scores");
 	 		} else {
 				href = this.getBaseUrl(song) + 
-					song.fileLocation + '/pdf/' + 
+					song.fileLocation + '/' + pdfSubdir + 
 					song.filePrefix + score.fileSuffix + '.pdf' ;
 				html += '        <li><a target="_blank" href="' + href + '">' + name + "</a></li>\n" ; 
 			}
@@ -211,6 +212,7 @@ function Manifest(manifest) {
 		var partName,  
 			href, 
 			html = "<div class='song-parts'>\n    <h4>Parts</h4>\n    <ul>\n" ; 
+		var pdfSubdir = ( song.pdfSubdir !== undefined ) ? song.pdfSubdir : 'pdf/';
 
 		if ( !this.bookNames ) { 
 			this.addBooks();
@@ -225,7 +227,7 @@ function Manifest(manifest) {
 			part = song.parts[partName] ; 
 			if (part) { 
 				href = this.getBaseUrl(song) + 
-					song.fileLocation + '/pdf/' + 
+					song.fileLocation + '/' + pdfSubdir + 
 					song.filePrefix + part.fileSuffix + '.pdf' ;
 				html += '        <li><a target="_blank" href="' + href + '">' + partName + "</a></li>\n" ; 
 			} else {
@@ -292,6 +294,7 @@ function Manifest(manifest) {
 		var songNumber, 
 			songId, 
 			song, 
+			pdfSubdir,
 			partsList,
 			partIndex, 
 			part, 
@@ -310,8 +313,9 @@ function Manifest(manifest) {
 				console.log("Skipping song number " + songNumber + " since it did not exist");
 				return;
 			}
+			pdfSubdir = ( song.pdfSubdir !== undefined ) ? song.pdfSubdir : 'pdf/';
 			songUrl = that.getBaseUrl(song) + 
-				song.fileLocation + '/pdf/' + 
+				song.fileLocation + '/' + pdfSubdir + 
 				song.filePrefix ; 
 
 			if ( partsList === undefined ) {

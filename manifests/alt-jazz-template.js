@@ -10,7 +10,7 @@ var altJazzRepertoire = {
 
 	selector: '#alt-jazz-manifest',
 
-	baseUrl: 'http://altjazz.org/scores/', 
+	baseUrl: 'http://ali-cia.net/altjazz/scores/', 
 
 	programOrder: [ '01', '02', '03' ],
 
