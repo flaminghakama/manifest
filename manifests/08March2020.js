@@ -50,6 +50,14 @@ var partSelection = {
     }
 };
 
+altMusicaBooks.books = {
+    '02': "English Horn",
+    '05': "Drums",
+    '06': "Violin I",
+    '07': "Violin II",
+    '08': "Viola",
+    '10': "Bass",
+};
 
 var manifest = new Manifest(rehearsalRepertoire);
 manifest.populate( altMusicaBooks, [ altJazzSongs["Next Level Shit"], originalSongs, arrangedSongs ], partSelection ); 
