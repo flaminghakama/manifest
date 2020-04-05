@@ -576,10 +576,10 @@ var originalSongs = {
                 "Bass": { fileSuffix: "Bass" }
             },
             scores: {
-                "Concert": { fileSuffix: "Score-Concert" },
+                //"Concert": { fileSuffix: "Score-Concert" },
                 "Transposed": { fileSuffix: "Score-Transposed" },
-                "Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" },
-                "Winds": { fileSuffix: "Score-Transposed-Winds" }
+                //"Clarinet Quintet": { fileSuffix: "Score-Clarinet-Quintet" },
+                //"Winds": { fileSuffix: "Score-Transposed-Winds" }
             },
             recordings: {
                 performance: {
@@ -739,7 +739,7 @@ var originalSongs = {
                     url: 'https://soundcloud.com/david-elaine-alt/windows-1'
                 },
                 strings: {
-                    description: 'String quartet and rhythm',
+                    description: 'String quartet and rhythm for tracking (8 bars of intro out front)',
                     url: 'https://soundcloud.com/david-elaine-alt/windows-string-quartet-with-rhythm'
                 }
             }

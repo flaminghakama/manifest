@@ -165,11 +165,13 @@ function Manifest(manifest) {
 
 		for ( name in song.recordings ) { 
 	 		recording = song.recordings[name] ; 
-	 		description = ( recording.description !== '' ) ? recording.description : name ; 
+	 		if ( recording ) {
+		 		description = ( recording.description !== '' ) ? recording.description : name ; 
 
-			if ( recording.url !== '' ) { 
-				html += '        <li><a target="_blank" href="' + recording.url + '">' + recording.description + "</a></li>\n" ; 
-				howManyRecordings += 1 ; 
+				if ( recording.url !== '' ) { 
+					html += '        <li><a target="_blank" href="' + recording.url + '">' + recording.description + "</a></li>\n" ; 
+					howManyRecordings += 1 ; 
+				}
 			}
 		}
 
