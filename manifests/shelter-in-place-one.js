@@ -12,11 +12,11 @@ var rehearsalRepertoire = {
 
     baseUrl: 'http://davidelainealt.com/scores/', 
 
-    programOrder: [ '07', '06', '01', '03' ],
+    programOrder: [ '07', '06', '01', '03', '02' ],
 
     program: {
         '01': "Next Level Shit",
-        //'02': "Stomping Ground",
+        '02': "Stomping Ground",
         '03': "Windows",
         //'04': "We Declare alt.musica",
         //'05': "Don't Wait for Me",
@@ -57,6 +57,8 @@ originalSongs.songs.Windows.recordings.debut = undefined;
 originalSongs.songs["As It Was alt.musica"].recordings.saxophone = undefined;
 originalSongs.songs["As It Was alt.musica"].recordings.original = undefined;
 originalSongs.songs["As It Was alt.musica"].recordings.quartet = undefined;
+originalSongs.songs["Stomping Ground"].recordings.debut = undefined;
+originalSongs.songs["Stomping Ground"].recordings.track = undefined;
 
 var manifest = new Manifest(rehearsalRepertoire);
 manifest.populate( altMusicaBooks, 
