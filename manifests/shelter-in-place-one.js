@@ -54,6 +54,9 @@ var partSelection = {
 originalSongs.songs.Windows.recordings.performance = undefined;
 originalSongs.songs.Windows.recordings.track = undefined;
 originalSongs.songs.Windows.recordings.debut = undefined;
+originalSongs.songs["As It Was alt.musica"].recordings.saxophone = undefined;
+originalSongs.songs["As It Was alt.musica"].recordings.original = undefined;
+originalSongs.songs["As It Was alt.musica"].recordings.quartet = undefined;
 
 var manifest = new Manifest(rehearsalRepertoire);
 manifest.populate( altMusicaBooks, 

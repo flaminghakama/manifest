@@ -192,7 +192,7 @@ var originalSongs = {
                     url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
                 },
                 synthesized: {
-                    description: 'MIDI',
+                    description: 'MIDI for tracking (8 bars out front)',
                     url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
                 }
             }
