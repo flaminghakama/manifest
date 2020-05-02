@@ -192,8 +192,12 @@ var originalSongs = {
                     url: 'https://soundcloud.com/david-elaine-alt/as-it-was-quartet/s-0ybqV'
                 },
                 synthesized: {
-                    description: 'MIDI for tracking (8 bars out front)',
+                    description: 'MIDI for tracking (8 bars out front), on SoundCloud',
                     url: 'https://soundcloud.com/david-elaine-alt/as-it-was-midi/s-qG3GR'
+                },
+                reference: {
+                    description: 'MIDI for tracking (8 bars out front), on Google Drive',
+                    url: 'https://drive.google.com/open?id=1tJrGuYz3aw_6d4Ix2XRhf5894H7gzhDD'
                 }
             }
         },
@@ -583,7 +587,7 @@ var originalSongs = {
             },
             recordings: {
                 performance: {
-                    description: 'alt.musica saxophone edition from Parallel Play',
+                    description: 'alt.musica saxophone edition from Parallel Play (for tracking)',
                     url: 'https://soundcloud.com/david-elaine-alt/stomping-ground-2'
                 },
                 debut: {
