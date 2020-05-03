@@ -12,14 +12,15 @@ var rehearsalRepertoire = {
 
     baseUrl: 'http://davidelainealt.com/scores/', 
 
-    programOrder: [ '05', '03', '01', '04', '02' ],
+    programOrder: [ '05', '03', '01', '04', '02', '06' ],
 
     program: {
         '01': "Next Level Shit",
         '02': "Stomping Ground",
         '03': "Octagon Warrior",
         '04': "As It Was alt.musica",
-        '05': "Lament"
+        '05': "Lament",
+        '06': "Cantina Ploy"
     },
 
     bookOrder: [ ],
