@@ -13,7 +13,7 @@ var lyricalCompositionsRepertoire = {
 
 	baseUrl: 'http://altjazz.org/scores/', 
 
-	programOrder: [ '03' ],
+	programOrder: [ '03', '05' ],
 
 	program: {
 		'01': "Frivolity",
