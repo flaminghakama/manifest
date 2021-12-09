@@ -13,16 +13,16 @@ var lyricalCompositionsRepertoire = {
 
 	baseUrl: 'http://altjazz.org/scores/', 
 
-	programOrder: [ '03', '05' ],
+	programOrder: [ '02', '07', '01', '03', '05', '04', '06' ],
 
 	program: {
-		'01': "Frivolity",
-		'02': "Three Out of Four Nights",
-		'03': "Force of Nature",
-		'04': "Jasmine",
+		'01': "Force of Nature",
+		'02': "Frivolity",
+		'03': "Jasmine",
+		'04': "Just a Cup of Coffee",
 		'05': "Mark Time",
-		'06': "Just a Cup of Coffee",
-		'07': "Seven O'Clock Tune",
+		'06': "Seven O'Clock Tune",
+		'07': "Three Out of Four Nights",
 	},
 
 	bookOrder: [ '01' ],
