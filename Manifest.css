@@ -2,7 +2,9 @@
  *  Styling for Manifest
  */
 
-.program { }
+.program { 
+	padding-top:0.6em;
+}
 .program h2 { 
 	margin-bottom: 1.2em;
 	padding-top: 1.4em;
@@ -36,6 +38,7 @@
     list-style-type: none;
     line-height: 1.2em ;
     max-width: 28em;
+    padding-left:0.4em;
 }
 .book-summary h2 { 
     margin-top: 14px ; 
